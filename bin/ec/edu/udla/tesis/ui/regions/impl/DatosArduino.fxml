@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane id="GridPane" hgap="15" vgap="15" xmlns:fx="http://javafx.com/fxml"
+	fx:controller="ec.edu.udla.tesis.ui.regions.impl.DatosArduinoController">
+	<padding>
+		<Insets top="20" right="10" bottom="10" left="10" />
+	</padding>
+
+	<Label text="Datos obtenidos:" style="-fx-font-weight: bold;"
+		GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="3">
+		<font>
+			<Font name="Tahoma" size="16" />
+		</font>
+	</Label>
+
+
+
+	<StackPane minHeight="20" maxWidth="20" maxHeight="10"
+		GridPane.columnIndex="0"  GridPane.rowIndex="1"></StackPane>
+
+	<StackPane  minHeight="20" maxWidth="20"
+		GridPane.columnIndex="2"  GridPane.rowIndex="1"></StackPane>
+
+	<TableView minWidth="800" fx:id="lecturasRealizadas"
+		GridPane.hgrow="ALWAYS"  GridPane.columnIndex="1"
+		GridPane.rowIndex="1">
+	</TableView>
+
+
+
+</GridPane>
