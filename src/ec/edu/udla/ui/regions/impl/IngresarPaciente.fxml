@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+
+<GridPane fx:id="gridPane" hgap="15" vgap="10"
+	xmlns:fx="http://javafx.com/fxml" fx:controller="ec.edu.udla.ui.regions.impl.IngresarPacienteController">
+
+	<padding>
+		<Insets top="20" right="10" bottom="10" left="50" />
+	</padding>
+
+	<ImageView GridPane.columnIndex="1" GridPane.RowSpan="1"
+		GridPane.rowIndex="0">
+		<image>
+			<Image url="@/patient.png" />
+		</image>
+	</ImageView>
+
+	<Text GridPane.columnIndex="2" GridPane.rowIndex="0"
+		text="INFORMACIÓN DEL PACIENTE">
+		<font>
+			<Font name="Verdana" size="30" />
+		</font>
+	</Text>
+
+	<Label text="Nombre:" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+	<TextField fx:id="nombre" GridPane.columnIndex="2"
+		GridPane.rowIndex="1" />
+
+	<Label text="Apellido:" GridPane.columnIndex="1"
+		GridPane.rowIndex="2" />
+	<TextField fx:id="apellido" GridPane.columnIndex="2"
+		GridPane.rowIndex="2" />
+
+	<Label text="Cedula:" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+	<TextField fx:id="cedula" GridPane.columnIndex="2"
+		GridPane.rowIndex="3" />
+	<Label text="Teléfono" GridPane.columnIndex="1"
+		GridPane.rowIndex="8" />
+	<TextField fx:id="telefono" GridPane.columnIndex="2"
+		GridPane.rowIndex="8" />
+
+	<Label text="Email:" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+	<TextField fx:id="email" GridPane.columnIndex="2"
+		GridPane.rowIndex="4" />
+
+	<Label text="Dirección:" GridPane.columnIndex="1"
+		GridPane.rowIndex="5" />
+	<TextField fx:id="direccion" GridPane.columnIndex="2"
+		GridPane.rowIndex="5" />
+
+	<Label text="Peso:" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+	<TextField fx:id="peso" GridPane.columnIndex="2"
+		GridPane.rowIndex="6" />
+
+	<Label text="Estatura:" GridPane.columnIndex="1"
+		GridPane.rowIndex="7" />
+	<TextField fx:id="estatura" GridPane.columnIndex="2"
+		GridPane.rowIndex="7" />
+
+	<Button text="Ingresar información" onAction="#guardarDatosPaciente"
+		id="rich-blue" GridPane.columnIndex="1" GridPane.ColumnSpan="2"
+		GridPane.rowIndex="9" />
+</GridPane>
