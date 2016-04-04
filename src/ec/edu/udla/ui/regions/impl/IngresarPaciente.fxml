@@ -18,65 +18,80 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.GridPane?>
 
 
-<GridPane fx:id="gridPane" hgap="15" vgap="10"
+<GridPane fx:id="gridPane" hgap="15" vgap="7"
 	xmlns:fx="http://javafx.com/fxml" fx:controller="ec.edu.udla.ui.regions.impl.IngresarPacienteController">
 
 	<padding>
-		<Insets top="20" right="10" bottom="10" left="50" />
+		<Insets top="20" right="40" bottom="20" left="40" />
 	</padding>
 
-	<ImageView GridPane.columnIndex="1" GridPane.RowSpan="1"
+	<GridPane GridPane.columnIndex="0" hgap="15"
 		GridPane.rowIndex="0">
-		<image>
-			<Image url="@/patient.png" />
-		</image>
-	</ImageView>
+		<ImageView GridPane.columnIndex="0">
+			<image>
+				<Image url="@/patient.png" />
+			</image>
+		</ImageView>
 
-	<Text GridPane.columnIndex="2" GridPane.rowIndex="0"
-		text="INFORMACIÓN DEL PACIENTE">
-		<font>
-			<Font name="Verdana" size="30" />
-		</font>
-	</Text>
+		<Text GridPane.columnIndex="1" GridPane.valignment="CENTER"
+			text="INFORMACIÓN DEL PACIENTE">
+			<font>
+				<Font name="Verdana" size="30" />
+			</font>
+		</Text>
+	</GridPane>
 
-	<Label text="Nombre:" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-	<TextField fx:id="nombre" GridPane.columnIndex="2"
-		GridPane.rowIndex="1" />
-
-	<Label text="Apellido:" GridPane.columnIndex="1"
+	<VBox GridPane.columnIndex="0" GridPane.rowIndex="1">
+		<GridPane hgap="15" vgap="7">
+			<padding>
+				<Insets top="10" right="0" bottom="10" left="40" />
+			</padding>
+			<Label text="Nombre:" GridPane.columnIndex="0"
+				GridPane.rowIndex="1" />
+			<TextField fx:id="nombre" GridPane.columnIndex="1"
+				GridPane.rowIndex="1" />
+			<Label text="Apellido:" GridPane.columnIndex="0"
+				GridPane.rowIndex="2" />
+			<TextField fx:id="apellido" GridPane.columnIndex="1"
+				GridPane.rowIndex="2" />
+			<Label text="Cedula:" GridPane.columnIndex="0"
+				GridPane.rowIndex="3" />
+			<TextField fx:id="cedula" GridPane.columnIndex="1"
+				GridPane.rowIndex="3" />
+			<Label text="Teléfono" GridPane.columnIndex="0"
+				GridPane.rowIndex="8" />
+			<TextField fx:id="telefono" GridPane.columnIndex="1"
+				GridPane.rowIndex="8" />
+			<Label text="Email:" GridPane.columnIndex="0"
+				GridPane.rowIndex="4" />
+			<TextField fx:id="email" GridPane.columnIndex="1"
+				GridPane.rowIndex="4" />
+			<Label text="Dirección:" GridPane.columnIndex="0"
+				GridPane.rowIndex="5" />
+			<TextField fx:id="direccion" GridPane.columnIndex="1"
+				GridPane.rowIndex="5" />
+			<Label text="Peso:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+			<TextField fx:id="peso" GridPane.columnIndex="1"
+				GridPane.rowIndex="6" />
+			<Label text="Estatura:" GridPane.columnIndex="0"
+				GridPane.rowIndex="7" />
+			<TextField fx:id="estatura" GridPane.columnIndex="1"
+				GridPane.rowIndex="7" />
+			<Button text="Ingresar información" onAction="#guardarDatosPaciente"
+				styleClass="ok-btn" GridPane.columnIndex="1" GridPane.halignment="RIGHT"
+				GridPane.rowIndex="9" />
+		</GridPane>
+	</VBox>
+	<StackPane minHeight="10" GridPane.columnIndex="0"
 		GridPane.rowIndex="2" />
-	<TextField fx:id="apellido" GridPane.columnIndex="2"
-		GridPane.rowIndex="2" />
+	<StackPane GridPane.columnIndex="0" GridPane.rowIndex="3"
+		GridPane.hgrow="ALWAYS">
+		<TableView fx:id="pacientes" />
+	</StackPane>
 
-	<Label text="Cedula:" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-	<TextField fx:id="cedula" GridPane.columnIndex="2"
-		GridPane.rowIndex="3" />
-	<Label text="Teléfono" GridPane.columnIndex="1"
-		GridPane.rowIndex="8" />
-	<TextField fx:id="telefono" GridPane.columnIndex="2"
-		GridPane.rowIndex="8" />
-
-	<Label text="Email:" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-	<TextField fx:id="email" GridPane.columnIndex="2"
-		GridPane.rowIndex="4" />
-
-	<Label text="Dirección:" GridPane.columnIndex="1"
-		GridPane.rowIndex="5" />
-	<TextField fx:id="direccion" GridPane.columnIndex="2"
-		GridPane.rowIndex="5" />
-
-	<Label text="Peso:" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-	<TextField fx:id="peso" GridPane.columnIndex="2"
-		GridPane.rowIndex="6" />
-
-	<Label text="Estatura:" GridPane.columnIndex="1"
-		GridPane.rowIndex="7" />
-	<TextField fx:id="estatura" GridPane.columnIndex="2"
-		GridPane.rowIndex="7" />
-
-	<Button text="Ingresar información" onAction="#guardarDatosPaciente"
-		id="rich-blue" GridPane.columnIndex="1" GridPane.ColumnSpan="2"
-		GridPane.rowIndex="9" />
 </GridPane>

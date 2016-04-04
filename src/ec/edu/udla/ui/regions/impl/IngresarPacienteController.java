@@ -11,19 +11,15 @@ import ec.edu.udla.ui.regions.RegionsContainer;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.control.Pagination;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.StackPane;
 
 public class IngresarPacienteController implements Initializable, DrawableRegion {
 
-	private static final int REGISTROS_POR_PAGINA = 15;
 	protected RegionsContainer container;
 
 	@FXML
@@ -35,11 +31,13 @@ public class IngresarPacienteController implements Initializable, DrawableRegion
 	@FXML
 	private ImageView imageView;
 
+	@FXML
 	private TableView<Paciente> pacientes;
+
 	private List<Paciente> pacientesEncontrados;
 
 	public IngresarPacienteController() {
-		pacientes = createTable();
+		// pacientes = createTable();
 		pacientesEncontrados = new PacientesFacade().crearListaPacientes(77);
 	}
 
@@ -55,45 +53,30 @@ public class IngresarPacienteController implements Initializable, DrawableRegion
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-
-		Pagination pagination = new Pagination((pacientesEncontrados.size() / REGISTROS_POR_PAGINA + 1), 0);
-		pagination.setPageFactory(this::createPage);
-		gridPane.add(new StackPane(pagination), 0, 11, 5, 1);
+		createTable();
 	}
 
 	private TableView<Paciente> createTable() {
 
-		pacientes = new TableView<Paciente>();
-
-		TableColumn<Paciente, String> columnaNombrePaciente = createColumn("Nombre", "nombre");
-		TableColumn<Paciente, String> columnaApellidoPaciente = createColumn("Apellido", "apellido");
-		TableColumn<Paciente, String> columnaCedulaPaciente = createColumn("Cedula", "cedula");
-		TableColumn<Paciente, String> columnaEmailPaciente = createColumn("Email", "email");
-
-		columnaNombrePaciente.setMinWidth(500);
-		columnaApellidoPaciente.setMinWidth(500);
-		columnaCedulaPaciente.setMinWidth(300);
-		columnaEmailPaciente.setMinWidth(300);// 1f * Integer.MAX_VALUE * 25);
-
-		pacientes.getColumns().add(columnaApellidoPaciente);
-		pacientes.getColumns().add(columnaNombrePaciente);
-		pacientes.getColumns().add(columnaCedulaPaciente);
-		pacientes.getColumns().add(columnaEmailPaciente);
+		pacientes.setItems(FXCollections.observableArrayList(pacientesEncontrados));
+		pacientes.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+		addColumnToTable(createColumn("Nombre", "nombre"), pacientes);
+		addColumnToTable(createColumn("Apellido", "apellido"), pacientes);
+		addColumnToTable(createColumn("Cedula", "cedula"), pacientes);
+		addColumnToTable(createColumn("Email", "email"), pacientes);
 
 		return pacientes;
+	}
+
+	private void addColumnToTable(TableColumn<Paciente, String> column, TableView<Paciente> table) {
+		table.getColumns().add(column);
 	}
 
 	private TableColumn<Paciente, String> createColumn(String columnHeader, String fieldName) {
 		TableColumn<Paciente, String> column = new TableColumn<>(columnHeader);
 		column.setCellValueFactory(new PropertyValueFactory<>(fieldName));
+		column.setMaxWidth(1f * Integer.MAX_VALUE * 25);
 		return column;
-	}
-
-	private Node createPage(int pageIndex) {
-		int fromIndex = pageIndex * REGISTROS_POR_PAGINA;
-		int toIndex = Math.min(fromIndex + REGISTROS_POR_PAGINA, pacientesEncontrados.size());
-		pacientes.setItems(FXCollections.observableArrayList(pacientesEncontrados.subList(fromIndex, toIndex)));
-		return new StackPane(pacientes);
 	}
 
 }
