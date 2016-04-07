@@ -21,6 +21,7 @@
 <?import javafx.scene.control.Pagination?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.ButtonBar?>
 
 
 <GridPane fx:id="gridPane" hgap="15" vgap="7"
@@ -46,7 +47,8 @@
 		</Text>
 	</GridPane>
 
-	<VBox GridPane.columnIndex="0" GridPane.rowIndex="1">
+
+	<VBox GridPane.columnIndex="0" GridPane.rowIndex="2">
 		<GridPane hgap="15" vgap="7">
 			<padding>
 				<Insets top="10" right="0" bottom="10" left="40" />
@@ -63,10 +65,6 @@
 				GridPane.rowIndex="3" />
 			<TextField fx:id="cedula" GridPane.columnIndex="1"
 				GridPane.rowIndex="3" />
-			<Label text="Teléfono" GridPane.columnIndex="0"
-				GridPane.rowIndex="8" />
-			<TextField fx:id="telefono" GridPane.columnIndex="1"
-				GridPane.rowIndex="8" />
 			<Label text="Email:" GridPane.columnIndex="0"
 				GridPane.rowIndex="4" />
 			<TextField fx:id="email" GridPane.columnIndex="1"
@@ -82,14 +80,20 @@
 				GridPane.rowIndex="7" />
 			<TextField fx:id="estatura" GridPane.columnIndex="1"
 				GridPane.rowIndex="7" />
+			<Label text="Teléfono" GridPane.columnIndex="0"
+				GridPane.rowIndex="8" />
+			<TextField fx:id="telefono" GridPane.columnIndex="1"
+				GridPane.rowIndex="8" />
 			<Button text="Ingresar información" onAction="#guardarDatosPaciente"
-				styleClass="ok-btn" GridPane.columnIndex="1" GridPane.halignment="RIGHT"
-				GridPane.rowIndex="9" />
+				styleClass="ok-btn" GridPane.columnIndex="1" GridPane.rowIndex="10"
+				GridPane.halignment="RIGHT" />
 		</GridPane>
 	</VBox>
+
 	<StackPane minHeight="10" GridPane.columnIndex="0"
-		GridPane.rowIndex="2" />
-	<StackPane GridPane.columnIndex="0" GridPane.rowIndex="3"
+		GridPane.rowIndex="4" />
+
+	<StackPane GridPane.columnIndex="0" GridPane.rowIndex="5"
 		GridPane.hgrow="ALWAYS">
 		<TableView fx:id="pacientes" />
 	</StackPane>

@@ -5,5 +5,18 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="externalLibs/postgresql-9.2-1004.jdbc41.jar"/>
+	<classpathentry kind="lib" path="externalLibs/antlr-runtime-3.0.jar"/>
+	<classpathentry kind="lib" path="externalLibs/commons-dbcp.jar"/>
+	<classpathentry kind="lib" path="externalLibs/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="externalLibs/commons-pool.jar"/>
+	<classpathentry kind="lib" path="externalLibs/org.springframework.asm-3.0.0.M3.jar"/>
+	<classpathentry kind="lib" path="externalLibs/org.springframework.beans-3.0.0.M3.jar"/>
+	<classpathentry kind="lib" path="externalLibs/org.springframework.context-3.0.0.M3.jar"/>
+	<classpathentry kind="lib" path="externalLibs/org.springframework.context.support-3.0.0.M3.jar"/>
+	<classpathentry kind="lib" path="externalLibs/org.springframework.core-3.0.0.M3.jar"/>
+	<classpathentry kind="lib" path="externalLibs/org.springframework.expression-3.0.0.M3.jar"/>
+	<classpathentry kind="lib" path="externalLibs/org.springframework.jdbc-3.0.0.M3.jar"/>
+	<classpathentry kind="lib" path="externalLibs/org.springframework.transaction-3.0.0.M3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
