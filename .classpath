@@ -18,5 +18,6 @@
 	<classpathentry kind="lib" path="externalLibs/org.springframework.expression-3.0.0.M3.jar"/>
 	<classpathentry kind="lib" path="externalLibs/org.springframework.jdbc-3.0.0.M3.jar"/>
 	<classpathentry kind="lib" path="externalLibs/org.springframework.transaction-3.0.0.M3.jar"/>
+	<classpathentry kind="lib" path="externalLibs/jssc-2.8.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
