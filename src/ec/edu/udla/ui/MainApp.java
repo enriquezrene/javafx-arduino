@@ -26,7 +26,7 @@ public class MainApp extends Application {
 		mainContainer.loadScreen(PANTALLA_LEER_INFORMACION,
 				LeerInformacionArduinoController.class.getResource(PANTALLA_LEER_INFORMACION));
 
-		mainContainer.setCurrentScreen(PANTALLA_INGRESO_DATOS);
+		mainContainer.setCurrentScreen(PANTALLA_LEER_INFORMACION);
 		mainContainer.setId("main_container");
 
 		Menu menuInicio = new Menu("Inicio");
@@ -39,7 +39,7 @@ public class MainApp extends Application {
 
 		mainContainer.setTop(barraDeMenu);
 
-		Scene scene = new Scene(mainContainer, primaryStage.getMaxWidth(), primaryStage.getMaxHeight());
+		Scene scene = new Scene(mainContainer/*, primaryStage.getMaxWidth(), primaryStage.getMaxHeight()*/);
 
 		scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
 

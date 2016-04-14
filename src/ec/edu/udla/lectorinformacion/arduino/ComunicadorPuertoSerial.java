@@ -1,12 +1,18 @@
 package ec.edu.udla.lectorinformacion.arduino;
 
+import java.util.Observable;
+import java.util.Observer;
+
+import javafx.scene.control.TextArea;
 import jssc.SerialPort;
 import jssc.SerialPortException;
 import jssc.SerialPortList;
 
-public class ComunicadorPuertoSerial {
+public class ComunicadorPuertoSerial implements Observer {
 
 	private static ComunicadorPuertoSerial instancia;
+	private LectorFlujosPuertoSerial lectorFlujosPuertoSerial;
+	private TextArea area;
 
 	public static ComunicadorPuertoSerial obtenerInstancia() {
 		if (instancia == null) {
@@ -27,11 +33,17 @@ public class ComunicadorPuertoSerial {
 		puertoSerial.setParams(SerialPort.BAUDRATE_9600, SerialPort.DATABITS_8, SerialPort.STOPBITS_1,
 				SerialPort.PARITY_NONE);
 		puertoSerial.setFlowControlMode(SerialPort.FLOWCONTROL_RTSCTS_IN | SerialPort.FLOWCONTROL_RTSCTS_OUT);
-		puertoSerial.addEventListener(new LectorFlujosPuertoSerial(puertoSerial), SerialPort.MASK_RXCHAR);
+		lectorFlujosPuertoSerial = new LectorFlujosPuertoSerial(puertoSerial);
+		lectorFlujosPuertoSerial.addObserver(this);
+		puertoSerial.addEventListener(lectorFlujosPuertoSerial, SerialPort.MASK_RXCHAR);
 	}
 
 	public void cerrarConexion() throws Exception {
 		puertoSerial.closePort();
+	}
+
+	public void asignarCampoParaEscribirSalida(TextArea area) {
+		this.area = area;
 	}
 
 	public void enviarCadenaDeTexto(String cadenaDeTexto) {
@@ -45,6 +57,11 @@ public class ComunicadorPuertoSerial {
 	public String[] obtenerPuertosSerialesDisponibles() {
 		String[] puertosSerialesDisponibles = SerialPortList.getPortNames();
 		return puertosSerialesDisponibles;
+	}
+
+	@Override
+	public void update(Observable o, Object linea) {
+		area.setText(area.getText() + linea.toString().trim() + "\n");
 	}
 
 }
