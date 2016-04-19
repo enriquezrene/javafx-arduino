@@ -31,7 +31,7 @@ public class ComunicadorPuertoSerial implements Observer {
 		puertoSerial = new SerialPort(puertoParaEstablecerConexion);
 		puertoSerial.openPort();
 		puertoSerial.setParams(SerialPort.BAUDRATE_9600, SerialPort.DATABITS_8, SerialPort.STOPBITS_1,
-				SerialPort.PARITY_NONE);
+				SerialPort.PARITY_NONE, true, false);
 		puertoSerial.setFlowControlMode(SerialPort.FLOWCONTROL_RTSCTS_IN | SerialPort.FLOWCONTROL_RTSCTS_OUT);
 		lectorFlujosPuertoSerial = new LectorFlujosPuertoSerial(puertoSerial);
 		lectorFlujosPuertoSerial.addObserver(this);

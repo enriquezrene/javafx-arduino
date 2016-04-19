@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
 
-import org.springframework.expression.spel.generated.SpringExpressionsParser.sumExpression_return;
-
 import jssc.SerialPort;
 import jssc.SerialPortEvent;
 import jssc.SerialPortEventListener;
