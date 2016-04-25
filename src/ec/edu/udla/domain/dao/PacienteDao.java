@@ -6,25 +6,20 @@ import java.util.List;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 
 import ec.edu.udla.domain.Paciente;
+import ec.edu.udla.domain.PojoBase;
 
-public class PacienteDao {
+public class PacienteDao extends AbstractDao {
 
 	public List<Paciente> findAll() {
 		String sql = "SELECT * FROM paciente ORDER BY id";
-		List<Paciente> pacientes = ConexionPostgreSQL.getInstance().getJdbcTemplate().query(sql,
+		List<Paciente> pacientes = conexion.getJdbcTemplate().query(sql,
 				new BeanPropertyRowMapper<Paciente>(Paciente.class));
 		return pacientes;
 	}
 
-	public void saveOrUpdate(Paciente paciente) {
-		if (paciente.getId() != 0) {
-			update(paciente);
-		} else {
-			save(paciente);
-		}
-	}
-
-	public void save(Paciente paciente) {
+	@Override
+	public void save(PojoBase entidad) {
+		Paciente paciente = (Paciente) entidad;
 		String sql = "insert into paciente" + " (nombre, apellido, cedula, email, direccion, telefono, peso, estatura) "
 				+ "values (?, ?, ?, ?, ?, ?, ?, ?)";
 		Object[] params = new Object[] { paciente.getNombre(), paciente.getApellido(), paciente.getCedula(),
@@ -32,10 +27,12 @@ public class PacienteDao {
 				paciente.getEstatura() };
 		int[] types = new int[] { Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR,
 				Types.VARCHAR, Types.NUMERIC, Types.INTEGER };
-		ConexionPostgreSQL.getInstance().getJdbcTemplate().update(sql, params, types);
+		conexion.getJdbcTemplate().update(sql, params, types);
 	}
 
-	public void update(Paciente paciente) {
+	@Override
+	public void update(PojoBase entidad) {
+		Paciente paciente = (Paciente) entidad;
 		String sql = "UPDATE paciente set nombre = ?, apellido=?, cedula=?, email=?, direccion=?, telefono=?, peso=?, estatura=? "
 				+ "where id=?";
 		Object[] params = new Object[] { paciente.getNombre(), paciente.getApellido(), paciente.getCedula(),
@@ -43,12 +40,12 @@ public class PacienteDao {
 				paciente.getEstatura(), paciente.getId() };
 		int[] types = new int[] { Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR,
 				Types.VARCHAR, Types.NUMERIC, Types.INTEGER, Types.INTEGER };
-		ConexionPostgreSQL.getInstance().getJdbcTemplate().update(sql, params, types);
+		conexion.getJdbcTemplate().update(sql, params, types);
 	}
 
 	public void delete(int id) {
 		String sql = "delete from paciente where id = " + id;
-		ConexionPostgreSQL.getInstance().getJdbcTemplate().update(sql);
+		conexion.getJdbcTemplate().update(sql);
 	}
 
 }

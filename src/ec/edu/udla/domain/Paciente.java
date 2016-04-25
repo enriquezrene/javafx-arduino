@@ -1,17 +1,8 @@
 package ec.edu.udla.domain;
 
-public class Paciente {
+public class Paciente extends PojoBase {
 
-	private int id;
 	private String nombre, apellido, cedula, telefono, email, direccion, peso, estatura;
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
 
 	public String getNombre() {
 		return nombre;

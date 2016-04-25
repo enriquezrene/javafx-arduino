@@ -7,15 +7,27 @@ import java.util.HashMap;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
 import javafx.scene.layout.BorderPane;
 
 public class RegionsContainer extends BorderPane {
 
 	private HashMap<String, Node> screens;
+	private MenuBar barraDeMenu;
 
 	public RegionsContainer() {
 		super();
 		screens = new HashMap<>();
+		barraDeMenu = new MenuBar();
+	}
+
+	public void mostrarBarraDeMenu() {
+		this.setTop(barraDeMenu);
+	}
+
+	public void cargarOpcionesDeMenu(Menu menu) {
+		this.barraDeMenu.getMenus().add(menu);
 	}
 
 	// Add the screen to the collection
