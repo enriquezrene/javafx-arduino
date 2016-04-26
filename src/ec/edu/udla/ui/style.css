@@ -1,8 +1,12 @@
 #main_container{
-	-fx-background-color: #FAFAFA;
+    -fx-base: #e9e99;
+    -fx-background: #e9e99;
+    -fx-control-inner-background: white;
 }
 
-.ok-btn {
+.button {
+    -fx-min-width: 200;
+    -fx-min-height: 40;
     -fx-background-color: #337ab7;
     -fx-border-color: #2e6da4;
     -fx-font-size: 14.0px;
@@ -13,7 +17,12 @@
     -fx-text-fill: white;
 }
 
-.ok-btn:hover {
+.label-bold{
+    -fx-font-weight: 700;
+    -fx-font-size:12px;
+}
+
+.button:hover {
     -fx-color: #fff;
     -fx-background-color: #286090;
     -fx-border-color: #204d74;
@@ -90,4 +99,93 @@
 
 .table-row-cell:empty .table-cell {
     -fx-border-width: 0.0px;
+}
+
+.menu-bar {
+    -fx-background-color: linear-gradient(to bottom, #d0d0d0, derive(#d0d0d0,+50%));
+    -fx-text-fill: black;
+}
+
+.menu-bar .menu .label {
+    -fx-padding: 0.333em 0.5em 0.333em 0.5em; /* 4 6 4 6*/
+    -fx-text-fill: black;
+}
+
+.my-gridpane {
+	-fx-background-color: radial-gradient(radius 100%, derive(-fx-base,70%), derive(-fx-base,20%));
+}
+
+.separator-label {
+   -fx-text-fill: steelblue ;
+}
+
+#window-resize-button {
+    -fx-background-image: url("images/window-corner.png");
+    -fx-background-position: right 1px bottom 1px;
+    -fx-background-repeat: no-repeat;
+}
+
+#window_close {
+    -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("images/window-close.png");
+    -fx-padding: 6 6 4 6;
+}
+
+#window_min {
+    -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("images/window-min.png");
+    -fx-padding: 6 6 4 6;
+}
+
+#window_max {
+    -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("images/window-expand.png");
+    -fx-padding: 6 6 4 6;
+}
+
+#window_close:hover {
+    -fx-background-image: url("images/window-close-over.png");
+}
+
+#window_min:hover {
+    -fx-background-image: url("images/window-min-over.png");
+}
+
+#window_max:hover {
+    -fx-background-image: url("images/window-expand-over.png");
+}
+
+.MTrimBar {
+	-fx-background-color:
+        linear-gradient(to bottom, derive(-fx-base,-30%), derive(-fx-base,-60%)),
+        linear-gradient(to bottom, derive(-fx-base,65%) 2%, derive(-fx-base,-20%) 95%);
+}
+
+.MTrimBar .tool-bar {
+    -fx-border-style: solid;
+    -fx-background-color: null;
+    -fx-border-color:  null;
+    -fx-border-width: 0px;
+}
+
+.tool-bar {
+    -fx-border-style: solid;
+    -fx-border-color:  linear-gradient(to bottom, derive(-fx-base,-30%), derive(-fx-base,-60%)),
+        linear-gradient(to bottom, derive(-fx-base,65%) 2%, derive(-fx-base,-20%) 95%);
+    -fx-border-width: 1px;
+}
+
+
+
+.login {
+    position: relative;
+    margin: 0px auto;
+    padding: 20px;
+    width: 310px;
+    background: #FFF none repeat scroll 0% 0%;
+    border-radius: 3px;
+    box-shadow: 0px 0px 200px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.3);
 }
