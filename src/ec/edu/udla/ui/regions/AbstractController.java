@@ -2,7 +2,7 @@ package ec.edu.udla.ui.regions;
 
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.TextInputControl;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 public abstract class AbstractController implements DrawableRegion {
@@ -25,7 +25,7 @@ public abstract class AbstractController implements DrawableRegion {
         this.container = container;
     }
 
-    protected void limpiarTextField(TextField... textFields) {
+    protected void limpiarTextInputs(TextInputControl... textFields) {
         for (int i = 0; i < textFields.length; i++) {
             textFields[i].setText("");
         }

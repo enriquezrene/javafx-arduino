@@ -4,6 +4,7 @@ import ec.edu.udla.domain.LecturaGlucometro;
 import ec.edu.udla.domain.Paciente;
 import ec.edu.udla.domain.dao.PacienteDao;
 import ec.edu.udla.domain.util.Context;
+import ec.edu.udla.ui.regions.AbstractController;
 import ec.edu.udla.ui.regions.DrawableRegion;
 import ec.edu.udla.ui.regions.RegionsContainer;
 import javafx.collections.FXCollections;
@@ -17,14 +18,11 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class LecturasGlucosaController implements Initializable, DrawableRegion {
+public class LecturasGlucosaController extends AbstractController implements Initializable {
 
     protected RegionsContainer container;
     private PacienteDao pacienteDao;
     private Paciente paciente;
-
-    @FXML
-    private ImageView imageView;
 
     @FXML
     private TableView<LecturaGlucometro> lecturas;
@@ -36,11 +34,6 @@ public class LecturasGlucosaController implements Initializable, DrawableRegion 
         this.paciente = (Paciente) Context.getInstance().get(Context.PACIENTE_EN_MEMORIA);
     }
 
-
-    @Override
-    public void setContainer(RegionsContainer container) {
-        this.container = container;
-    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -55,15 +48,5 @@ public class LecturasGlucosaController implements Initializable, DrawableRegion 
         return lecturas;
     }
 
-    private void addColumnToTable(TableColumn column, TableView table) {
-        table.getColumns().add(column);
-    }
-
-    private TableColumn createColumn(String columnHeader, String fieldName, int size) {
-        TableColumn column = new TableColumn<>(columnHeader);
-        column.setCellValueFactory(new PropertyValueFactory<>(fieldName));
-        column.setMaxWidth(1f * Integer.MAX_VALUE * size);
-        return column;
-    }
 
 }

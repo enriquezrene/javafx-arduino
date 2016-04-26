@@ -9,19 +9,13 @@ import ec.edu.udla.domain.dao.PacienteDao;
 import ec.edu.udla.domain.util.Context;
 import ec.edu.udla.ui.MainApp;
 import ec.edu.udla.ui.regions.AbstractController;
-import ec.edu.udla.ui.regions.DrawableRegion;
-import ec.edu.udla.ui.regions.RegionsContainer;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ContextMenu;
 import javafx.scene.control.MenuItem;
-import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.GridPane;
 
 public class IngresarPacienteController extends AbstractController implements Initializable {
 
@@ -55,7 +49,7 @@ public class IngresarPacienteController extends AbstractController implements In
         paciente.setTelefono(telefono.getText());
         pacienteDao.saveOrUpdate(paciente);
         pacientes.setItems(FXCollections.observableArrayList(pacienteDao.findAll()));
-        limpiarTextField(apellido, cedula, direccion, email, estatura, nombre, peso, telefono);
+        limpiarTextInputs(apellido, cedula, direccion, email, estatura, nombre, peso, telefono);
         paciente = null;
     }
 
