@@ -39,7 +39,7 @@ public class LoginController implements Initializable, DrawableRegion {
 		try {
 			facade.login(name, contrasena);
 			regionsContainer.mostrarBarraDeMenu();
-			regionsContainer.setCurrentScreen(MainApp.PANTALLA_ADMINISTRACION_USUARIOS);
+			regionsContainer.setCurrentScreen(MainApp.PANTALLA_INGRESO_DATOS);
 			limpiarComponentes();
 		} catch (RuntimeException e) {
 			Alert alert = buildDialog(AlertType.ERROR, e.getMessage(), null);

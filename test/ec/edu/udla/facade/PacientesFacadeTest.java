@@ -5,10 +5,19 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
+import ec.edu.udla.domain.LecturaGlucometro;
 import ec.edu.udla.domain.Paciente;
+import ec.edu.udla.domain.dao.PacienteDao;
 import ec.edu.udla.facade.PacientesFacade;
 
 public class PacientesFacadeTest {
+
+	@Test
+	public void obtenerLecturasAPartirDelIdPaciente() {
+		PacienteDao pacienteDao = new PacienteDao();
+		int idPaciente = 3;
+		List<LecturaGlucometro> lecturas = pacienteDao.buscarLecturasGlucosa(idPaciente);
+	}
 
 	@Test
 	public void debeRetornarTantosPacientesComoSeSolicite() throws Exception {

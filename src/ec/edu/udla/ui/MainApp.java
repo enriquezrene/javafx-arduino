@@ -31,7 +31,7 @@ public class MainApp extends Application {
 		mainContainer.setId("main_container");
 
 		Menu menuInicio = new Menu("Inicio");
-		MenuItem opcionIngresarPacientes = crearItemDeMenu("Ingresar paciente", PANTALLA_INGRESO_DATOS);
+		MenuItem opcionIngresarPacientes = crearItemDeMenu("Pacientes", PANTALLA_INGRESO_DATOS);
 		MenuItem opcionAdministrarUsuarios = crearItemDeMenu("Administrar usuarios", PANTALLA_ADMINISTRACION_USUARIOS);
 		MenuItem opcionLeerInformacionArduino = crearItemDeMenu("Establecer conexion", PANTALLA_LEER_INFORMACION);
 		menuInicio.getItems().addAll(opcionIngresarPacientes, opcionAdministrarUsuarios, opcionLeerInformacionArduino);

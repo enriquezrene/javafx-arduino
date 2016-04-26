@@ -4,25 +4,26 @@ import java.util.Date;
 
 public class LecturaGlucometro {
 
-	private String nombrePaciente;
-	private String lecturaGlucosa;
+	private int id;
+	private String valor;
 	private Date fechaHora;
 	private EstadoPacienteEnLaLectura estado;
+	private int idPaciente;
 
-	public String getNombrePaciente() {
-		return nombrePaciente;
+	public int getId() {
+		return id;
 	}
 
-	public void setNombrePaciente(String nombrePaciente) {
-		this.nombrePaciente = nombrePaciente;
+	public void setId(int id) {
+		this.id = id;
 	}
 
-	public String getLecturaGlucosa() {
-		return lecturaGlucosa;
+	public String getValor() {
+		return valor;
 	}
 
-	public void setLecturaGlucosa(String lecturaGlucosa) {
-		this.lecturaGlucosa = lecturaGlucosa;
+	public void setValor(String valor) {
+		this.valor = valor;
 	}
 
 	public Date getFechaHora() {
@@ -39,6 +40,14 @@ public class LecturaGlucometro {
 
 	public void setEstado(EstadoPacienteEnLaLectura estado) {
 		this.estado = estado;
+	}
+
+	public int getIdPaciente() {
+		return idPaciente;
+	}
+
+	public void setIdPaciente(int idPaciente) {
+		this.idPaciente = idPaciente;
 	}
 
 }

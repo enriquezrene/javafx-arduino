@@ -15,8 +15,6 @@ import javafx.scene.control.TextField;
 
 public class LeerInformacionArduinoController implements Initializable, DrawableRegion {
 
-	private RegionsContainer regionsContainer;
-
 	@FXML
 	private ComboBox<String> puertosSeriales;
 
@@ -31,7 +29,7 @@ public class LeerInformacionArduinoController implements Initializable, Drawable
 
 	@Override
 	public void setContainer(RegionsContainer container) {
-		this.regionsContainer = container;
+
 	}
 
 	@FXML

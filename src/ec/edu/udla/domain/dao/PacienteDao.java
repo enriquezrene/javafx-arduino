@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 
+import ec.edu.udla.domain.LecturaGlucometro;
 import ec.edu.udla.domain.Paciente;
 import ec.edu.udla.domain.PojoBase;
 
@@ -46,6 +47,13 @@ public class PacienteDao extends AbstractDao {
 	public void delete(int id) {
 		String sql = "delete from paciente where id = " + id;
 		conexion.getJdbcTemplate().update(sql);
+	}
+
+	public List<LecturaGlucometro> buscarLecturasGlucosa(int idPaciente) {
+		String sql = "SELECT * FROM lectura_glucometro WHERE id_paciente = " + idPaciente + " ORDER BY id";
+		List<LecturaGlucometro> lecturas = conexion.getJdbcTemplate().query(sql,
+				new BeanPropertyRowMapper<LecturaGlucometro>(LecturaGlucometro.class));
+		return lecturas;
 	}
 
 }

@@ -1,71 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+
+
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
-<?import javafx.scene.control.Pagination?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.control.ButtonBar?>
-<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<GridPane hgap="15" vgap="7" xmlns:fx="http://javafx.com/fxml" style="text-align:center"
+          fx:controller="ec.edu.udla.ui.regions.login.impl.LoginController" alignment="CENTER">
+
+    <padding>
+        <Insets top="20" right="40" bottom="20" left="40"/>
+    </padding>
+
+    <GridPane GridPane.columnIndex="0" hgap="15"
+              GridPane.rowIndex="0">
+        <ImageView GridPane.columnIndex="0">
+            <image>
+                <Image url="@/patient.png"/>
+            </image>
+        </ImageView>
+
+        <Text GridPane.columnIndex="1" GridPane.valignment="CENTER" text="LOGIN">
+            <font>
+                <Font name="Verdana" size="30"/>
+            </font>
+        </Text>
+    </GridPane>
 
 
-<GridPane hgap="15" vgap="7" xmlns:fx="http://javafx.com/fxml"
-	fx:controller="ec.edu.udla.ui.regions.login.impl.LoginController">
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="2">
 
-	<padding>
-		<Insets top="20" right="40" bottom="20" left="40" />
-	</padding>
+        <GridPane hgap="15" vgap="7">
+            <padding>
+                <Insets top="10" right="0" bottom="10" left="40"/>
+            </padding>
+            <Label text="Nombre de usuario:" GridPane.columnIndex="0"
+                   GridPane.rowIndex="1"/>
+            <TextField fx:id="usuario" GridPane.columnIndex="1"
+                       GridPane.rowIndex="1"/>
+            <Label text="Password:" GridPane.columnIndex="0"
+                   GridPane.rowIndex="2"/>
+            <PasswordField fx:id="password" GridPane.columnIndex="1"
+                           GridPane.rowIndex="2"/>
 
-	<GridPane GridPane.columnIndex="0" hgap="15"
-		GridPane.rowIndex="0">
-		<ImageView GridPane.columnIndex="0">
-			<image>
-				<Image url="@/patient.png" />
-			</image>
-		</ImageView>
-
-		<Text GridPane.columnIndex="1" GridPane.valignment="CENTER" text="LOGIN">
-			<font>
-				<Font name="Verdana" size="30" />
-			</font>
-		</Text>
-	</GridPane>
-
-
-	<VBox GridPane.columnIndex="0" GridPane.rowIndex="2">
-
-		<GridPane hgap="15" vgap="7">
-			<padding>
-				<Insets top="10" right="0" bottom="10" left="40" />
-			</padding>
-			<Label text="Nombre de usuario:" GridPane.columnIndex="0"
-				GridPane.rowIndex="1" />
-			<TextField fx:id="usuario" GridPane.columnIndex="1"
-				GridPane.rowIndex="1" />
-			<Label text="Password:" GridPane.columnIndex="0"
-				GridPane.rowIndex="2" />
-			<PasswordField fx:id="password" GridPane.columnIndex="1"
-				GridPane.rowIndex="2" />
-
-			<Button text="OK" onAction="#login" styleClass="ok-btn"
-				GridPane.columnIndex="1" GridPane.rowIndex="10" GridPane.halignment="RIGHT" />
-		</GridPane>
-	</VBox>
+            <Button text="OK" onAction="#login" styleClass="ok-btn"
+                    GridPane.columnIndex="1" GridPane.rowIndex="10" GridPane.halignment="RIGHT"/>
+        </GridPane>
+    </VBox>
 
 </GridPane>

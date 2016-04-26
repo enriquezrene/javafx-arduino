@@ -20,8 +20,9 @@ public class LectorInformacionEnMemoria implements LectorInformacion {
 	}
 
 	private List<LecturaGlucometro> crearLecturas(int cantidad) {
-		String[] nombres = { "Juan", "Mathy", "Rene", "Mayra", "Johana" };
-		String[] apellidos = { "Guaman", "Enriquez", "Lopez", "Olmedo", "Veintimilla" };
+		// String[] nombres = { "Juan", "Mathy", "Rene", "Mayra", "Johana" };
+		// String[] apellidos = { "Guaman", "Enriquez", "Lopez", "Olmedo",
+		// "Veintimilla" };
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTime(new Date());
 
@@ -31,10 +32,12 @@ public class LectorInformacionEnMemoria implements LectorInformacion {
 		for (int i = 0; i < cantidad; i++) {
 			LecturaGlucometro lecturaGlucometro = new LecturaGlucometro();
 			lecturaGlucometro.setEstado(estados[i % 2]);
-			lecturaGlucometro.setNombrePaciente(nombres[i % 5] + " " + apellidos[4 - (i % 5)]);
+			// lecturaGlucometro.setNombrePaciente(nombres[i % 5] + " " +
+			// apellidos[4 - (i % 5)]);
 			calendar.add(Calendar.MONTH, new Random().nextInt());
 			lecturaGlucometro.setFechaHora(calendar.getTime());
-			lecturaGlucometro.setLecturaGlucosa(new Random().nextInt(1200) + "");
+			// lecturaGlucometro.setLecturaGlucosa(new Random().nextInt(1200) +
+			// "");
 
 			lecturas.add(lecturaGlucometro);
 		}
