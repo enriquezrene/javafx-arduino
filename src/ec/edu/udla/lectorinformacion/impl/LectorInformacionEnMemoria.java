@@ -35,7 +35,7 @@ public class LectorInformacionEnMemoria implements LectorInformacion {
 			// lecturaGlucometro.setNombrePaciente(nombres[i % 5] + " " +
 			// apellidos[4 - (i % 5)]);
 			calendar.add(Calendar.MONTH, new Random().nextInt());
-			lecturaGlucometro.setFechaHora(calendar.getTime());
+			lecturaGlucometro.setFecha(calendar.getTime());
 			// lecturaGlucometro.setLecturaGlucosa(new Random().nextInt(1200) +
 			// "");
 

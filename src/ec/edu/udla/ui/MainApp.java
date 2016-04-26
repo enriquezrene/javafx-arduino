@@ -5,6 +5,7 @@ import java.io.IOException;
 import ec.edu.udla.ui.regions.RegionsContainer;
 import ec.edu.udla.ui.regions.adminusuarios.impl.AdministrarUsuarioController;
 import ec.edu.udla.ui.regions.impl.IngresarPacienteController;
+import ec.edu.udla.ui.regions.impl.LecturasGlucosaController;
 import ec.edu.udla.ui.regions.lectorarduino.impl.LeerInformacionArduinoController;
 import ec.edu.udla.ui.regions.login.impl.LoginController;
 import javafx.application.Application;
@@ -19,6 +20,7 @@ public class MainApp extends Application {
 	public static final String PANTALLA_LEER_INFORMACION = "LeerInformacionArduino.fxml";
 	public static final String PANTALLA_LOGIN = "Login.fxml";
 	public static final String PANTALLA_ADMINISTRACION_USUARIOS = "AdministracionUsuarios.fxml";
+	public static final String PANTALLA_MEDIDAS_GLUCOSA = "LecturasGlucosa.fxml";
 
 	private RegionsContainer mainContainer;
 
@@ -51,6 +53,7 @@ public class MainApp extends Application {
 
 	private void cargarPantallas() throws IOException {
 		mainContainer = new RegionsContainer();
+
 		mainContainer.loadScreen(PANTALLA_INGRESO_DATOS,
 				IngresarPacienteController.class.getResource(PANTALLA_INGRESO_DATOS));
 		mainContainer.loadScreen(PANTALLA_LOGIN, LoginController.class.getResource(PANTALLA_LOGIN));

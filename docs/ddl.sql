@@ -22,3 +22,14 @@ CREATE TABLE usuario(
    nombre_de_usuario TEXT,
    contrasena TEXT
 );
+
+CREATE TABLE lectura_glucometro(
+   id  SERIAL PRIMARY KEY,
+   id_paciente  INTEGER,
+   valor TEXT,
+   fecha TIMESTAMP,
+   estado TEXT
+);
+
+insert into lectura_glucometro (id_paciente, valor, fecha, estado) values
+(1, '54.50', '10/05/2015', 'AYUNAS');
