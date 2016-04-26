@@ -6,7 +6,7 @@ public class LecturaGlucometro {
 
 	private int id;
 	private String valor;
-	private Date fechaHora;
+	private Date fecha;
 	private EstadoPacienteEnLaLectura estado;
 	private int idPaciente;
 
@@ -26,12 +26,12 @@ public class LecturaGlucometro {
 		this.valor = valor;
 	}
 
-	public Date getFechaHora() {
-		return fechaHora;
+	public Date getFecha() {
+		return fecha;
 	}
 
-	public void setFechaHora(Date fechaHora) {
-		this.fechaHora = fechaHora;
+	public void setFecha(Date fecha) {
+		this.fecha = fecha;
 	}
 
 	public EstadoPacienteEnLaLectura getEstado() {
