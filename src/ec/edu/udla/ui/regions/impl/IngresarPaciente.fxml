@@ -5,6 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import org.kordamp.bootstrapfx.scene.layout.Panel?>
+
 <GridPane fx:id="gridPane" hgap="15" vgap="7"
           xmlns:fx="http://javafx.com/fxml" fx:controller="ec.edu.udla.ui.regions.impl.IngresarPacienteController">
 
@@ -13,7 +14,7 @@
     </padding>
 
 
-    <VBox GridPane.columnIndex="0" GridPane.rowIndex="2">
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0">
         <Panel styleClass="panel-primary">
 
             <heading>

@@ -8,67 +8,67 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import org.kordamp.bootstrapfx.scene.layout.Panel?>
 <GridPane hgap="15" vgap="7" xmlns:fx="http://javafx.com/fxml"
-          fx:controller="ec.edu.udla.ui.regions.adminusuarios.impl.AdministrarUsuarioController">
+	fx:controller="ec.edu.udla.ui.regions.adminusuarios.impl.AdministrarUsuarioController">
 
-    <padding>
-        <Insets top="20" right="40" bottom="20" left="40"/>
-    </padding>
+	<padding>
+		<Insets top="20" right="40" bottom="20" left="40" />
+	</padding>
 
-    <GridPane GridPane.columnIndex="0" hgap="15"
-              GridPane.rowIndex="0">
-        <ImageView GridPane.columnIndex="0">
-            <image>
-                <Image url="@/patient.png"/>
-            </image>
-        </ImageView>
-
-        <Text GridPane.columnIndex="1" GridPane.valignment="CENTER"
-              text="DOCTORES">
-            <font>
-                <Font name="Verdana" size="30"/>
-            </font>
-        </Text>
-    </GridPane>
+	<!-- GridPane GridPane.columnIndex="0" hgap="15" GridPane.rowIndex="0">
+		<ImageView GridPane.columnIndex="0"> <image> <Image url="@/patient.png" />
+		</image> </ImageView> <Text GridPane.columnIndex="1" GridPane.valignment="CENTER"
+		text="DOCTORES"> <font> <Font name="Verdana" size="30" /> </font> </Text>
+		</GridPane -->
 
 
-    <VBox GridPane.columnIndex="0" GridPane.rowIndex="2">
-        <GridPane hgap="15" vgap="7">
-            <padding>
-                <Insets top="10" right="0" bottom="10" left="40"/>
-            </padding>
-            <Label text="Nombre:" GridPane.columnIndex="0"
-                   GridPane.rowIndex="1"/>
-            <TextField fx:id="nombre" GridPane.columnIndex="1"
-                       GridPane.rowIndex="1"/>
-            <Label text="Apellido:" GridPane.columnIndex="0"
-                   GridPane.rowIndex="2"/>
-            <TextField fx:id="apellido" GridPane.columnIndex="1"
-                       GridPane.rowIndex="2"/>
-            <Label text="Email:" GridPane.columnIndex="0"
-                   GridPane.rowIndex="3"/>
-            <TextField fx:id="email" GridPane.columnIndex="1"
-                       GridPane.rowIndex="3"/>
-            <Label text="Nombre de usuario:" GridPane.columnIndex="0"
-                   GridPane.rowIndex="4"/>
-            <TextField fx:id="nombreUsuario" GridPane.columnIndex="1"
-                       GridPane.rowIndex="4"/>
-            <Label text="Password:" GridPane.columnIndex="0"
-                   GridPane.rowIndex="5"/>
-            <PasswordField fx:id="password" GridPane.columnIndex="1"
-                           GridPane.rowIndex="5"/>
+	<VBox GridPane.columnIndex="0" GridPane.rowIndex="0">
 
-            <Button text="Guardar" onAction="#guardarDatos" styleClass="ok-btn"
-                    GridPane.columnIndex="1" GridPane.rowIndex="10" GridPane.halignment="RIGHT"/>
-        </GridPane>
-    </VBox>
+		<Panel styleClass="panel-primary">
+			<heading>
+				<Label styleClass="h3" text="Doctores" />
+			</heading>
+			<body>
+				<GridPane hgap="15" vgap="7">
+					<padding>
+						<Insets top="10" right="0" bottom="10" left="40" />
+					</padding>
+					<Label text="Nombre:" GridPane.columnIndex="0"
+						GridPane.rowIndex="1" />
+					<TextField fx:id="nombre" GridPane.columnIndex="1"
+						GridPane.rowIndex="1" />
+					<Label text="Apellido:" GridPane.columnIndex="0"
+						GridPane.rowIndex="2" />
+					<TextField fx:id="apellido" GridPane.columnIndex="1"
+						GridPane.rowIndex="2" />
+					<Label text="Email:" GridPane.columnIndex="0"
+						GridPane.rowIndex="3" />
+					<TextField fx:id="email" GridPane.columnIndex="1"
+						GridPane.rowIndex="3" />
+					<Label text="Nombre de usuario:" GridPane.columnIndex="0"
+						GridPane.rowIndex="4" />
+					<TextField fx:id="nombreUsuario" GridPane.columnIndex="1"
+						GridPane.rowIndex="4" />
+					<Label text="Password:" GridPane.columnIndex="0"
+						GridPane.rowIndex="5" />
+					<PasswordField fx:id="password" GridPane.columnIndex="1"
+						GridPane.rowIndex="5" />
 
-    <StackPane minHeight="10" GridPane.columnIndex="0"
-               GridPane.rowIndex="4"/>
+					<Button text="Guardar" onAction="#guardarDatos" styleClass="ok-btn"
+						GridPane.columnIndex="1" GridPane.rowIndex="10"
+						GridPane.halignment="RIGHT" />
+				</GridPane>
+			</body>
+		</Panel>
+	</VBox>
 
-    <StackPane GridPane.columnIndex="0" GridPane.rowIndex="5"
-               GridPane.hgrow="ALWAYS">
-        <TableView fx:id="usuarios"/>
-    </StackPane>
+	<StackPane minHeight="10" GridPane.columnIndex="0"
+		GridPane.rowIndex="4" />
+
+	<StackPane GridPane.columnIndex="0" GridPane.rowIndex="5"
+		GridPane.hgrow="ALWAYS">
+		<TableView fx:id="usuarios" />
+	</StackPane>
 
 </GridPane>

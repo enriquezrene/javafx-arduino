@@ -5,7 +5,6 @@ import java.io.IOException;
 import ec.edu.udla.ui.regions.RegionsContainer;
 import ec.edu.udla.ui.regions.adminusuarios.impl.AdministrarUsuarioController;
 import ec.edu.udla.ui.regions.impl.IngresarPacienteController;
-import ec.edu.udla.ui.regions.impl.LecturasGlucosaController;
 import ec.edu.udla.ui.regions.lectorarduino.impl.LeerInformacionArduinoController;
 import ec.edu.udla.ui.regions.login.impl.LoginController;
 import javafx.application.Application;
