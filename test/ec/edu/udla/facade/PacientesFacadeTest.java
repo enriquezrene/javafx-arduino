@@ -17,6 +17,7 @@ public class PacientesFacadeTest {
 		PacienteDao pacienteDao = new PacienteDao();
 		int idPaciente = 3;
 		List<LecturaGlucometro> lecturas = pacienteDao.buscarLecturasGlucosa(idPaciente);
+		Assert.assertNotNull(lecturas);
 	}
 
 	@Test
