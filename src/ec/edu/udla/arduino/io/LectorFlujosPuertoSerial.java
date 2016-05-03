@@ -18,6 +18,16 @@ public class LectorFlujosPuertoSerial extends Observable implements SerialPortEv
 		flujoSalidaPuertoSerial = new ArrayList<>();
 	}
 
+	@Override
+	public synchronized void setChanged() {
+		super.setChanged();
+	}
+
+	@Override
+	public void notifyObservers(Object arg) {
+		super.notifyObservers(arg);
+	}
+
 	public synchronized void serialEvent(SerialPortEvent event) {
 		if (event.isRXCHAR()) {
 			try {

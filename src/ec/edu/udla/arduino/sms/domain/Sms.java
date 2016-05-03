@@ -6,7 +6,7 @@ package ec.edu.udla.arduino.sms.domain;
 public class Sms {
 
 	private String destinatario;
-	public String contenido;
+	private String contenido;
 
 	public static class Builder {
 

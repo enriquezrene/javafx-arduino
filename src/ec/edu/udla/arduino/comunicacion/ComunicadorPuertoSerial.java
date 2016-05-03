@@ -62,7 +62,11 @@ public class ComunicadorPuertoSerial implements Observer {
 
 	@Override
 	public void update(Observable o, Object linea) {
+
 		area.setText(area.getText() + linea.toString().trim() + "\n");
 	}
 
+	public LectorFlujosPuertoSerial getLectorFlujosPuertoSerial() {
+		return this.lectorFlujosPuertoSerial;
+	}
 }
