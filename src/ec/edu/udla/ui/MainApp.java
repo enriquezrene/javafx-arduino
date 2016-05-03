@@ -5,7 +5,6 @@ import java.io.IOException;
 import ec.edu.udla.ui.regions.RegionsContainer;
 import ec.edu.udla.ui.regions.adminusuarios.impl.AdministrarUsuarioController;
 import ec.edu.udla.ui.regions.impl.IngresarPacienteController;
-import ec.edu.udla.ui.regions.impl.LecturasGlucosaController;
 import ec.edu.udla.ui.regions.lectorarduino.impl.LeerInformacionArduinoController;
 import ec.edu.udla.ui.regions.login.impl.LoginController;
 import javafx.application.Application;
@@ -16,63 +15,62 @@ import javafx.stage.Stage;
 
 public class MainApp extends Application {
 
-	public static final String PANTALLA_INGRESO_DATOS = "IngresarPaciente.fxml";
-	public static final String PANTALLA_LEER_INFORMACION = "LeerInformacionArduino.fxml";
-	public static final String PANTALLA_LOGIN = "Login.fxml";
-	public static final String PANTALLA_ADMINISTRACION_USUARIOS = "AdministracionUsuarios.fxml";
-	public static final String PANTALLA_MEDIDAS_GLUCOSA = "LecturasGlucosa.fxml";
+    public static final String PANTALLA_INGRESO_DATOS = "IngresarPaciente.fxml";
+    public static final String PANTALLA_LEER_INFORMACION = "LeerInformacionArduino.fxml";
+    public static final String PANTALLA_LOGIN = "Login.fxml";
+    public static final String PANTALLA_ADMINISTRACION_USUARIOS = "AdministracionUsuarios.fxml";
+    public static final String PANTALLA_MEDIDAS_GLUCOSA = "LecturasGlucosa.fxml";
 
-	private RegionsContainer mainContainer;
+    private RegionsContainer mainContainer;
 
-	@Override
-	public void start(Stage primaryStage) throws Exception {
+    @Override
+    public void start(Stage primaryStage) throws Exception {
 
-		cargarPantallas();
+        cargarPantallas();
 
-		mainContainer.setCurrentScreen(PANTALLA_LOGIN);
-		mainContainer.setId("main_container");
+        mainContainer.setCurrentScreen(PANTALLA_LOGIN);
+        mainContainer.setId("main_container");
 
-		Menu menuInicio = new Menu("Inicio");
-		MenuItem opcionIngresarPacientes = crearItemDeMenu("Pacientes", PANTALLA_INGRESO_DATOS);
-		MenuItem opcionAdministrarUsuarios = crearItemDeMenu("Administrar usuarios", PANTALLA_ADMINISTRACION_USUARIOS);
-		MenuItem opcionLeerInformacionArduino = crearItemDeMenu("Establecer conexion", PANTALLA_LEER_INFORMACION);
-		menuInicio.getItems().addAll(opcionIngresarPacientes, opcionAdministrarUsuarios, opcionLeerInformacionArduino);
+        Menu menuInicio = new Menu("Inicio");
+        MenuItem opcionIngresarPacientes = crearItemDeMenu("Pacientes", PANTALLA_INGRESO_DATOS);
+        MenuItem opcionAdministrarUsuarios = crearItemDeMenu("Administrar usuarios", PANTALLA_ADMINISTRACION_USUARIOS);
+        MenuItem opcionLeerInformacionArduino = crearItemDeMenu("Establecer conexion", PANTALLA_LEER_INFORMACION);
+        menuInicio.getItems().addAll(opcionIngresarPacientes, opcionAdministrarUsuarios, opcionLeerInformacionArduino);
 
-		mainContainer.cargarOpcionesDeMenu(menuInicio);
+        mainContainer.cargarOpcionesDeMenu(menuInicio);
 
-		Scene scene = new Scene(mainContainer);
+        Scene scene = new Scene(mainContainer);
+        scene.getStylesheets().add("bootstrapfx.css");
+        scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
+        primaryStage.setTitle("Aplicacion Demo");
+        primaryStage.setScene(scene);
+        primaryStage.setMaximized(true);
+        primaryStage.show();
 
-		scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
+    }
 
-		primaryStage.setTitle("Aplicacion Demo");
-		primaryStage.setScene(scene);
-		primaryStage.setMaximized(true);
-		primaryStage.show();
+    private void cargarPantallas() throws IOException {
+        mainContainer = new RegionsContainer();
 
-	}
+        mainContainer.loadScreen(PANTALLA_INGRESO_DATOS,
+                IngresarPacienteController.class.getResource(PANTALLA_INGRESO_DATOS));
+        mainContainer.loadScreen(PANTALLA_LOGIN, LoginController.class.getResource(PANTALLA_LOGIN));
+        mainContainer.loadScreen(PANTALLA_LEER_INFORMACION,
+                LeerInformacionArduinoController.class.getResource(PANTALLA_LEER_INFORMACION));
+        mainContainer.loadScreen(PANTALLA_ADMINISTRACION_USUARIOS,
+                AdministrarUsuarioController.class.getResource(PANTALLA_ADMINISTRACION_USUARIOS));
+    }
 
-	private void cargarPantallas() throws IOException {
-		mainContainer = new RegionsContainer();
+    private MenuItem crearItemDeMenu(String menuItemLabel, String screenToShow) throws Exception {
+        MenuItem menuItem = new MenuItem(menuItemLabel);
 
-		mainContainer.loadScreen(PANTALLA_INGRESO_DATOS,
-				IngresarPacienteController.class.getResource(PANTALLA_INGRESO_DATOS));
-		mainContainer.loadScreen(PANTALLA_LOGIN, LoginController.class.getResource(PANTALLA_LOGIN));
-		mainContainer.loadScreen(PANTALLA_LEER_INFORMACION,
-				LeerInformacionArduinoController.class.getResource(PANTALLA_LEER_INFORMACION));
-		mainContainer.loadScreen(PANTALLA_ADMINISTRACION_USUARIOS,
-				AdministrarUsuarioController.class.getResource(PANTALLA_ADMINISTRACION_USUARIOS));
-	}
+        menuItem.setOnAction(event -> {
+            mainContainer.setCurrentScreen(screenToShow);
+        });
+        return menuItem;
+    }
 
-	private MenuItem crearItemDeMenu(String menuItemLabel, String screenToShow) throws Exception {
-		MenuItem menuItem = new MenuItem(menuItemLabel);
-
-		menuItem.setOnAction(event -> {
-			mainContainer.setCurrentScreen(screenToShow);
-		});
-		return menuItem;
-	}
-
-	public static void main(String[] args) {
-		launch(args);
-	}
+    public static void main(String[] args) {
+        launch(args);
+    }
 }

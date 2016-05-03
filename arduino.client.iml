@@ -166,5 +166,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="bootstrapfx-all" level="project" />
   </component>
 </module>

@@ -1,18 +1,20 @@
 package ec.edu.udla.ui.regions.login.impl;
 
 import java.net.URL;
+import java.util.Observable;
 import java.util.ResourceBundle;
 
 import ec.edu.udla.facade.AdministracionUsuariosFacade;
 import ec.edu.udla.ui.MainApp;
 import ec.edu.udla.ui.regions.AbstractController;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Alert;
+import javafx.scene.Node;
+import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
 
 public class LoginController extends AbstractController implements Initializable {
 
@@ -24,6 +26,7 @@ public class LoginController extends AbstractController implements Initializable
 
     @FXML
     private PasswordField password;
+
 
     public LoginController() {
         facade = new AdministracionUsuariosFacade();
@@ -54,7 +57,7 @@ public class LoginController extends AbstractController implements Initializable
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // Dynamic initialization of controls (if any)
+
     }
 
 }

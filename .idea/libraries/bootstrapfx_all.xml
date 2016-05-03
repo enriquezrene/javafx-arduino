@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="bootstrapfx-all">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/externalLibs/bootstrapfx-all.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -17,6 +17,7 @@ public abstract class AbstractDao {
 			save(entidad);
 		}
 	}
+
 	public abstract void save(PojoBase entidad);
 
 	public abstract void update(PojoBase entidad);
