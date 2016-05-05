@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import org.kordamp.bootstrapfx.scene.layout.Panel?>
 <GridPane hgap="15" vgap="7" xmlns:fx="http://javafx.com/fxml" style="text-align:center"
-          fx:controller="ec.edu.udla.ui.regions.login.impl.LoginController" alignment="CENTER">
+          fx:controller="ec.edu.udla.ui.regions.login.LoginController" alignment="CENTER">
 
 
     <Panel GridPane.columnIndex="0" GridPane.rowIndex="1"

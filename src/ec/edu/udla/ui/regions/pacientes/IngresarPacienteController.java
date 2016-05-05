@@ -1,4 +1,4 @@
-package ec.edu.udla.ui.regions.impl;
+package ec.edu.udla.ui.regions.pacientes;
 
 import java.io.IOException;
 import java.net.URL;
