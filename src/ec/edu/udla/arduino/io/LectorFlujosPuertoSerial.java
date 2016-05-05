@@ -1,4 +1,4 @@
-package ec.edu.udla.lectorinformacion.arduino;
+package ec.edu.udla.arduino.io;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +16,16 @@ public class LectorFlujosPuertoSerial extends Observable implements SerialPortEv
 	public LectorFlujosPuertoSerial(SerialPort puertoSerial) {
 		this.puertoSerial = puertoSerial;
 		flujoSalidaPuertoSerial = new ArrayList<>();
+	}
+
+	@Override
+	public synchronized void setChanged() {
+		super.setChanged();
+	}
+
+	@Override
+	public void notifyObservers(Object arg) {
+		super.notifyObservers(arg);
 	}
 
 	public synchronized void serialEvent(SerialPortEvent event) {

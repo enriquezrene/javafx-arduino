@@ -1,8 +1,9 @@
-package ec.edu.udla.lectorinformacion.arduino;
+package ec.edu.udla.arduino.comunicacion;
 
 import java.util.Observable;
 import java.util.Observer;
 
+import ec.edu.udla.arduino.io.LectorFlujosPuertoSerial;
 import javafx.scene.control.TextArea;
 import jssc.SerialPort;
 import jssc.SerialPortException;
@@ -61,7 +62,11 @@ public class ComunicadorPuertoSerial implements Observer {
 
 	@Override
 	public void update(Observable o, Object linea) {
+
 		area.setText(area.getText() + linea.toString().trim() + "\n");
 	}
 
+	public LectorFlujosPuertoSerial getLectorFlujosPuertoSerial() {
+		return this.lectorFlujosPuertoSerial;
+	}
 }

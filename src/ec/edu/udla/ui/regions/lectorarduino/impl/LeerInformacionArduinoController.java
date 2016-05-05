@@ -3,7 +3,7 @@ package ec.edu.udla.ui.regions.lectorarduino.impl;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import ec.edu.udla.lectorinformacion.arduino.ComunicadorPuertoSerial;
+import ec.edu.udla.arduino.comunicacion.ComunicadorPuertoSerial;
 import ec.edu.udla.ui.regions.AbstractController;
 import ec.edu.udla.ui.regions.DrawableRegion;
 import ec.edu.udla.ui.regions.RegionsContainer;

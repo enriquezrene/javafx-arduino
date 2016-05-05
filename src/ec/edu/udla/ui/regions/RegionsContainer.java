@@ -4,12 +4,18 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.HashMap;
 
+import ec.edu.udla.ui.regions.sms.SmsController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.control.Button;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
+import javafx.scene.control.TitledPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.shape.Shape;
 
 public class RegionsContainer extends BorderPane {
 
