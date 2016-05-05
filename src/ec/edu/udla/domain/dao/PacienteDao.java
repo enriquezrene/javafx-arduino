@@ -1,8 +1,10 @@
 package ec.edu.udla.domain.dao;
 
 import java.sql.Types;
+import java.util.Date;
 import java.util.List;
 
+import org.mockito.asm.Type;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 
 import ec.edu.udla.domain.LecturaGlucometro;
@@ -53,6 +55,15 @@ public class PacienteDao extends AbstractDao {
     public List<LecturaGlucometro> buscarLecturasGlucosa(int idPaciente) {
         String sql = "SELECT * FROM lectura_glucometro WHERE id_paciente = " + idPaciente + " ORDER BY id";
         List<LecturaGlucometro> lecturas = conexion.getJdbcTemplate().query(sql,
+                new BeanPropertyRowMapper<LecturaGlucometro>(LecturaGlucometro.class));
+        return lecturas;
+    }
+
+    public List<LecturaGlucometro> buscarLecturasGlucosaEntreFechas(int idPaciente, Date fechaInicio, Date fechaFin) {
+        String sql = "SELECT * FROM lectura_glucometro WHERE id_paciente = ? and  fecha BETWEEN ? AND ?";
+        Object[] params = new Object[]{idPaciente, fechaInicio, fechaFin};
+        int [] types = new int[]{Types.INTEGER, Types.DATE, Types.DATE};
+        List<LecturaGlucometro> lecturas = conexion.getJdbcTemplate().query(sql, params, types,
                 new BeanPropertyRowMapper<LecturaGlucometro>(LecturaGlucometro.class));
         return lecturas;
     }
