@@ -36,8 +36,7 @@ public class LoginController extends AbstractController implements Initializable
     private void login(ActionEvent event) {
         try {
             facade.login(usuario.getText(), password.getText());
-            container.mostrarBarraDeMenu();
-            container.setCurrentScreen(MainApp.PANTALLA_INGRESO_DATOS);
+            container.setCurrentScreen(MainApp.PANTALLA_CONEXION_ARDUINO);
             limpiarTextInputs(usuario, password);
         } catch (RuntimeException e) {
             Alert alert = buildDialog(AlertType.ERROR, e.getMessage(), null);
@@ -46,7 +45,7 @@ public class LoginController extends AbstractController implements Initializable
         }
     }
 
-    private Alert buildDialog(AlertType alertType, String contentText, String headerText) {
+    public static Alert buildDialog(AlertType alertType, String contentText, String headerText) {
         Alert alert = new Alert(alertType);
         alert.setTitle(alertType.name());
         alert.setHeaderText(headerText);

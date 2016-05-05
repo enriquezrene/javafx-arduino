@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import ec.edu.udla.ui.regions.RegionsContainer;
 import ec.edu.udla.ui.regions.adminusuarios.AdministrarUsuarioController;
+import ec.edu.udla.ui.regions.arduinointegration.ConexionArduinoController;
 import ec.edu.udla.ui.regions.pacientes.IngresarPacienteController;
 import ec.edu.udla.ui.regions.arduino.LeerInformacionArduinoController;
 import ec.edu.udla.ui.regions.login.LoginController;
@@ -27,6 +28,7 @@ public class MainApp extends Application {
     public static final String PANTALLA_LOGIN = "Login.fxml";
     public static final String PANTALLA_ADMINISTRACION_USUARIOS = "AdministracionUsuarios.fxml";
     public static final String PANTALLA_MEDIDAS_GLUCOSA = "LecturasGlucosa.fxml";
+    public static final String PANTALLA_CONEXION_ARDUINO = "ConexionArduino.fxml";
 
     private RegionsContainer mainContainer;
 
@@ -37,6 +39,7 @@ public class MainApp extends Application {
 
         mainContainer.setCurrentScreen(PANTALLA_LOGIN);
         mainContainer.setId("main_container");
+        mainContainer.setPrimaryStage(primaryStage);
 
         Menu menuInicio = new Menu("Inicio");
         MenuItem opcionIngresarPacientes = crearItemDeMenu("Pacientes", PANTALLA_INGRESO_DATOS);
@@ -89,6 +92,8 @@ public class MainApp extends Application {
                 LeerInformacionArduinoController.class.getResource(PANTALLA_LEER_INFORMACION));
         mainContainer.loadScreen(PANTALLA_ADMINISTRACION_USUARIOS,
                 AdministrarUsuarioController.class.getResource(PANTALLA_ADMINISTRACION_USUARIOS));
+        mainContainer.loadScreen(PANTALLA_CONEXION_ARDUINO,
+                ConexionArduinoController.class.getResource(PANTALLA_CONEXION_ARDUINO));
     }
 
     private MenuItem crearItemDeMenu(String menuItemLabel, String screenToShow) throws Exception {

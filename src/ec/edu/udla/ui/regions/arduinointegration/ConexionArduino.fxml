@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import org.kordamp.bootstrapfx.scene.layout.Panel?>
+<GridPane hgap="15" vgap="7" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="ec.edu.udla.ui.regions.arduinointegration.ConexionArduinoController">
+
+    <padding>
+        <Insets top="20" right="40" bottom="20" left="40"/>
+    </padding>
+
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <Panel styleClass="panel-primary">
+            <heading>
+                <Label styleClass="h3" text="Configuracion del equipo"/>
+            </heading>
+            <body>
+
+                <GridPane hgap="15" vgap="7">
+                    <padding>
+                        <Insets top="10" right="0" bottom="10" left="40"/>
+                    </padding>
+                    <Label text="Seleccione el puerto en el cual se encuentra el Arduino:"
+                           GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                    <ComboBox fx:id="puertosSeriales" GridPane.columnIndex="1"
+                              GridPane.rowIndex="1"/>
+                    <Button text="OK" fx:id="botonConectar" onAction="#conectar"
+                            GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+                    <Button text="Cerrar conexion" onAction="#cerrar"
+                            GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+
+                    <TextArea fx:id="textoArduino" GridPane.columnIndex="0"
+                              GridPane.columnSpan="3" GridPane.rowIndex="3"/>
+                </GridPane>
+            </body>
+        </Panel>
+    </VBox>
+
+</GridPane>

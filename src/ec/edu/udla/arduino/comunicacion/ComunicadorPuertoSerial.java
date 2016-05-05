@@ -15,6 +15,10 @@ public class ComunicadorPuertoSerial implements Observer {
 	private LectorFlujosPuertoSerial lectorFlujosPuertoSerial;
 	private TextArea area;
 
+	public void addObservers(Observer observer){
+		lectorFlujosPuertoSerial.addObserver(observer);
+	}
+
 	public static ComunicadorPuertoSerial obtenerInstancia() {
 		if (instancia == null) {
 			instancia = new ComunicadorPuertoSerial();
@@ -62,7 +66,6 @@ public class ComunicadorPuertoSerial implements Observer {
 
 	@Override
 	public void update(Observable o, Object linea) {
-
 		area.setText(area.getText() + linea.toString().trim() + "\n");
 	}
 

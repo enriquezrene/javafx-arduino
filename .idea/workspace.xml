@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e6aae44-1dc7-490c-9028-919151680913" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/custom/DateAxis.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/FXUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/Loading.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/PacienteDao.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/PacienteDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosa.fxml" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosa.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/arduino/comunicacion/ComunicadorPuertoSerial.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/arduino/comunicacion/ComunicadorPuertoSerial.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/arduino/sms/domain/Sms.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/arduino/sms/domain/Sms.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/arduino/sms/service/ServicioEnvioSms.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/arduino/sms/service/ServicioEnvioSms.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/RegionsContainer.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/RegionsContainer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/LoginController.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/LoginController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/sms/SmsController.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/sms/SmsController.java" />
     </list>
     <ignored path="arduino.client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,45 +35,108 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LecturasGlucosa.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosa.fxml">
+      <file leaf-file-name="ConexionArduinoController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.16292135">
+              <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FXUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/FXUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#764#794#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/local/java/jdk1.8.0_66/javafx-src.zip!/javafx/scene/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="383" column="22" selection-start-line="383" selection-start-column="22" selection-end-line="383" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Panel.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/externalLibs/bootstrapfx-all.jar!/org/kordamp/bootstrapfx/scene/layout/Panel.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.1538463">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/Login.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.818182">
-              <caret line="28" column="98" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="98" />
+            <state vertical-scroll-proportion="1.9636364">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ddl.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docs/ddl.sql">
+      <file leaf-file-name="Loading.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/Loading.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7559322">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="37" />
+            <state vertical-scroll-proportion="-4.581818">
+              <caret line="14" column="71" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="71" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LecturasGlucosaController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="94" column="72" selection-start-line="94" selection-start-column="72" selection-end-line="94" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PacienteDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/dao/PacienteDao.java">
+      <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="61" column="67" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="67" />
+              <caret line="60" column="105" selection-start-line="59" selection-start-column="16" selection-end-line="60" selection-end-column="105" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegionsContainer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/RegionsContainer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.769231">
+              <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+              <folding>
+                <element signature="e#847#848#0" expanded="true" />
+                <element signature="e#878#879#0" expanded="true" />
+                <element signature="e#1886#1887#0" expanded="true" />
+                <element signature="e#1925#1926#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ComunicadorPuertoSerial.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/arduino/comunicacion/ComunicadorPuertoSerial.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="e#573#574#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,16 +191,22 @@
         <option value="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/AbstractDao.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/sms/domain/Sms.java" />
         <option value="$PROJECT_DIR$/test/ec/edu/udla/facade/SmsBuilder.java" />
-        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/RegionsContainer.java" />
-        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/sms/SmsController.java" />
-        <option value="$PROJECT_DIR$/src/ec/edu/udla/arduino/sms/service/ServicioEnvioSms.java" />
-        <option value="$PROJECT_DIR$/src/ec/edu/udla/arduino/sms/domain/Sms.java" />
-        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/sms/Sms.fxml" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/custom/DateAxis.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/PacienteDao.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosa.fxml" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/arduino/comunicacion/ComunicadorPuertoSerial.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/sms/SmsController.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/arduino/sms/service/ServicioEnvioSms.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/arduino/sms/domain/Sms.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/RegionsContainer.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/Loading.fxml" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/FXUtils.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java" />
       </list>
     </option>
   </component>
@@ -142,9 +218,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="35" />
-    <option name="width" value="1920" />
-    <option name="height" value="1045" />
+    <option name="x" value="401" />
+    <option name="y" value="92" />
+    <option name="width" value="1268" />
+    <option name="height" value="988" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -171,9 +248,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -301,25 +375,122 @@
               <option name="myItemId" value="udla" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="regions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="udla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="regions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduinointegration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="udla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="regions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="udla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="*.sql&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/docs/ddl.sql&#10;LGC&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java&#10;IPC&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/pacientes/IngresarPacienteController.java&#10;MA&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/MainApp.java&#10;M&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/MainApp.java&#10;MainA&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/MainApp.java&#10;Abst&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/domain/dao/AbstractDao.java&#10;Log&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/impl/Login.fxml&#10;style&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/style.css&#10;LC&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/impl/LoginController.java&#10;Login&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/impl/Login.fxml&#10;Ingresa&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/impl/IngresarPaciente.fxml&#10;styl&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/style.css&#10;Lo&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/impl/Login.fxml&#10;Pac&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/domain/dao/PacienteDao.java&#10;Main&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/MainApp.java" />
+    <property name="SearchEverywhereHistoryKey" value="LC&#9;PSI&#9;JAVA://ec.edu.udla.ui.regions.login.LoginController&#10;MA&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/MainApp.java&#10;Login.fx&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/Login.fxml&#10;*.sql&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/docs/ddl.sql&#10;LGC&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java&#10;IPC&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/pacientes/IngresarPacienteController.java&#10;M&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/MainApp.java&#10;MainA&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/MainApp.java&#10;Abst&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/domain/dao/AbstractDao.java&#10;Log&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/impl/Login.fxml&#10;style&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/style.css&#10;Login&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/impl/Login.fxml&#10;Ingresa&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/impl/IngresarPaciente.fxml&#10;styl&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/style.css&#10;Lo&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/impl/Login.fxml&#10;Pac&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/domain/dao/PacienteDao.java&#10;Main&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/MainApp.java" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration" />
+      <recent name="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/sms" />
+      <recent name="$PROJECT_DIR$/externalLibs" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ec.edu.udla.ui.regions.arduinointegration" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ec.edu.udla.ui.regions.custom" />
       <recent name="ec.edu.udla.sms.domain" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/sms" />
-      <recent name="$PROJECT_DIR$/externalLibs" />
     </key>
   </component>
   <component name="RunManager" selected="Application.MainApp">
@@ -740,8 +911,8 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="35" width="1920" height="1045" extended-state="6" />
-    <editor active="true" />
+    <frame x="401" y="92" width="1268" height="988" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -750,10 +921,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5063898" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3264192" sideWeight="0.49361023" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.346915" sideWeight="0.49361023" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32532752" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14483494" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22185971" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -790,6 +961,41 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosa.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="98" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/ddl.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="94" column="72" selection-start-line="94" selection-start-column="72" selection-end-line="94" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/dao/PacienteDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="67" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docs/ddl.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -925,22 +1131,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/RegionsContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="105" selection-start-line="56" selection-start-column="62" selection-end-line="57" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/custom/DateAxis.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.928934">
@@ -1004,13 +1194,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.1241136">
           <caret line="286" column="23" selection-start-line="286" selection-start-column="23" selection-end-line="286" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/dao/PacienteDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="1.050505">
           <caret line="61" column="67" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="67" />
           <folding />
         </state>
@@ -1021,7 +1210,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.818182">
+        <state vertical-scroll-proportion="0.0">
           <caret line="28" column="98" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="98" />
           <folding />
         </state>
@@ -1029,7 +1218,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="1.4343435">
           <caret line="94" column="72" selection-start-line="94" selection-start-column="72" selection-end-line="94" selection-end-column="72" />
           <folding />
         </state>
@@ -1037,8 +1226,169 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/ddl.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7559322">
+        <state vertical-scroll-proportion="0.0">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPaciente.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2">
+          <caret line="22" column="18" selection-start-line="16" selection-start-column="4" selection-end-line="22" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduino/LeerInformacionArduino.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="32" selection-start-line="41" selection-start-column="12" selection-end-line="42" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3454547">
+          <caret line="34" column="69" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/sms/SmsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/arduino/sms/service/ServicioEnvioSms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ec/edu/udla/arduino/sms/domain/SmsBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/arduino/sms/domain/Sms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="63" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/arduino/comunicacion/ComunicadorPuertoSerial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#573#574#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/RegionsContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding>
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#1886#1887#0" expanded="true" />
+            <element signature="e#1925#1926#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/externalLibs/bootstrapfx-all.jar!/org/kordamp/bootstrapfx/scene/layout/Panel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.1538463">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/java/jdk1.8.0_66/javafx-src.zip!/javafx/scene/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="383" column="22" selection-start-line="383" selection-start-column="22" selection-end-line="383" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/FXUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#764#794#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/Login.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9636364">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/Loading.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.581818">
+          <caret line="14" column="71" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="105" selection-start-line="59" selection-start-column="16" selection-end-line="60" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16292135">
+          <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
           <folding />
         </state>
       </provider>

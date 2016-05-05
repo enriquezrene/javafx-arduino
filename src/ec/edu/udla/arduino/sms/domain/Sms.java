@@ -46,7 +46,7 @@ public class Sms {
 				int longitudRestantePara100 = 100 - longitudActual;
 				StringBuilder cadenaVaciaNecesariaParaCompletar = new StringBuilder();
 				while (cadenaVaciaNecesariaParaCompletar.length() < longitudRestantePara100) {
-					cadenaVaciaNecesariaParaCompletar.append(" ");
+					cadenaVaciaNecesariaParaCompletar.append("_");
 				}
 				contenidoConTamanioDeseado.insert(longitudActual, cadenaVaciaNecesariaParaCompletar);
 

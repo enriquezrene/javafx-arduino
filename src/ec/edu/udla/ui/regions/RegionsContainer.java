@@ -16,16 +16,22 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.shape.Shape;
+import javafx.stage.Stage;
 
 public class RegionsContainer extends BorderPane {
 
 	private HashMap<String, Node> screens;
 	private MenuBar barraDeMenu;
+	private Stage primaryStage;
 
 	public RegionsContainer() {
 		super();
 		screens = new HashMap<>();
 		barraDeMenu = new MenuBar();
+	}
+
+	public Stage getPrimaryStage(){
+		return this.primaryStage;
 	}
 
 	public void mostrarBarraDeMenu() {
@@ -64,4 +70,7 @@ public class RegionsContainer extends BorderPane {
 		screens.remove(name);
 	}
 
+	public void setPrimaryStage(Stage primaryStage) {
+		this.primaryStage = primaryStage;
+	}
 }
