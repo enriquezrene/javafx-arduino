@@ -1,39 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import org.kordamp.bootstrapfx.scene.layout.Panel?>
+<?import javafx.scene.control.Label?>
+
 <GridPane fx:id="gridPane" hgap="15" vgap="7"
-		  xmlns:fx="http://javafx.com/fxml" fx:controller="ec.edu.udla.ui.regions.pacientes.LecturasGlucosaController">
+          xmlns:fx="http://javafx.com/fxml" fx:controller="ec.edu.udla.ui.regions.pacientes.LecturasGlucosaController">
 
-	<padding>
-		<Insets top="20" right="40" bottom="20" left="40" />
-	</padding>
+    <padding>
+        <Insets top="20" right="40" bottom="20" left="40"/>
+    </padding>
 
-	<GridPane GridPane.columnIndex="0" hgap="15"
-		GridPane.rowIndex="0">
-		<ImageView GridPane.columnIndex="0">
-			<image>
-				<Image url="@/patient.png" />
-			</image>
-		</ImageView>
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <Panel styleClass="panel-primary">
+            <heading>
+                <Label styleClass="h3" text="Lecturas de glucosa"/>
+            </heading>
+            <body>
+                <Label styleClass="h4" fx:id="infoPaciente"/>
+            </body>
+        </Panel>
+    </VBox>
 
-		<Text GridPane.columnIndex="1" GridPane.valignment="CENTER"
-			text="LECTURAS DE GLUCOSA">
-			<font>
-				<Font name="Verdana" size="30" />
-			</font>
-		</Text>
-	</GridPane>
-
-	<StackPane GridPane.columnIndex="0" GridPane.rowIndex="5"
-		GridPane.hgrow="ALWAYS">
-		<TableView fx:id="lecturas" />
-	</StackPane>
+    <StackPane GridPane.columnIndex="0" GridPane.rowIndex="1"
+               GridPane.hgrow="ALWAYS">
+        <TableView fx:id="lecturas"/>
+    </StackPane>
 
 </GridPane>

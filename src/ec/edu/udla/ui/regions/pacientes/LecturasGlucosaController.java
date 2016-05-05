@@ -23,6 +23,9 @@ public class LecturasGlucosaController extends AbstractController implements Ini
     @FXML
     private TableView<LecturaGlucometro> lecturas;
 
+    @FXML
+    private Label infoPaciente;
+
 
     public LecturasGlucosaController() {
         this.pacienteDao = new PacienteDao();
@@ -34,6 +37,7 @@ public class LecturasGlucosaController extends AbstractController implements Ini
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         createTable();
+        infoPaciente.setText("Paciente: " + paciente.getApellido() + " " + paciente.getNombre());
     }
 
     private TableView<LecturaGlucometro> createTable() {
