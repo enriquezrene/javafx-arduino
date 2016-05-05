@@ -30,7 +30,7 @@
                     <TextArea fx:id="contenido" GridPane.columnIndex="0"
                               prefRowCount="2" wrapText="true"
                               GridPane.rowIndex="4"/>
-                    <Button text="Enviar" styleClass="btn-default" onAction="#enviarSms"
+                    <Button text="Enviar" styleClass="ok-btn" onAction="#enviarSms"
                             GridPane.columnIndex="0" GridPane.rowIndex="5"
                             GridPane.halignment="RIGHT"/>
                 </GridPane>
