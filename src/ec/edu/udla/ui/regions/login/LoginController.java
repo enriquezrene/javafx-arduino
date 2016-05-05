@@ -1,4 +1,4 @@
-package ec.edu.udla.ui.regions.login.impl;
+package ec.edu.udla.ui.regions.login;
 
 import java.net.URL;
 import java.util.Observable;

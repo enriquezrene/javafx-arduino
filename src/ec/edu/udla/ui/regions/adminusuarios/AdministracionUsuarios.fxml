@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Text?>
 <?import org.kordamp.bootstrapfx.scene.layout.Panel?>
 <GridPane hgap="15" vgap="7" xmlns:fx="http://javafx.com/fxml"
-	fx:controller="ec.edu.udla.ui.regions.adminusuarios.impl.AdministrarUsuarioController">
+	fx:controller="ec.edu.udla.ui.regions.adminusuarios.AdministrarUsuarioController">
 
 	<padding>
 		<Insets top="20" right="40" bottom="20" left="40" />

@@ -1,4 +1,4 @@
-package ec.edu.udla.ui.regions.lectorarduino.impl;
+package ec.edu.udla.ui.regions.arduino;
 
 import java.net.URL;
 import java.util.ResourceBundle;

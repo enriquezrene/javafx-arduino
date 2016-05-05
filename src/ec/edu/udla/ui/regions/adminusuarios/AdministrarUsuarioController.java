@@ -1,4 +1,4 @@
-package ec.edu.udla.ui.regions.adminusuarios.impl;
+package ec.edu.udla.ui.regions.adminusuarios;
 
 import java.net.URL;
 import java.util.ResourceBundle;
