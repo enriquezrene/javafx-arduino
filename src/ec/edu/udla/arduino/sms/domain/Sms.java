@@ -71,4 +71,8 @@ public class Sms {
 		return this.destinatario;
 	}
 
+	@Override
+	public String toString() {
+		return "[destinatario:"+destinatario+" contenido:"+contenido+"]";
+	}
 }

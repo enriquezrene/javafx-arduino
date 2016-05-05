@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.bootstrapfx.scene.layout.Panel?>
+<GridPane hgap="15" vgap="7" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="ec.edu.udla.ui.regions.sms.SmsController">
+
+    <padding>
+        <Insets top="5" right="5" bottom="5" left="5"/>
+    </padding>
+
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0">
+
+        <Panel styleClass="panel-default">
+            <heading>
+                <Label styleClass="h3" text="SMS"/>
+            </heading>
+            <body>
+                <GridPane hgap="15" vgap="7">
+
+                    <Label text="Numero del paciente:" GridPane.columnIndex="0"
+                           GridPane.rowIndex="1"/>
+                    <TextField fx:id="destinatatio" GridPane.columnIndex="0"
+                               GridPane.rowIndex="2"/>
+                    <Label text="Mensaje:" GridPane.columnIndex="0"
+                           GridPane.rowIndex="3"/>
+                    <TextArea fx:id="contenido" GridPane.columnIndex="0"
+                              prefRowCount="2" wrapText="true"
+                              GridPane.rowIndex="4"/>
+                    <Button text="Enviar" styleClass="btn-default" onAction="#enviarSms"
+                            GridPane.columnIndex="0" GridPane.rowIndex="5"
+                            GridPane.halignment="RIGHT"/>
+                </GridPane>
+            </body>
+        </Panel>
+    </VBox>
+
+</GridPane>
