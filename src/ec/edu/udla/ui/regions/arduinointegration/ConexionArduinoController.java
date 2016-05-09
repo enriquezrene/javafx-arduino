@@ -1,24 +1,16 @@
 package ec.edu.udla.ui.regions.arduinointegration;
 
 import ec.edu.udla.arduino.comunicacion.ComunicadorPuertoSerial;
-import ec.edu.udla.ui.MainApp;
+import ec.edu.udla.arduino.parser.LecturaGlucometroArduino;
+import ec.edu.udla.domain.LecturaGlucometro;
 import ec.edu.udla.ui.regions.AbstractController;
 import ec.edu.udla.ui.regions.login.LoginController;
-import ec.edu.udla.ui.regions.sms.SmsController;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
-import javafx.stage.Modality;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-import org.kordamp.bootstrapfx.scene.layout.Panel;
 
 import java.net.URL;
 import java.util.Observable;
@@ -33,8 +25,6 @@ public class ConexionArduinoController extends AbstractController implements Ini
     @FXML
     private TextArea textoArduino;
 
-    @FXML
-    private Button botonConectar;
 
     @FXML
     private TextField comando;
@@ -43,45 +33,29 @@ public class ConexionArduinoController extends AbstractController implements Ini
 
     private Label label;
 
-    private boolean cerrar = false;
+    @FXML
+    private Button btnLeerInformacion, botonConectar, btnActivarModoOnLine, btnLimpiarArduino;
 
     @FXML
-    private void enviar() throws Exception {
-        ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto(comando.getText());
-        comando.setText("");
-    }
+    private ImageView loading;
+
+    private int i = 1;
 
     @FXML
     private void conectar() {
         try {
-
             ComunicadorPuertoSerial.obtenerInstancia().configurarConexion(puertosSeriales.getValue().toString());
-            botonConectar.setDisable(true);
             container.mostrarBarraDeMenu();
-
-            FXMLLoader loader = new FXMLLoader(this.getClass().getResource("Loading.fxml"));
-            Parent node = loader.load();
-            label = FXUtils.getChildByID(node, "mensaje");
-            label.setText("Estableciendo conexion con dispositivo arduino");
-
-            dialogStage = new Stage();
-            dialogStage.setTitle("Procesando");
-            dialogStage.initModality(Modality.NONE);
-            dialogStage.initOwner(container.getPrimaryStage());
-            Scene scene = new Scene(node, 500, 150);
-            scene.getStylesheets().add("bootstrapfx.css");
-            scene.getStylesheets().addAll(MainApp.class.getResource("style.css").toExternalForm());
-            dialogStage.setScene(scene);
-            dialogStage.initStyle(StageStyle.DECORATED);
-            dialogStage.show();
-
+            loading.setVisible(true);
             ComunicadorPuertoSerial.obtenerInstancia().addObservers(this);
-        } catch (Exception e) {
-            Alert alert = LoginController.buildDialog(Alert.AlertType.ERROR, "No se puede establecer la conexion, intente mas tarde", null);
 
+        } catch (Exception e) {
+            e.printStackTrace();
+            Alert alert = LoginController.buildDialog(Alert.AlertType.ERROR, "No se puede establecer la conexion, intente mas tarde", null);
             alert.show();
         }
     }
+
 
     @FXML
     private void cerrar() throws Exception {
@@ -97,15 +71,57 @@ public class ConexionArduinoController extends AbstractController implements Ini
         }
         textoArduino.setDisable(true);
         ComunicadorPuertoSerial.obtenerInstancia().asignarCampoParaEscribirSalida(textoArduino);
+        loading.setVisible(false);
+//        desactivarBotones(btnLeerInformacion, botonConectar, btnActivarModoOnLine, btnLimpiarArduino);
+        botonConectar.setDisable(false);
     }
 
     @Override
     public void update(Observable o, Object texto) {
         if (texto != null) {
+            System.out.println(texto);
             if (texto.toString().contains("Fin")) {
-                label.setText("que fue");
-//                dialogStage.close();
+                loading.setVisible(false);
+            } else if (!texto.toString().contains("Inicializa")) {
+                loading.setVisible(false);
+                if (texto.toString().trim().length() < 25) {
+                    System.out.println("Mensaje vacio: "+texto);
+                }else{
+                    extraerInformacion(texto.toString().trim().substring(20).trim());
+                }
             }
         }
+    }
+
+    private void extraerInformacion(String cadenaArduino) {
+        System.out.println("extraer info de: "+cadenaArduino);
+        LecturaGlucometro lecturaGlucometro = new LecturaGlucometroArduino(cadenaArduino).obtenerObjeto();
+
+    }
+
+    private void desactivarBotones(Button... buttons){
+        for (int j = 0; j < buttons.length; j++) {
+            buttons[j].setDisable(true);
+        }
+    }
+
+    public void leerInformacion(ActionEvent event) throws InterruptedException {
+        loading.setVisible(true);
+        ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto(i++ + "");
+    }
+
+    public void limpiarArduino(ActionEvent event) {
+        loading.setVisible(true);
+        ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto("C");
+    }
+
+    public void activarModoOnLine(ActionEvent event) {
+        loading.setVisible(true);
+        ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto("A");
+    }
+
+    public void activarModoOffLine(ActionEvent event) {
+        loading.setVisible(true);
+        ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto("B");
     }
 }

@@ -32,11 +32,24 @@
                               GridPane.rowIndex="1"/>
                     <Button text="OK" fx:id="botonConectar" onAction="#conectar"
                             GridPane.columnIndex="2" GridPane.rowIndex="1"/>
-                    <Button text="Cerrar conexion" onAction="#cerrar"
+                    <Button text="Leer informacion" onAction="#leerInformacion" fx:id="btnLeerInformacion"
                             GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+                    <Button text="Limpiar arduino" onAction="#limpiarArduino" fx:id="btnLimpiarArduino"
+                            GridPane.columnIndex="5" GridPane.rowIndex="1"/>
+                    <Button text="Activar modo on-line" onAction="#activarModoOnLine" fx:id="btnActivarModoOnLine"
+                            GridPane.columnIndex="6" GridPane.rowIndex="1"/>
+                    <Button text="Activar modo off-line" onAction="#activarModoOffLine"
+                            GridPane.columnIndex="7" GridPane.rowIndex="1"/>
+                    <Button text="Cerrar conexion" onAction="#cerrar"
+                            GridPane.columnIndex="8" GridPane.rowIndex="1"/>
 
                     <TextArea fx:id="textoArduino" GridPane.columnIndex="0"
                               GridPane.columnSpan="3" GridPane.rowIndex="3"/>
+                    <ImageView fx:id="loading">
+                        <image>
+                            <Image url="loading.gif"/>
+                        </image>
+                    </ImageView>
                 </GridPane>
             </body>
         </Panel>

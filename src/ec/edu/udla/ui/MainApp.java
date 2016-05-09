@@ -37,7 +37,7 @@ public class MainApp extends Application {
 
         cargarPantallas();
 
-        mainContainer.setCurrentScreen(PANTALLA_LOGIN);
+        mainContainer.setCurrentScreen(PANTALLA_CONEXION_ARDUINO);
         mainContainer.setId("main_container");
         mainContainer.setPrimaryStage(primaryStage);
 

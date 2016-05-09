@@ -9,6 +9,14 @@ public class LecturaGlucometro {
 	private Date fecha;
 	private EstadoPacienteEnLaLectura estado;
 	private int idPaciente;
+	private String cedulaPaciente;
+
+	public void printInfo(){
+		System.out.println(cedulaPaciente);
+		System.out.println(estado);
+		System.out.println(fecha);
+		System.out.println(valor);
+	}
 
 	public int getId() {
 		return id;
@@ -50,4 +58,11 @@ public class LecturaGlucometro {
 		this.idPaciente = idPaciente;
 	}
 
+	public String getCedulaPaciente() {
+		return cedulaPaciente;
+	}
+
+	public void setCedulaPaciente(String cedulaPaciente) {
+		this.cedulaPaciente = cedulaPaciente;
+	}
 }

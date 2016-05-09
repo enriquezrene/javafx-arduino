@@ -31,7 +31,7 @@ public class LectorFlujosPuertoSerial extends Observable implements SerialPortEv
 	public synchronized void serialEvent(SerialPortEvent event) {
 		if (event.isRXCHAR()) {
 			try {
-				Thread.sleep(5000);
+				Thread.sleep(1000);
 				String buffer = puertoSerial.readString();
 				if (buffer != null && !buffer.isEmpty() && !buffer.equals("null")) {
 					flujoSalidaPuertoSerial.add(buffer);

@@ -18,6 +18,9 @@ public class ComunicadorPuertoSerial implements Observer {
 	public void addObservers(Observer observer){
 		lectorFlujosPuertoSerial.addObserver(observer);
 	}
+	public void removeObservers(Observer observer){
+		lectorFlujosPuertoSerial.deleteObserver(observer);
+	}
 
 	public static ComunicadorPuertoSerial obtenerInstancia() {
 		if (instancia == null) {
