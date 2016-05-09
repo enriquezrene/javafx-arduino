@@ -3,18 +3,24 @@ package ec.edu.udla.ui.regions.arduinointegration;
 import ec.edu.udla.arduino.comunicacion.ComunicadorPuertoSerial;
 import ec.edu.udla.arduino.parser.LecturaGlucometroArduino;
 import ec.edu.udla.domain.LecturaGlucometro;
+import ec.edu.udla.domain.dao.PacienteDao;
+import ec.edu.udla.ui.MainApp;
 import ec.edu.udla.ui.regions.AbstractController;
 import ec.edu.udla.ui.regions.login.LoginController;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Region;
 import javafx.stage.Stage;
+import org.controlsfx.control.Notifications;
 
 import java.net.URL;
 import java.util.Observable;
 import java.util.Observer;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class ConexionArduinoController extends AbstractController implements Initializable, Observer {
@@ -25,7 +31,6 @@ public class ConexionArduinoController extends AbstractController implements Ini
     @FXML
     private TextArea textoArduino;
 
-
     @FXML
     private TextField comando;
 
@@ -34,12 +39,14 @@ public class ConexionArduinoController extends AbstractController implements Ini
     private Label label;
 
     @FXML
-    private Button btnLeerInformacion, botonConectar, btnActivarModoOnLine, btnLimpiarArduino;
+    private Button btnLeerInformacion, botonConectar;
 
     @FXML
     private ImageView loading;
 
-    private int i = 1;
+    private PacienteDao pacienteDao;
+
+    private int indiceDelRegistroProcesado = 1;
 
     @FXML
     private void conectar() {
@@ -58,9 +65,9 @@ public class ConexionArduinoController extends AbstractController implements Ini
 
 
     @FXML
-    private void cerrar() throws Exception {
+    private void cerrarConexion() throws Exception {
         ComunicadorPuertoSerial.obtenerInstancia().cerrarConexion();
-
+        this.indiceDelRegistroProcesado = 1;
     }
 
     @Override
@@ -72,8 +79,7 @@ public class ConexionArduinoController extends AbstractController implements Ini
         textoArduino.setDisable(true);
         ComunicadorPuertoSerial.obtenerInstancia().asignarCampoParaEscribirSalida(textoArduino);
         loading.setVisible(false);
-//        desactivarBotones(btnLeerInformacion, botonConectar, btnActivarModoOnLine, btnLimpiarArduino);
-        botonConectar.setDisable(false);
+        pacienteDao = new PacienteDao();
     }
 
     @Override
@@ -85,21 +91,58 @@ public class ConexionArduinoController extends AbstractController implements Ini
             } else if (!texto.toString().contains("Inicializa")) {
                 loading.setVisible(false);
                 if (texto.toString().trim().length() < 25) {
-                    System.out.println("Mensaje vacio: "+texto);
-                }else{
-                    extraerInformacion(texto.toString().trim().substring(20).trim());
+                    Platform.runLater(() -> {
+                        Alert dialog = LoginController.buildDialog(Alert.AlertType.CONFIRMATION, "Toda la informacion ha sido procesada exitosamente, desea intentar reprocesar?", "Informacion");
+                        dialog.getDialogPane().getChildren().stream().filter(node -> node instanceof Label).forEach(node -> ((Label) node).setMinHeight(Region.USE_PREF_SIZE));
+                        Optional<ButtonType> result = dialog.showAndWait();
+                        ComunicadorPuertoSerial.obtenerInstancia().removeObservers(this);
+                        if (result.get() == ButtonType.OK) {
+                            System.out.println("REPROCESAR");
+                            try {
+                                ComunicadorPuertoSerial.obtenerInstancia().cerrarConexion();
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+                        } else {
+                            System.out.println("NO REPROCESAR");
+                            limpiarInformacionDelArduino();
+                            ponerArduinoEnModoOnline();
+                            container.setCurrentScreen(MainApp.PANTALLA_DATOS_PACIENTE);
+                        }
+                    });
+                } else {
+                    try {
+                        LecturaGlucometro lecturaGlucometro = extraerInformacion(texto.toString().trim().substring(20).trim());
+                        pacienteDao.registrarLectura(lecturaGlucometro);
+                        Platform.runLater(() -> {
+                            Notifications.create().title("Informacion guardada").text("La información ha sido registrada exitosamente").showInformation();
+                        });
+                    } catch (Exception e) {
+                        System.out.println("Error al procesar informacion");
+                        e.printStackTrace();
+//                        Platform.runLater(() -> {
+//                            Notifications.create().title("Error").text("Notifique este error al administrador " + e.getMessage()).showWarning();
+//                        });
+                    }
                 }
             }
         }
     }
 
-    private void extraerInformacion(String cadenaArduino) {
-        System.out.println("extraer info de: "+cadenaArduino);
-        LecturaGlucometro lecturaGlucometro = new LecturaGlucometroArduino(cadenaArduino).obtenerObjeto();
+    private void ponerArduinoEnModoOnline() {
+        ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto("A");
+    }
+
+    private void limpiarInformacionDelArduino() {
+        ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto("C");
+    }
+
+    private LecturaGlucometro extraerInformacion(String cadenaArduino) {
+        return new LecturaGlucometroArduino(cadenaArduino).obtenerObjeto();
 
     }
 
-    private void desactivarBotones(Button... buttons){
+    private void desactivarBotones(Button... buttons) {
         for (int j = 0; j < buttons.length; j++) {
             buttons[j].setDisable(true);
         }
@@ -107,21 +150,8 @@ public class ConexionArduinoController extends AbstractController implements Ini
 
     public void leerInformacion(ActionEvent event) throws InterruptedException {
         loading.setVisible(true);
-        ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto(i++ + "");
+        ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto(indiceDelRegistroProcesado++ + "");
     }
 
-    public void limpiarArduino(ActionEvent event) {
-        loading.setVisible(true);
-        ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto("C");
-    }
 
-    public void activarModoOnLine(ActionEvent event) {
-        loading.setVisible(true);
-        ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto("A");
-    }
-
-    public void activarModoOffLine(ActionEvent event) {
-        loading.setVisible(true);
-        ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto("B");
-    }
 }

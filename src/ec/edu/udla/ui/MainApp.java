@@ -23,7 +23,7 @@ import javafx.stage.Stage;
 
 public class MainApp extends Application {
 
-    public static final String PANTALLA_INGRESO_DATOS = "IngresarPaciente.fxml";
+    public static final String PANTALLA_DATOS_PACIENTE = "IngresarPaciente.fxml";
     public static final String PANTALLA_LEER_INFORMACION = "LeerInformacionArduino.fxml";
     public static final String PANTALLA_LOGIN = "Login.fxml";
     public static final String PANTALLA_ADMINISTRACION_USUARIOS = "AdministracionUsuarios.fxml";
@@ -42,7 +42,7 @@ public class MainApp extends Application {
         mainContainer.setPrimaryStage(primaryStage);
 
         Menu menuInicio = new Menu("Inicio");
-        MenuItem opcionIngresarPacientes = crearItemDeMenu("Pacientes", PANTALLA_INGRESO_DATOS);
+        MenuItem opcionIngresarPacientes = crearItemDeMenu("Pacientes", PANTALLA_DATOS_PACIENTE);
         MenuItem opcionAdministrarUsuarios = crearItemDeMenu("Administrar usuarios", PANTALLA_ADMINISTRACION_USUARIOS);
         MenuItem opcionLeerInformacionArduino = crearItemDeMenu("Establecer conexion", PANTALLA_LEER_INFORMACION);
 
@@ -85,8 +85,8 @@ public class MainApp extends Application {
     private void cargarPantallas() throws IOException {
         mainContainer = new RegionsContainer();
 
-        mainContainer.loadScreen(PANTALLA_INGRESO_DATOS,
-                IngresarPacienteController.class.getResource(PANTALLA_INGRESO_DATOS));
+        mainContainer.loadScreen(PANTALLA_DATOS_PACIENTE,
+                IngresarPacienteController.class.getResource(PANTALLA_DATOS_PACIENTE));
         mainContainer.loadScreen(PANTALLA_LOGIN, LoginController.class.getResource(PANTALLA_LOGIN));
         mainContainer.loadScreen(PANTALLA_LEER_INFORMACION,
                 LeerInformacionArduinoController.class.getResource(PANTALLA_LEER_INFORMACION));

@@ -50,6 +50,7 @@ public class IngresarPacienteController extends AbstractController implements In
         pacienteDao.saveOrUpdate(paciente);
         pacientes.setItems(FXCollections.observableArrayList(pacienteDao.findAll()));
         limpiarTextInputs(apellido, cedula, direccion, email, estatura, nombre, peso, telefono);
+        pacientes.refresh();
         paciente = null;
     }
 

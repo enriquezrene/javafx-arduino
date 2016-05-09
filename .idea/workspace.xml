@@ -2,24 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e6aae44-1dc7-490c-9028-919151680913" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ec/edu/udla/arduino/parser/FechaHexadecimal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ec/edu/udla/arduino/parser/LecturaGlucometroArduino.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ec/edu/udla/arduino/parser/NumeroHexadecimal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/LoadingController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ec/edu/udla/arduino/parser/FechaHexadecimalTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ec/edu/udla/arduino/parser/LectorGlucometroDesdeArduinoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ec/edu/udla/arduino/parser/NumeroHexadecimalTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/externalLibs/controlsfx-8.40.10.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/controlsfx_8_40_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/LecturaGlucometroDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ec/edu/udla/domain/PacienteTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ec/edu/udla/domain/dao/LecturaGlucometroDaoTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ec/edu/udla/domain/dao/PacienteDaoTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/arduino/comunicacion/ComunicadorPuertoSerial.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/arduino/comunicacion/ComunicadorPuertoSerial.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/arduino/io/LectorFlujosPuertoSerial.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/arduino/io/LectorFlujosPuertoSerial.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arduino.client.iml" afterPath="$PROJECT_DIR$/arduino.client.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/domain/LecturaGlucometro.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/domain/LecturaGlucometro.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/domain/Paciente.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/domain/Paciente.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/AbstractDao.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/AbstractDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/ConexionPostgreSQL.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/ConexionPostgreSQL.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/PacienteDao.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/PacienteDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/Loading.fxml" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/Loading.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPacienteController.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPacienteController.java" />
     </list>
     <ignored path="arduino.client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,22 +40,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConexionArduinoController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java">
+      <file leaf-file-name="ConexionArduino.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.1272728">
+              <caret line="35" column="76" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
               <folding />
             </state>
           </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="PacienteDao.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/dao/PacienteDao.java">
+      <file leaf-file-name="ConexionArduinoController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8111888">
-              <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
-              <folding />
+            <state vertical-scroll-proportion="1.0944057">
+              <caret line="121" column="44" selection-start-line="121" selection-start-column="44" selection-end-line="121" selection-end-column="44" />
+              <folding>
+                <element signature="e#5378#5379#0" expanded="true" />
+                <element signature="e#5461#5462#0" expanded="true" />
+                <element signature="e#5512#5513#0" expanded="true" />
+                <element signature="e#5595#5596#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,7 +114,6 @@
         <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/style.css" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/impl/Login.fxml" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/impl/IngresarPaciente.fxml" />
-        <option value="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/AbstractDao.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/sms/domain/Sms.java" />
         <option value="$PROJECT_DIR$/test/ec/edu/udla/facade/SmsBuilder.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/sms/Sms.fxml" />
@@ -121,11 +127,9 @@
         <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/RegionsContainer.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/FXUtils.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/arduino/comunicacion/ComunicadorPuertoSerial.java" />
-        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/Loading.fxml" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/LoadingController.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/arduino/io/LectorFlujosPuertoSerial.java" />
-        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/arduino/parsers/LecturaEnCadenaArduino.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/arduino/parser/NumeroHexadecimal.java" />
         <option value="$PROJECT_DIR$/test/ec/edu/udla/arduino/parser/NumeroHexadecimalTest.java" />
@@ -133,10 +137,19 @@
         <option value="$PROJECT_DIR$/test/ec/edu/udla/arduino/parser/FechaHexadecimalTest.java" />
         <option value="$PROJECT_DIR$/test/ec/edu/udla/arduino/parser/LectorGlucometroDesdeArduinoTest.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/arduino/parser/LectorGlucometroDesdeArduino.java" />
+        <option value="$PROJECT_DIR$/test/ec/edu/udla/domain/PacienteTest.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/domain/Paciente.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/ConexionPostgreSQL.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/AbstractDao.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/domain/LecturaGlucometro.java" />
-        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java" />
+        <option value="$PROJECT_DIR$/test/ec/edu/udla/domain/dao/LecturaGlucometroDaoTest.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/LecturaGlucometroDao.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/PacienteDao.java" />
+        <option value="$PROJECT_DIR$/test/ec/edu/udla/domain/dao/PacienteDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPacienteController.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java" />
       </list>
     </option>
   </component>
@@ -215,6 +228,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="facade" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="udla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="udla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -354,6 +415,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pacientes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="udla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="regions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="arduinointegration" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -420,7 +511,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -446,6 +537,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="udla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comunicacion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="externalLibs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -454,7 +585,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="MApp&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/MainApp.java&#10;LC&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/arduinointegration/LoadingController.java&#10;Reg&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/RegionsContainer.java&#10;MA&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/MainApp.java&#10;Login.fx&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/Login.fxml&#10;*.sql&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/docs/ddl.sql&#10;LGC&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java&#10;IPC&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/pacientes/IngresarPacienteController.java&#10;M&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/MainApp.java&#10;MainA&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/MainApp.java&#10;Abst&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/domain/dao/AbstractDao.java&#10;Log&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/impl/Login.fxml&#10;style&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/style.css&#10;Login&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/impl/Login.fxml&#10;Ingresa&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/impl/IngresarPaciente.fxml&#10;styl&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/style.css&#10;Lo&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/impl/Login.fxml&#10;Pac&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/domain/dao/PacienteDao.java&#10;Main&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/MainApp.java" />
+    <property name="SearchEverywhereHistoryKey" value="CA.f&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml&#10;PC&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/pacientes/IngresarPacienteController.java&#10;LC&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/arduinointegration/LoadingController.java&#10;MA&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/MainApp.java&#10;PDT&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/test/ec/edu/udla/domain/dao/PacienteDaoTest.java&#10;MApp&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/MainApp.java&#10;Reg&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/RegionsContainer.java&#10;Login.fx&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/Login.fxml&#10;*.sql&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/docs/ddl.sql&#10;LGC&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java&#10;IPC&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/pacientes/IngresarPacienteController.java&#10;M&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/MainApp.java&#10;MainA&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/MainApp.java&#10;Abst&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/domain/dao/AbstractDao.java&#10;Log&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/impl/Login.fxml&#10;style&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/style.css&#10;Login&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/impl/Login.fxml&#10;Ingresa&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/impl/IngresarPaciente.fxml&#10;styl&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/style.css&#10;Lo&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/impl/Login.fxml&#10;Pac&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/domain/dao/PacienteDao.java&#10;Main&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/MainApp.java" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/ec/edu/udla/arduino" />
@@ -462,6 +593,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="ec.edu.udla.domain.dao" />
       <recent name="ec.edu.udla.arduino.parser" />
       <recent name="ec.edu.udla.ui.regions.custom" />
       <recent name="ec.edu.udla.sms.domain" />
@@ -471,25 +603,25 @@
       <recent name="ec.edu.udla.ui.regions.arduinointegration" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/externalLibs" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration" />
       <recent name="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/sms" />
-      <recent name="$PROJECT_DIR$/externalLibs" />
     </key>
   </component>
   <component name="RunManager" selected="Application.MainApp">
-    <configuration default="false" name="LectorGlucometroDesdeArduinoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="PacienteDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ec.edu.udla.arduino.parser.*" />
+          <option name="PATTERN" value="ec.edu.udla.domain.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="arduino.client" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ec.edu.udla.arduino.parser" />
-      <option name="MAIN_CLASS_NAME" value="ec.edu.udla.arduino.parser.LectorGlucometroDesdeArduinoTest" />
+      <option name="PACKAGE_NAME" value="ec.edu.udla.domain.dao" />
+      <option name="MAIN_CLASS_NAME" value="ec.edu.udla.domain.dao.PacienteDaoTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -504,19 +636,19 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="LectorGlucometroDesdeArduinoTest.siLaCuartaCadenaEsC_Lectura_Ayunas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="LecturaGlucometroDaoTest.laConsultaDeLecturasDebeRetornarUnaListaNoNula" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ec.edu.udla.arduino.parser.*" />
+          <option name="PATTERN" value="ec.edu.udla.domain.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="arduino.client" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ec.edu.udla.arduino.parser" />
-      <option name="MAIN_CLASS_NAME" value="ec.edu.udla.arduino.parser.LectorGlucometroDesdeArduinoTest" />
-      <option name="METHOD_NAME" value="siLaCuartaCadenaEsC_Lectura_Ayunas" />
+      <option name="PACKAGE_NAME" value="ec.edu.udla.domain.dao" />
+      <option name="MAIN_CLASS_NAME" value="ec.edu.udla.domain.dao.LecturaGlucometroDaoTest" />
+      <option name="METHOD_NAME" value="laConsultaDeLecturasDebeRetornarUnaListaNoNula" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -530,19 +662,19 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="LectorGlucometroDesdeArduinoTest.siLaCuartaCadenaEsA_Lectura_Ayunas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="LecturaGlucometroDaoTest.alGuardarUnNuevoRegistroSeDebeAumentarLosRegistrosEnLaBase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ec.edu.udla.arduino.parser.*" />
+          <option name="PATTERN" value="ec.edu.udla.domain.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="arduino.client" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ec.edu.udla.arduino.parser" />
-      <option name="MAIN_CLASS_NAME" value="ec.edu.udla.arduino.parser.LectorGlucometroDesdeArduinoTest" />
-      <option name="METHOD_NAME" value="siLaCuartaCadenaEsA_Lectura_Ayunas" />
+      <option name="PACKAGE_NAME" value="ec.edu.udla.domain.dao" />
+      <option name="MAIN_CLASS_NAME" value="ec.edu.udla.domain.dao.LecturaGlucometroDaoTest" />
+      <option name="METHOD_NAME" value="alGuardarUnNuevoRegistroSeDebeAumentarLosRegistrosEnLaBase" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -556,19 +688,19 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="LectorGlucometroDesdeArduinoTest.siLaCuartaCadenaEsC_ConComida" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="PacienteDaoTest.paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ec.edu.udla.arduino.parser.*" />
+          <option name="PATTERN" value="ec.edu.udla.domain.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="arduino.client" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ec.edu.udla.arduino.parser" />
-      <option name="MAIN_CLASS_NAME" value="ec.edu.udla.arduino.parser.LectorGlucometroDesdeArduinoTest" />
-      <option name="METHOD_NAME" value="siLaCuartaCadenaEsC_ConComida" />
+      <option name="PACKAGE_NAME" value="ec.edu.udla.domain.dao" />
+      <option name="MAIN_CLASS_NAME" value="ec.edu.udla.domain.dao.PacienteDaoTest" />
+      <option name="METHOD_NAME" value="paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -905,19 +1037,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.LectorGlucometroDesdeArduinoTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.LectorGlucometroDesdeArduinoTest.siLaCuartaCadenaEsC_Lectura_Ayunas" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LectorGlucometroDesdeArduinoTest.siLaCuartaCadenaEsA_Lectura_Ayunas" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.LectorGlucometroDesdeArduinoTest.siLaCuartaCadenaEsC_ConComida" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.PacienteDaoTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.LecturaGlucometroDaoTest.laConsultaDeLecturasDebeRetornarUnaListaNoNula" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LecturaGlucometroDaoTest.alGuardarUnNuevoRegistroSeDebeAumentarLosRegistrosEnLaBase" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.PacienteDaoTest.paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado" />
       <item index="4" class="java.lang.String" itemvalue="Application.MainApp" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.MainApp" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.LectorGlucometroDesdeArduinoTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LectorGlucometroDesdeArduinoTest.siLaCuartaCadenaEsC_ConComida" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LectorGlucometroDesdeArduinoTest.siLaCuartaCadenaEsA_Lectura_Ayunas" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.LectorGlucometroDesdeArduinoTest.siLaCuartaCadenaEsC_Lectura_Ayunas" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.PacienteDaoTest.paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LecturaGlucometroDaoTest.alGuardarUnNuevoRegistroSeDebeAumentarLosRegistrosEnLaBase" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LecturaGlucometroDaoTest.laConsultaDeLecturasDebeRetornarUnaListaNoNula" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PacienteDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -940,35 +1072,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LectorGlucometroDesdeArduinoTest - 2016.05.09 at 12h 14m 54s.xml">
-      <configuration name="LectorGlucometroDesdeArduinoTest" configurationId="JUnit" />
+    <history-entry file="LecturaGlucometroDaoTest_alGuardarUnNuevoRegistroSeDebeAumentarLosRegistrosEnLaBase - 2016.05.09 at 15h 55m 36s.xml">
+      <configuration name="LecturaGlucometroDaoTest.alGuardarUnNuevoRegistroSeDebeAumentarLosRegistrosEnLaBase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LectorGlucometroDesdeArduinoTest - 2016.05.09 at 12h 14m 58s.xml">
-      <configuration name="LectorGlucometroDesdeArduinoTest" configurationId="JUnit" />
+    <history-entry file="PacienteDaoTest_paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado - 2016.05.09 at 15h 57m 43s.xml">
+      <configuration name="PacienteDaoTest.paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LectorGlucometroDesdeArduinoTest - 2016.05.09 at 12h 15m 04s.xml">
-      <configuration name="LectorGlucometroDesdeArduinoTest" configurationId="JUnit" />
+    <history-entry file="PacienteDaoTest_paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado - 2016.05.09 at 15h 59m 09s.xml">
+      <configuration name="PacienteDaoTest.paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LectorGlucometroDesdeArduinoTest - 2016.05.09 at 12h 19m 27s.xml">
-      <configuration name="LectorGlucometroDesdeArduinoTest" configurationId="JUnit" />
+    <history-entry file="PacienteDaoTest_paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado - 2016.05.09 at 16h 00m 44s.xml">
+      <configuration name="PacienteDaoTest.paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LectorGlucometroDesdeArduinoTest_siLaCuartaCadenaEsA_Lectura_Ayunas - 2016.05.09 at 12h 16m 26s.xml">
-      <configuration name="LectorGlucometroDesdeArduinoTest.siLaCuartaCadenaEsA_Lectura_Ayunas" configurationId="JUnit" />
+    <history-entry file="PacienteDaoTest_paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado - 2016.05.09 at 16h 01m 51s.xml">
+      <configuration name="PacienteDaoTest.paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LectorGlucometroDesdeArduinoTest_siLaCuartaCadenaEsC_ConComida - 2016.05.09 at 12h 16m 41s.xml">
-      <configuration name="LectorGlucometroDesdeArduinoTest.siLaCuartaCadenaEsC_ConComida" configurationId="JUnit" />
+    <history-entry file="PacienteDaoTest_paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado - 2016.05.09 at 16h 03m 24s.xml">
+      <configuration name="PacienteDaoTest.paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LectorGlucometroDesdeArduinoTest_siLaCuartaCadenaEsC_ConComida - 2016.05.09 at 12h 17m 02s.xml">
-      <configuration name="LectorGlucometroDesdeArduinoTest.siLaCuartaCadenaEsC_ConComida" configurationId="JUnit" />
+    <history-entry file="PacienteDaoTest_paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado - 2016.05.09 at 16h 04m 42s.xml">
+      <configuration name="PacienteDaoTest.paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LectorGlucometroDesdeArduinoTest_siLaCuartaCadenaEsC_ConComida - 2016.05.09 at 12h 19m 24s.xml">
-      <configuration name="LectorGlucometroDesdeArduinoTest.siLaCuartaCadenaEsC_ConComida" configurationId="JUnit" />
+    <history-entry file="PacienteDaoTest_paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado - 2016.05.09 at 16h 05m 14s.xml">
+      <configuration name="PacienteDaoTest.paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LectorGlucometroDesdeArduinoTest_siLaCuartaCadenaEsC_Lectura_Ayunas - 2016.05.09 at 12h 15m 13s.xml">
-      <configuration name="LectorGlucometroDesdeArduinoTest.siLaCuartaCadenaEsC_Lectura_Ayunas" configurationId="JUnit" />
+    <history-entry file="PacienteDaoTest_paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado - 2016.05.09 at 16h 06m 58s.xml">
+      <configuration name="PacienteDaoTest.paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LectorGlucometroDesdeArduinoTest_siLaCuartaCadenaEsC_Lectura_Ayunas - 2016.05.09 at 12h 15m 40s.xml">
-      <configuration name="LectorGlucometroDesdeArduinoTest.siLaCuartaCadenaEsC_Lectura_Ayunas" configurationId="JUnit" />
+    <history-entry file="PacienteDaoTest_paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado - 2016.05.09 at 16h 07m 46s.xml">
+      <configuration name="PacienteDaoTest.paraRegistrarUnaLecturaSeDebeUsarElIdDelPacienteRecienRegistrado" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -982,7 +1114,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5063898" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34606987" sideWeight="0.49361023" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34606987" sideWeight="0.49361023" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32532752" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22151224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1017,19 +1149,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ec/edu/udla/arduino/parser/FechaHexadecimal.java</url>
-          <line>14</line>
+          <url>file://$PROJECT_DIR$/src/ec/edu/udla/domain/dao/PacienteDao.java</url>
+          <line>109</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ec/edu/udla/arduino/parser/FechaHexadecimal.java</url>
-          <line>19</line>
+          <url>file://$PROJECT_DIR$/src/ec/edu/udla/domain/dao/LecturaGlucometroDao.java</url>
+          <line>25</line>
           <properties />
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1038,90 +1170,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/dao/PacienteDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/dao/AbstractDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/dao/PacienteDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/PojoBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06132879">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/Paciente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06132879">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/util/Context.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="75" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/DrawableRegion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12265758">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/AbstractController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/dao/ConexionPostgreSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/dao/AbstractDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/ec/edu/udla/facade/PacientesFacadeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1270,13 +1318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/LoadingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/Loading.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.1272726">
@@ -1296,33 +1337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/arduino/io/LectorFlujosPuertoSerial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#579#580#0" expanded="false" />
-            <element signature="e#604#605#0" expanded="false" />
-            <element signature="e#659#660#0" expanded="false" />
-            <element signature="e#692#693#0" expanded="false" />
-            <element signature="e#1180#1181#0" expanded="false" />
-            <element signature="e#1217#1218#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/ec/edu/udla/arduino/parser/NumeroHexadecimalTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37762237">
@@ -1338,10 +1352,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#200#201#0" expanded="false" />
+            <element signature="e#254#255#0" expanded="false" />
+            <element signature="e#302#303#0" expanded="false" />
+            <element signature="e#372#373#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1358,14 +1372,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/arduino/parser/FechaHexadecimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1404,22 +1410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/LecturaGlucometro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="109" column="5" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/arduino/parser/LecturaGlucometroArduino.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1430,19 +1420,190 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java">
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/dao/UsuarioDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/java/jdk1.8.0_66/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="147" column="19" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
+          <folding>
+            <element signature="e#5748#5749#0" expanded="false" />
+            <element signature="e#5784#5785#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/Paciente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ec/edu/udla/domain/PacienteTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/dao/ConexionPostgreSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/dao/AbstractDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/PojoBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.062937066">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/LecturaGlucometro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ec/edu/udla/domain/dao/LecturaGlucometroDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="74" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ec/edu/udla/domain/dao/PacienteDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="1" selection-start-line="107" selection-start-column="1" selection-end-line="107" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/arduino/parser/FechaHexadecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/dao/LecturaGlucometroDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/dao/PacienteDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8111888">
-          <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/arduino/io/LectorFlujosPuertoSerial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/externalLibs/jssc-2.8.0.jar!/jssc/SerialPort.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.3461537">
+          <caret line="633" column="0" selection-start-line="633" selection-start-column="0" selection-end-line="633" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/java/jdk1.8.0_66/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1773" column="0" selection-start-line="1773" selection-start-column="0" selection-end-line="1773" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPacienteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/LoadingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.1272728">
+          <caret line="35" column="76" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0944057">
+          <caret line="121" column="44" selection-start-line="121" selection-start-column="44" selection-end-line="121" selection-end-column="44" />
+          <folding>
+            <element signature="e#5378#5379#0" expanded="true" />
+            <element signature="e#5461#5462#0" expanded="true" />
+            <element signature="e#5512#5513#0" expanded="true" />
+            <element signature="e#5595#5596#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

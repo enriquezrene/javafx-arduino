@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
-
 <?import org.kordamp.bootstrapfx.scene.layout.Panel?>
 <GridPane hgap="15" vgap="7" xmlns:fx="http://javafx.com/fxml"
           fx:controller="ec.edu.udla.ui.regions.arduinointegration.ConexionArduinoController">
@@ -34,15 +32,8 @@
                             GridPane.columnIndex="2" GridPane.rowIndex="1"/>
                     <Button text="Leer informacion" onAction="#leerInformacion" fx:id="btnLeerInformacion"
                             GridPane.columnIndex="4" GridPane.rowIndex="1"/>
-                    <Button text="Limpiar arduino" onAction="#limpiarArduino" fx:id="btnLimpiarArduino"
-                            GridPane.columnIndex="5" GridPane.rowIndex="1"/>
-                    <Button text="Activar modo on-line" onAction="#activarModoOnLine" fx:id="btnActivarModoOnLine"
-                            GridPane.columnIndex="6" GridPane.rowIndex="1"/>
-                    <Button text="Activar modo off-line" onAction="#activarModoOffLine"
-                            GridPane.columnIndex="7" GridPane.rowIndex="1"/>
-                    <Button text="Cerrar conexion" onAction="#cerrar"
+                    <Button text="Cerrar conexion" onAction="#cerrarConexion"
                             GridPane.columnIndex="8" GridPane.rowIndex="1"/>
-
                     <TextArea fx:id="textoArduino" GridPane.columnIndex="0"
                               GridPane.columnSpan="3" GridPane.rowIndex="3"/>
                     <ImageView fx:id="loading">
