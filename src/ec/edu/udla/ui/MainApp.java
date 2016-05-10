@@ -66,7 +66,7 @@ public class MainApp extends Application {
             }
         });
 
-        menuInicio.getItems().addAll(opcionIngresarPacientes, opcionAdministrarUsuarios, opcionLeerInformacionArduino, opcionEnvioSms);
+        menuInicio.getItems().addAll(opcionIngresarPacientes, opcionAdministrarUsuarios/*, opcionLeerInformacionArduino, opcionEnvioSms*/);
 
 
 
@@ -80,6 +80,7 @@ public class MainApp extends Application {
         primaryStage.setMaximized(true);
         primaryStage.show();
         mainContainer.setHostServices(getHostServices());
+        mainContainer.mostrarBarraDeMenu();
 
     }
 

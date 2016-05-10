@@ -2,6 +2,9 @@
   <library name="controlsfx-8.40.10">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/externalLibs/controlsfx-8.40.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/externalLibs/itext-pdfa-5.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/externalLibs/itext-xtra-5.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/externalLibs/itextpdf-5.5.9.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

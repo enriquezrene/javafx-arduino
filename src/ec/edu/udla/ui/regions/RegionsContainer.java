@@ -72,11 +72,11 @@ public class RegionsContainer extends BorderPane {
 		screens.remove(name);
 	}
 
-<<<<<<< HEAD
+
 	public void setPrimaryStage(Stage primaryStage) {
 		this.primaryStage = primaryStage;
 	}
-=======
+
     public HostServices getHostServices() {
         return hostServices;
     }
@@ -84,5 +84,5 @@ public class RegionsContainer extends BorderPane {
     public void setHostServices(HostServices hostServices) {
         this.hostServices = hostServices;
     }
->>>>>>> 732f4fa03ac4549a73b960479d6c7001a025a3c7
+
 }

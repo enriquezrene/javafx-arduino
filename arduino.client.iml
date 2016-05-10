@@ -2,10 +2,12 @@
 <module type="JAVA_MODULE" version="4">
   <component name="EclipseModuleManager">
     <libelement value="jar://$MODULE_DIR$/externalLibs/postgresql-9.2-1004.jdbc41.jar!/" />
-    <libelement value="jar://$MODULE_DIR$/externalLibs/antlr-runtime-3.0.jar!/" />
     <libelement value="jar://$MODULE_DIR$/externalLibs/commons-dbcp.jar!/" />
     <libelement value="jar://$MODULE_DIR$/externalLibs/commons-logging-1.0.4.jar!/" />
     <libelement value="jar://$MODULE_DIR$/externalLibs/commons-pool.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/externalLibs/jssc-2.8.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/externalLibs/antlr-runtime-3.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/externalLibs/bootstrapfx-all.jar!/" />
     <libelement value="jar://$MODULE_DIR$/externalLibs/org.springframework.asm-3.0.0.M3.jar!/" />
     <libelement value="jar://$MODULE_DIR$/externalLibs/org.springframework.beans-3.0.0.M3.jar!/" />
     <libelement value="jar://$MODULE_DIR$/externalLibs/org.springframework.context-3.0.0.M3.jar!/" />
@@ -14,7 +16,7 @@
     <libelement value="jar://$MODULE_DIR$/externalLibs/org.springframework.expression-3.0.0.M3.jar!/" />
     <libelement value="jar://$MODULE_DIR$/externalLibs/org.springframework.jdbc-3.0.0.M3.jar!/" />
     <libelement value="jar://$MODULE_DIR$/externalLibs/org.springframework.transaction-3.0.0.M3.jar!/" />
-    <libelement value="jar://$MODULE_DIR$/externalLibs/jssc-2.8.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/externalLibs/mockito-all-1.10.19.jar!/" />
     <conelement value="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER" />
     <src_description expected_position="0">
       <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
@@ -50,15 +52,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="antlr-runtime-3.0.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/externalLibs/antlr-runtime-3.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
       <library name="commons-dbcp.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/externalLibs/commons-dbcp.jar!/" />
@@ -80,6 +73,33 @@
       <library name="commons-pool.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/externalLibs/commons-pool.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jssc-2.8.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/externalLibs/jssc-2.8.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="antlr-runtime-3.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/externalLibs/antlr-runtime-3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="bootstrapfx-all.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/externalLibs/bootstrapfx-all.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -158,21 +178,15 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="jssc-2.8.0.jar">
+      <library name="mockito-all-1.10.19.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/externalLibs/jssc-2.8.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/externalLibs/mockito-all-1.10.19.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="bootstrapfx-all" level="project" />
-    <orderEntry type="library" name="mockito-all-1.10.19" level="project" />
-<<<<<<< HEAD
     <orderEntry type="library" name="controlsfx-8.40.10" level="project" />
-=======
-    <orderEntry type="library" name="itext-pdfa-5.5.9" level="project" />
     <orderEntry type="library" name="xmlworker-5.5.9" level="project" />
->>>>>>> 732f4fa03ac4549a73b960479d6c7001a025a3c7
   </component>
 </module>

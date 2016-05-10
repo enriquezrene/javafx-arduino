@@ -2,11 +2,9 @@ package ec.edu.udla.domain;
 
 public class Paciente extends PojoBase {
 
-<<<<<<< HEAD
+
     public static final Paciente NEW = new Paciente();
 
-=======
->>>>>>> 732f4fa03ac4549a73b960479d6c7001a025a3c7
     private String nombre, apellido, cedula, telefono, email, direccion, peso, estatura;
 
     public String getNombre() {
@@ -73,7 +71,7 @@ public class Paciente extends PojoBase {
         this.estatura = estatura;
     }
 
-<<<<<<< HEAD
+
     @Override
     public boolean equals(Object obj) {
         Paciente paciente = (Paciente) obj;
@@ -85,9 +83,10 @@ public class Paciente extends PojoBase {
             cedulasIguales = this.cedula.equals(paciente.getCedula());
         }
         return cedulasIguales && idsIguales;
-=======
+    }
+
     public String getFullName() {
         return this.nombre + " " + this.apellido;
->>>>>>> 732f4fa03ac4549a73b960479d6c7001a025a3c7
+
     }
 }

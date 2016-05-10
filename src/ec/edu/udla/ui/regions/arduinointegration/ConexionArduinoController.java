@@ -121,7 +121,7 @@ public class ConexionArduinoController extends AbstractController implements Ini
                             }
                         } else {
                             System.out.println("NO REPROCESAR");
-                            container.mostrarBarraDeMenu();
+//                            container.mostrarBarraDeMenu();
                             limpiarInformacionDelArduino();
                             ponerArduinoEnModoOnline();
                             container.setCurrentScreen(MainApp.PANTALLA_DATOS_PACIENTE);
