@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e6aae44-1dc7-490c-9028-919151680913" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/externalLibs/controlsfx-8.40.10.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/controlsfx_8_40_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/LecturaGlucometroDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ec/edu/udla/domain/PacienteTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ec/edu/udla/domain/dao/LecturaGlucometroDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ec/edu/udla/domain/dao/PacienteDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arduino.client.iml" afterPath="$PROJECT_DIR$/arduino.client.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/domain/LecturaGlucometro.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/domain/LecturaGlucometro.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/domain/Paciente.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/domain/Paciente.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/AbstractDao.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/AbstractDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/ConexionPostgreSQL.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/ConexionPostgreSQL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/PacienteDao.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/domain/dao/PacienteDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPacienteController.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPacienteController.java" />
     </list>
     <ignored path="arduino.client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,8 +28,8 @@
       <file leaf-file-name="ConexionArduino.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.1272728">
-              <caret line="35" column="76" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
+            <state vertical-scroll-proportion="-4.836364">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -56,14 +41,9 @@
       <file leaf-file-name="ConexionArduinoController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0944057">
-              <caret line="121" column="44" selection-start-line="121" selection-start-column="44" selection-end-line="121" selection-end-column="44" />
-              <folding>
-                <element signature="e#5378#5379#0" expanded="true" />
-                <element signature="e#5461#5462#0" expanded="true" />
-                <element signature="e#5512#5513#0" expanded="true" />
-                <element signature="e#5595#5596#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.71428573">
+              <caret line="123" column="59" selection-start-line="123" selection-start-column="59" selection-end-line="123" selection-end-column="59" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -190,7 +170,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -579,6 +558,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
@@ -1114,7 +1094,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5063898" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34606987" sideWeight="0.49361023" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34497815" sideWeight="0.49361023" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32532752" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22151224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1351,12 +1331,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding>
-            <element signature="e#200#201#0" expanded="false" />
-            <element signature="e#254#255#0" expanded="false" />
-            <element signature="e#302#303#0" expanded="false" />
-            <element signature="e#372#373#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1364,7 +1338,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1372,7 +1345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1380,7 +1352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="626" column="28" selection-start-line="626" selection-start-column="28" selection-end-line="626" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1424,7 +1395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1461,7 +1431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1469,7 +1438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1513,7 +1481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1539,7 +1506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1547,7 +1513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.3461537">
           <caret line="633" column="0" selection-start-line="633" selection-start-column="0" selection-end-line="633" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1585,8 +1550,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1272728">
-          <caret line="35" column="76" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
+        <state vertical-scroll-proportion="-4.836364">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1596,14 +1561,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0944057">
-          <caret line="121" column="44" selection-start-line="121" selection-start-column="44" selection-end-line="121" selection-end-column="44" />
-          <folding>
-            <element signature="e#5378#5379#0" expanded="true" />
-            <element signature="e#5461#5462#0" expanded="true" />
-            <element signature="e#5512#5513#0" expanded="true" />
-            <element signature="e#5595#5596#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.71428573">
+          <caret line="123" column="59" selection-start-line="123" selection-start-column="59" selection-end-line="123" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>

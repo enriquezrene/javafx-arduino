@@ -13,7 +13,7 @@
         <Insets top="20" right="40" bottom="20" left="40"/>
     </padding>
 
-    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0">
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.hgrow="ALWAYS">
         <Panel styleClass="panel-primary">
             <heading>
                 <Label styleClass="h3" text="Configuracion del equipo"/>
@@ -31,10 +31,10 @@
                     <Button text="OK" fx:id="botonConectar" onAction="#conectar"
                             GridPane.columnIndex="2" GridPane.rowIndex="1"/>
                     <Button text="Leer informacion" onAction="#leerInformacion" fx:id="btnLeerInformacion"
+                            GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+                    <Button text="Cerrar conexion" onAction="#cerrarConexion" fx:id="btnCerrarConexion"
                             GridPane.columnIndex="4" GridPane.rowIndex="1"/>
-                    <Button text="Cerrar conexion" onAction="#cerrarConexion"
-                            GridPane.columnIndex="8" GridPane.rowIndex="1"/>
-                    <TextArea fx:id="textoArduino" GridPane.columnIndex="0"
+                    <TextArea fx:id="textoArduino" GridPane.columnIndex="0" visible="false"
                               GridPane.columnSpan="3" GridPane.rowIndex="3"/>
                     <ImageView fx:id="loading">
                         <image>
