@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.*?>
 <?import org.kordamp.bootstrapfx.scene.layout.Panel?>
-<?import javafx.scene.control.Label?>
-
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Button?>
 <GridPane fx:id="gridPane" hgap="15" vgap="7"
           xmlns:fx="http://javafx.com/fxml" fx:controller="ec.edu.udla.ui.regions.pacientes.LecturasGlucosaController">
 
@@ -18,13 +20,21 @@
                 <Label styleClass="h3" text="Lecturas de glucosa"/>
             </heading>
             <body>
-                <Label styleClass="h4" fx:id="infoPaciente"/>
+                <VBox spacing="20">
+                    <Label styleClass="h4" fx:id="infoPaciente"/>
+                    <GridPane hgap="10" vgap="7">
+                        <Label text="Fecha desde" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                        <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="none" fx:id="fechaInicio"/>
+                        <Label text="Fecha hasta" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                        <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="fechaFin"/>
+                        <Button text="Aplicar filtro" GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#filtrar"/>
+                    </GridPane>
+                    <StackPane fx:id="chartPane" GridPane.hgrow="ALWAYS" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                </VBox>
             </body>
         </Panel>
     </VBox>
-
-    <StackPane GridPane.columnIndex="0" GridPane.rowIndex="1"
-               GridPane.hgrow="ALWAYS">
+    <StackPane GridPane.hgrow="ALWAYS" GridPane.columnIndex="0" GridPane.rowIndex="1">
         <TableView fx:id="lecturas"/>
     </StackPane>
 

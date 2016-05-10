@@ -2,20 +2,19 @@ package ec.edu.udla.domain;
 
 import java.util.Date;
 
-public class LecturaGlucometro {
+public class LecturaGlucometro extends PojoBase{
 
-	private int id;
 	private String valor;
 	private Date fecha;
 	private EstadoPacienteEnLaLectura estado;
 	private int idPaciente;
+	private String cedulaPaciente;
 
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
+	public void printInfo(){
+		System.out.println(cedulaPaciente);
+		System.out.println(estado);
+		System.out.println(fecha);
+		System.out.println(valor);
 	}
 
 	public String getValor() {
@@ -50,4 +49,11 @@ public class LecturaGlucometro {
 		this.idPaciente = idPaciente;
 	}
 
+	public String getCedulaPaciente() {
+		return cedulaPaciente;
+	}
+
+	public void setCedulaPaciente(String cedulaPaciente) {
+		this.cedulaPaciente = cedulaPaciente;
+	}
 }

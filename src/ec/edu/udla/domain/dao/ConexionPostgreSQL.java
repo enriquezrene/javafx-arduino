@@ -46,7 +46,6 @@ public class ConexionPostgreSQL {
 		try {
 			DataSource ds = BasicDataSourceFactory.createDataSource(DB_PROPERTIES);
 			JDBC_TEMPLATE = new JdbcTemplate(ds);
-
 		} catch (Exception e) {
 			throw new RuntimeException("Ocurrio un error al realizar la conexion");
 		}
