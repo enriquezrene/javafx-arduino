@@ -79,6 +79,7 @@ public class MainApp extends Application {
         primaryStage.setScene(scene);
         primaryStage.setMaximized(true);
         primaryStage.show();
+        mainContainer.setHostServices(getHostServices());
 
     }
 

@@ -4,9 +4,10 @@ import ec.edu.udla.domain.LecturaGlucometro;
 import ec.edu.udla.domain.Paciente;
 import ec.edu.udla.domain.dao.PacienteDao;
 import ec.edu.udla.domain.util.Context;
+import ec.edu.udla.reportes.ReporteLecturaGlucometro;
 import ec.edu.udla.ui.regions.AbstractController;
-import ec.edu.udla.ui.regions.RegionsContainer;
 import ec.edu.udla.ui.regions.custom.DateAxis;
+import javafx.application.HostServices;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -15,19 +16,20 @@ import javafx.fxml.Initializable;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
-import javafx.scene.control.*;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableView;
 import javafx.scene.layout.StackPane;
 
+import java.io.File;
 import java.net.URL;
 import java.time.ZoneId;
 import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.ResourceBundle;
 
 public class LecturasGlucosaController extends AbstractController implements Initializable {
 
-    protected RegionsContainer container;
     private PacienteDao pacienteDao;
     private Paciente paciente;
 
@@ -95,5 +97,15 @@ public class LecturasGlucosaController extends AbstractController implements Ini
         this.lecturas.setItems(FXCollections.observableArrayList(lecturaGlucometros));
         lecturas.refresh();
 
+    }
+
+    public void exportar(ActionEvent actionEvent) {
+        HostServices hostServices = this.container.getHostServices();
+        try {
+            File file = new ReporteLecturaGlucometro(lecturas.getItems(), paciente.getFullName()).getReporteAsPDF();
+            hostServices.showDocument(file.toURI().toURL().toExternalForm());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

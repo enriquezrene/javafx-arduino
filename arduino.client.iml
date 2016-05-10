@@ -168,6 +168,11 @@
     </orderEntry>
     <orderEntry type="library" name="bootstrapfx-all" level="project" />
     <orderEntry type="library" name="mockito-all-1.10.19" level="project" />
+<<<<<<< HEAD
     <orderEntry type="library" name="controlsfx-8.40.10" level="project" />
+=======
+    <orderEntry type="library" name="itext-pdfa-5.5.9" level="project" />
+    <orderEntry type="library" name="xmlworker-5.5.9" level="project" />
+>>>>>>> 732f4fa03ac4549a73b960479d6c7001a025a3c7
   </component>
 </module>

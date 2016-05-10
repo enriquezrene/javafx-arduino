@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.HashMap;
 
 import ec.edu.udla.ui.regions.sms.SmsController;
+import javafx.application.HostServices;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -20,6 +21,7 @@ import javafx.stage.Stage;
 
 public class RegionsContainer extends BorderPane {
 
+    private HostServices hostServices;
 	private HashMap<String, Node> screens;
 	private MenuBar barraDeMenu;
 	private Stage primaryStage;
@@ -70,7 +72,17 @@ public class RegionsContainer extends BorderPane {
 		screens.remove(name);
 	}
 
+<<<<<<< HEAD
 	public void setPrimaryStage(Stage primaryStage) {
 		this.primaryStage = primaryStage;
 	}
+=======
+    public HostServices getHostServices() {
+        return hostServices;
+    }
+
+    public void setHostServices(HostServices hostServices) {
+        this.hostServices = hostServices;
+    }
+>>>>>>> 732f4fa03ac4549a73b960479d6c7001a025a3c7
 }

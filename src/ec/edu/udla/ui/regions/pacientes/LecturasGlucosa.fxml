@@ -24,12 +24,19 @@
                     <Label styleClass="h4" fx:id="infoPaciente"/>
                     <GridPane hgap="10" vgap="7">
                         <Label text="Fecha desde" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
-                        <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="none" fx:id="fechaInicio"/>
+                        <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="none"
+                                    fx:id="fechaInicio"/>
                         <Label text="Fecha hasta" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
                         <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="fechaFin"/>
-                        <Button text="Aplicar filtro" GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#filtrar"/>
+                        <HBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2">
+                            <Button text="Aplicar filtro"
+                                    onAction="#filtrar"/>
+                            <Button text="Exportar como PDF"
+                                    onAction="#exportar"/>
+                        </HBox>
                     </GridPane>
-                    <StackPane fx:id="chartPane" GridPane.hgrow="ALWAYS" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                    <StackPane fx:id="chartPane" GridPane.hgrow="ALWAYS" GridPane.columnIndex="0"
+                               GridPane.rowIndex="2"/>
                 </VBox>
             </body>
         </Panel>
