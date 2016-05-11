@@ -21,5 +21,10 @@
 	<classpathentry kind="lib" path="externalLibs/org.springframework.jdbc-3.0.0.M3.jar"/>
 	<classpathentry kind="lib" path="externalLibs/org.springframework.transaction-3.0.0.M3.jar"/>
 	<classpathentry kind="lib" path="externalLibs/mockito-all-1.10.19.jar"/>
+	<classpathentry kind="lib" path="externalLibs/xmlworker-5.5.9.jar"/>
+	<classpathentry kind="lib" path="externalLibs/controlsfx-8.40.10.jar"/>
+	<classpathentry kind="lib" path="externalLibs/itext-pdfa-5.5.9.jar"/>
+	<classpathentry kind="lib" path="externalLibs/itext-xtra-5.5.9.jar"/>
+	<classpathentry kind="lib" path="externalLibs/itextpdf-5.5.9.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
