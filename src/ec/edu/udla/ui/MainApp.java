@@ -18,8 +18,10 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyCodeCombination;
 import javafx.scene.input.KeyCombination;
+import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class MainApp extends Application {
 
@@ -77,10 +79,9 @@ public class MainApp extends Application {
         scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
         primaryStage.setTitle("Aplicacion Demo");
         primaryStage.setScene(scene);
-        primaryStage.setMaximized(true);
+        primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.show();
         mainContainer.setHostServices(getHostServices());
-
     }
 
     private void cargarPantallas() throws IOException {
