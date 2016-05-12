@@ -15,6 +15,9 @@ import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class LoginController extends AbstractController implements Initializable {
 
@@ -39,6 +42,14 @@ public class LoginController extends AbstractController implements Initializable
             container.setCurrentScreen(MainApp.PANTALLA_CONEXION_ARDUINO);
             limpiarTextInputs(usuario, password);
             container.mostrarBarraDeMenu();
+
+            container.getPrimaryStage().hide();
+            Stage stage = new Stage();
+            container.getPrimaryStage().getScene().setFill(Color.WHITE);
+            stage.setScene(container.getPrimaryStage().getScene());
+            stage.setMaximized(true);
+            stage.show();
+            container.setPrimaryStage(stage);
         } catch (RuntimeException e) {
             Alert alert = buildDialog(AlertType.ERROR, e.getMessage(), null);
             alert.showAndWait();
