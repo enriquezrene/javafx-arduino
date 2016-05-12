@@ -7,6 +7,8 @@
 <?import org.kordamp.bootstrapfx.scene.layout.Panel?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <GridPane fx:id="gridPane" hgap="15" vgap="7"
           xmlns:fx="http://javafx.com/fxml" fx:controller="ec.edu.udla.ui.regions.pacientes.LecturasGlucosaController">
 
@@ -21,6 +23,11 @@
             </heading>
             <body>
                 <VBox spacing="20">
+                    <ImageView fx:id="loading">
+                        <image>
+                            <Image url="loading.gif"/>
+                        </image>
+                    </ImageView>
                     <Label styleClass="h4" fx:id="infoPaciente"/>
                     <GridPane hgap="10" vgap="7">
                         <Label text="Fecha desde" GridPane.columnIndex="0" GridPane.rowIndex="0"/>

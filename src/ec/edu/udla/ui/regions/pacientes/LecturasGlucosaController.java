@@ -8,8 +8,10 @@ import ec.edu.udla.reportes.ReporteLecturaGlucometro;
 import ec.edu.udla.ui.regions.AbstractController;
 import ec.edu.udla.ui.regions.custom.DateAxis;
 import javafx.application.HostServices;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -19,6 +21,7 @@ import javafx.scene.chart.XYChart;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 
 import java.io.File;
@@ -45,6 +48,9 @@ public class LecturasGlucosaController extends AbstractController implements Ini
     @FXML
     private DatePicker fechaInicio, fechaFin;
 
+    @FXML
+    private ImageView loading;
+
 
     public LecturasGlucosaController() {
         this.pacienteDao = new PacienteDao();
@@ -58,6 +64,7 @@ public class LecturasGlucosaController extends AbstractController implements Ini
         createTable(pacienteDao.buscarLecturasGlucosa(paciente.getId()));
         populateChart(pacienteDao.buscarLecturasGlucosa(paciente.getId()));
         infoPaciente.setText("Paciente: " + paciente.getApellido() + " " + paciente.getNombre());
+        loading.setVisible(false);
     }
 
     private void populateChart(List<LecturaGlucometro> lecturas) {
@@ -101,11 +108,22 @@ public class LecturasGlucosaController extends AbstractController implements Ini
 
     public void exportar(ActionEvent actionEvent) {
         HostServices hostServices = this.container.getHostServices();
-        try {
-            File file = new ReporteLecturaGlucometro(lecturas.getItems(), paciente.getFullName()).getReporteAsPDF();
-            hostServices.showDocument(file.toURI().toURL().toExternalForm());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Task<File> task = new Task<File>() {
+            @Override public File call() {
+                try {
+                    File file = new ReporteLecturaGlucometro(lecturas.getItems(), paciente.getFullName()).getReporteAsPDF();
+                    hostServices.showDocument(file.toURI().toURL().toExternalForm());
+                    return file;
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                return null;
+            }
+        };
+
+        task.setOnRunning((e) -> loading.setVisible(true));
+        task.setOnSucceeded((e) -> {loading.setVisible(false);});
+        task.setOnFailed((e) -> {loading.setVisible(false);});
+        new Thread(task).start();
     }
 }
