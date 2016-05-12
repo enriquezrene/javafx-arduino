@@ -8,6 +8,7 @@ import com.itextpdf.tool.xml.XMLWorkerHelper;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Date;
 
 /**
  * Created by moe on 5/9/16.
@@ -45,7 +46,7 @@ public class TextoComoFilaHtml {
     }
 
     public File asPdfFile() throws IOException, DocumentException {
-        File file = new File("docs/report.pdf");
+        File file = new File("docs/"+new Date().getTime()+".pdf");
         if (file.exists()) {
             file.delete();
         }
@@ -58,4 +59,5 @@ public class TextoComoFilaHtml {
         document.close();
         return file;
     }
+
 }
