@@ -38,6 +38,7 @@ public class LoginController extends AbstractController implements Initializable
             facade.login(usuario.getText(), password.getText());
             container.setCurrentScreen(MainApp.PANTALLA_CONEXION_ARDUINO);
             limpiarTextInputs(usuario, password);
+            container.mostrarBarraDeMenu();
         } catch (RuntimeException e) {
             Alert alert = buildDialog(AlertType.ERROR, e.getMessage(), null);
             alert.showAndWait();

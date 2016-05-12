@@ -37,7 +37,7 @@ public class MainApp extends Application {
 
         cargarPantallas();
 
-        mainContainer.setCurrentScreen(PANTALLA_CONEXION_ARDUINO);
+        mainContainer.setCurrentScreen(PANTALLA_LOGIN);
         mainContainer.setId("main_container");
         mainContainer.setPrimaryStage(primaryStage);
 
@@ -80,7 +80,6 @@ public class MainApp extends Application {
         primaryStage.setMaximized(true);
         primaryStage.show();
         mainContainer.setHostServices(getHostServices());
-        mainContainer.mostrarBarraDeMenu();
 
     }
 
