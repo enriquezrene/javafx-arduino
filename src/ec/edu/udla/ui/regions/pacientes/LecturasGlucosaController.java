@@ -64,7 +64,6 @@ public class LecturasGlucosaController extends AbstractController implements Ini
         createTable(pacienteDao.buscarLecturasGlucosa(paciente.getId()));
         populateChart(pacienteDao.buscarLecturasGlucosa(paciente.getId()));
         infoPaciente.setText("Paciente: " + paciente.getApellido() + " " + paciente.getNombre());
-        loading.setVisible(false);
     }
 
     private void populateChart(List<LecturaGlucometro> lecturas) {
@@ -121,9 +120,9 @@ public class LecturasGlucosaController extends AbstractController implements Ini
             }
         };
 
-        task.setOnRunning((e) -> loading.setVisible(true));
-        task.setOnSucceeded((e) -> {loading.setVisible(false);});
-        task.setOnFailed((e) -> {loading.setVisible(false);});
+        task.setOnRunning((e) -> {loading.setVisible(true); loading.setManaged(true);});
+        task.setOnSucceeded((e) -> {loading.setVisible(false); loading.setManaged(false);});
+        task.setOnFailed((e) -> {loading.setVisible(false); loading.setManaged(false);});
         new Thread(task).start();
     }
 }
