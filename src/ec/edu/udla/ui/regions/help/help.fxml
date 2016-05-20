@@ -15,7 +15,7 @@
     </padding>
 
 
-    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0">
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.hgrow="ALWAYS">
         <Panel styleClass="panel-primary">
 
             <heading>
