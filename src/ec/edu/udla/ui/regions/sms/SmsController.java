@@ -3,6 +3,7 @@ package ec.edu.udla.ui.regions.sms;
 import ec.edu.udla.arduino.comunicacion.ComunicadorPuertoSerial;
 import ec.edu.udla.arduino.sms.domain.Sms;
 import ec.edu.udla.arduino.sms.service.ServicioEnvioSms;
+import ec.edu.udla.ui.regions.AbstractController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
@@ -13,7 +14,7 @@ import java.util.Observer;
 /**
  * Created by moe on 5/4/16.
  */
-public class SmsController{
+public class SmsController extends AbstractController{
 
     @FXML
     private TextField destinatatio;

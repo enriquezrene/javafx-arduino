@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import org.kordamp.bootstrapfx.scene.layout.Panel?>
+<?import javafx.scene.control.Label?>
+<GridPane fx:id="gridPane" hgap="15" vgap="7"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="ec.edu.udla.ui.regions.help.HelpController">
+
+    <padding>
+        <Insets top="20" right="40" bottom="20" left="40"/>
+    </padding>
+
+
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <Panel styleClass="panel-primary">
+
+            <heading>
+                <Label styleClass="h3" text="Ayuda"/>
+            </heading>
+            <body>
+                <GridPane hgap="15" vgap="7">
+                    <WebView fx:id="myWebView"/>
+                </GridPane>
+            </body>
+        </Panel>
+    </VBox>
+
+</GridPane>
