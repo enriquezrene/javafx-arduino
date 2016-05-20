@@ -1,6 +1,7 @@
 package ec.edu.udla.ui.regions.arduinointegration;
 
 import ec.edu.udla.arduino.comunicacion.ComunicadorPuertoSerial;
+import ec.edu.udla.arduino.listener.ModoOnlineListener;
 import ec.edu.udla.arduino.parser.LecturaGlucometroArduino;
 import ec.edu.udla.domain.LecturaGlucometro;
 import ec.edu.udla.domain.dao.PacienteDao;
@@ -124,6 +125,7 @@ public class ConexionArduinoController extends AbstractController implements Ini
 //                            container.mostrarBarraDeMenu();
                             limpiarInformacionDelArduino();
                             ponerArduinoEnModoOnline();
+                            ComunicadorPuertoSerial.obtenerInstancia().addObservers(ModoOnlineListener.getInstance());
                             container.setCurrentScreen(MainApp.PANTALLA_DATOS_PACIENTE);
                         }
                     });
@@ -147,6 +149,11 @@ public class ConexionArduinoController extends AbstractController implements Ini
     }
 
     private void ponerArduinoEnModoOnline() {
+        try {
+            Thread.sleep(5000L);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto("A");
     }
 
