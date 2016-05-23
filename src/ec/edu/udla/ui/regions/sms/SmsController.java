@@ -9,8 +9,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-import java.util.Observer;
-
 /**
  * Created by moe on 5/4/16.
  */

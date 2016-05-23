@@ -1,6 +1,15 @@
 package ec.edu.udla.ui.regions.custom;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collections;
+import java.util.Date;
+import java.util.List;
+
 import com.sun.javafx.charts.ChartLayoutAnimator;
+
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.beans.property.LongProperty;
@@ -10,10 +19,6 @@ import javafx.beans.property.SimpleLongProperty;
 import javafx.scene.chart.Axis;
 import javafx.util.Duration;
 import javafx.util.StringConverter;
-
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.*;
 
 /**
  * Created by rene on 05/05/16.
