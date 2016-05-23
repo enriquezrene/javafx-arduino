@@ -188,5 +188,6 @@
     </orderEntry>
     <orderEntry type="library" name="controlsfx-8.40.10" level="project" />
     <orderEntry type="library" name="xmlworker-5.5.9" level="project" />
+    <orderEntry type="library" name="poi-3.14" level="project" />
   </component>
 </module>

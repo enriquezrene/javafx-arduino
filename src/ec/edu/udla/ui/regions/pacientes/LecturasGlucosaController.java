@@ -8,7 +8,6 @@ import ec.edu.udla.reportes.ReporteLecturaGlucometro;
 import ec.edu.udla.ui.regions.AbstractController;
 import ec.edu.udla.ui.regions.custom.DateAxis;
 import javafx.application.HostServices;
-import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
@@ -111,6 +110,27 @@ public class LecturasGlucosaController extends AbstractController implements Ini
             @Override public File call() {
                 try {
                     File file = new ReporteLecturaGlucometro(lecturas.getItems(), paciente.getFullName()).getReporteAsPDF();
+                    hostServices.showDocument(file.toURI().toURL().toExternalForm());
+                    return file;
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                return null;
+            }
+        };
+
+        task.setOnRunning((e) -> {loading.setVisible(true); loading.setManaged(true);});
+        task.setOnSucceeded((e) -> {loading.setVisible(false); loading.setManaged(false);});
+        task.setOnFailed((e) -> {loading.setVisible(false); loading.setManaged(false);});
+        new Thread(task).start();
+    }
+
+    public void exportarXls(ActionEvent actionEvent) {
+        HostServices hostServices = this.container.getHostServices();
+        Task<File> task = new Task<File>() {
+            @Override public File call() {
+                try {
+                    File file = new ReporteLecturaGlucometro(lecturas.getItems(), paciente.getFullName()).getFilasAsExcelFile();
                     hostServices.showDocument(file.toURI().toURL().toExternalForm());
                     return file;
                 } catch (Exception e) {

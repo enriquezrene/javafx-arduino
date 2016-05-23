@@ -10,6 +10,10 @@ public class LecturaGlucometro extends PojoBase{
 	private int idPaciente;
 	private String cedulaPaciente;
 
+	public LecturaGlucometro(){
+		setFecha(new Date());
+	}
+
 	public void printInfo(){
 		System.out.println(cedulaPaciente);
 		System.out.println(estado);

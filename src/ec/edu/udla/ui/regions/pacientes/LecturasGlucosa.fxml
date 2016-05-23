@@ -36,6 +36,8 @@
                                         onAction="#filtrar"/>
                                 <Button text="Exportar como PDF"
                                         onAction="#exportar"/>
+                                <Button text="Exportar como Excel"
+                                        onAction="#exportarXls"/>
                             </HBox>
                         </GridPane>
                         <StackPane fx:id="chartPane" GridPane.hgrow="ALWAYS" GridPane.columnIndex="0"
