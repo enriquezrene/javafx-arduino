@@ -26,5 +26,6 @@
 	<classpathentry kind="lib" path="externalLibs/itext-pdfa-5.5.9.jar"/>
 	<classpathentry kind="lib" path="externalLibs/itext-xtra-5.5.9.jar"/>
 	<classpathentry kind="lib" path="externalLibs/itextpdf-5.5.9.jar"/>
+	<classpathentry kind="lib" path="externalLibs/poi-3.14.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

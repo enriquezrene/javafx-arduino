@@ -1,13 +1,12 @@
 package ec.edu.udla.domain.dao;
 
-import ec.edu.udla.domain.LecturaGlucometro;
-import ec.edu.udla.domain.Paciente;
-import ec.edu.udla.domain.PojoBase;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
-
 import java.sql.Types;
 import java.util.List;
+
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+
+import ec.edu.udla.domain.LecturaGlucometro;
+import ec.edu.udla.domain.PojoBase;
 
 /**
  * Created by rene on 09/05/16.
@@ -34,6 +33,6 @@ public class LecturaGlucometroDao extends AbstractDao {
 
     @Override
     public void update(PojoBase entidad) {
-        throw new NotImplementedException();
+//        throw new NotImplementedException();
     }
 }
