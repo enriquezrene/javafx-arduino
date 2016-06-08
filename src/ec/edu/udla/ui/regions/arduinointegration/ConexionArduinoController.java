@@ -42,8 +42,8 @@ public class ConexionArduinoController extends AbstractController implements Ini
     @FXML
     private Button btnLeerInformacion, botonConectar, btnCerrarConexion;
 
-    @FXML
-    private ImageView loading;
+//    @FXML
+//    private ImageView loading;
 
     private PacienteDao pacienteDao;
 
@@ -55,7 +55,7 @@ public class ConexionArduinoController extends AbstractController implements Ini
             indiceDelRegistroProcesado = 1;
             btnLeerInformacion.setText("Procesar informacion en la posicion: " + indiceDelRegistroProcesado);
             ComunicadorPuertoSerial.obtenerInstancia().configurarConexion(puertosSeriales.getValue().toString());
-            loading.setVisible(true);
+//            loading.setVisible(true);
             ComunicadorPuertoSerial.obtenerInstancia().addObservers(this);
             desactivarBotones(botonConectar);
         } catch (Exception e) {
@@ -83,7 +83,7 @@ public class ConexionArduinoController extends AbstractController implements Ini
         textoArduino.setDisable(true);
         ComunicadorPuertoSerial.obtenerInstancia().asignarCampoParaEscribirSalida(textoArduino);
         desactivarBotones(btnLeerInformacion, btnCerrarConexion);
-        loading.setVisible(false);
+//        loading.setVisible(false);
         pacienteDao = new PacienteDao();
         btnLeerInformacion.setText("Procesar informacion en la posicion: " + indiceDelRegistroProcesado);
     }
@@ -93,11 +93,11 @@ public class ConexionArduinoController extends AbstractController implements Ini
         if (texto != null) {
             System.out.println(texto);
             if (texto.toString().contains("Fin")) {
-                loading.setVisible(false);
+//                loading.setVisible(false);
                 btnLeerInformacion.setDisable(false);
                 btnCerrarConexion.setDisable(false);
             } else if (!texto.toString().contains("Inicializa")) {
-                loading.setVisible(false);
+//                loading.setVisible(false);
                 if (texto.toString().trim().length() < 25) {
                     Platform.runLater(() -> {
                         Alert dialog = LoginController.buildDialog(Alert.AlertType.CONFIRMATION, "Toda la informacion ha sido procesada exitosamente, desea intentar reprocesar?", "Informacion");
@@ -168,12 +168,12 @@ public class ConexionArduinoController extends AbstractController implements Ini
 
     private void desactivarBotones(Button... buttons) {
         for (int j = 0; j < buttons.length; j++) {
-            buttons[j].setDisable(true);
+//            buttons[j].setDisable(true);
         }
     }
 
     public void leerInformacion(ActionEvent event) throws InterruptedException {
-        loading.setVisible(true);
+//        loading.setVisible(true);
         ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto(indiceDelRegistroProcesado++ + "");
         btnLeerInformacion.setText("Procesar informacion en la posicion: " + indiceDelRegistroProcesado);
     }

@@ -11,22 +11,17 @@ public class ServicioEnvioSms implements Observer {
     public static final String NOTIFICACION_LUEGO_COMANDO_ARDUINO = "celular";
     public static final String NOTIFICACION_LUEGO_DESTINATARIO = "caracteres";
     public static final String NOTIFICACION_LUEGO_LONGITUD = "Ingrese";
-    public boolean enProceso;
     private Sms sms;
 
     public ServicioEnvioSms() {
-        enProceso = false;
         ComunicadorPuertoSerial.obtenerInstancia().addObservers(this);
     }
 
     public void enviarMensaje(Sms sms, ComunicadorPuertoSerial comunicadorPuertoSerial) {
-        if (enProceso) {
-            throw new RuntimeException("En proceso...");
-        } else {
-            this.sms = sms;
-            comunicadorPuertoSerial.enviarCadenaDeTexto(sms.comandoArduino());
-            enProceso = true;
-        }
+
+        this.sms = sms;
+        comunicadorPuertoSerial.enviarCadenaDeTexto(sms.comandoArduino());
+
     }
 
     @Override
@@ -37,19 +32,27 @@ public class ServicioEnvioSms implements Observer {
         }
         if (text.toString().contains(NOTIFICACION_LUEGO_COMANDO_ARDUINO)) {
             System.out.println("Recibido notificacion llego comando");
-            for (int i = 0; i < sms.getDestinatario().length(); i++) {
-                ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto(sms.getDestinatario().substring(i, i + 1));
-            }
+            ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto(sms.getDestinatario());
         } else if (text.toString().contains(NOTIFICACION_LUEGO_DESTINATARIO)) {
             System.out.println("Recibido notificacion llego destinatario");
-            ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto(String.valueOf(sms.getContenido().length()));
+            ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto("0");
+            try {
+                Thread.sleep(1000L);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto("9");
+            try {
+                Thread.sleep(1000L);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto("9");
         } else if (text.toString().contains(NOTIFICACION_LUEGO_LONGITUD)) {
             System.out.println("Recibido notificacion llego LONGITUD");
-            for (int i = 0; i < sms.getContenido().length(); i++) {
-                ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto(sms.getContenido().substring(i, i + 1));
-            }
+            ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto(sms.getContenido());
             System.out.println("ENVIO REALIZADO");
-            enProceso = false;
+            ComunicadorPuertoSerial.obtenerInstancia().removeObservers(this);
         }
     }
 }

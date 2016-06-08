@@ -42,16 +42,17 @@ public class Sms {
 			int longitudActual = contenido.length();
 			StringBuilder contenidoConTamanioDeseado = new StringBuilder(contenido);
 
-			if (longitudActual < 100) {
-				int longitudRestantePara100 = 100 - longitudActual;
+			int MAX_LONGITUD = 100;
+			if (longitudActual < MAX_LONGITUD) {
+				int longitudRestantePara100 = MAX_LONGITUD - longitudActual;
 				StringBuilder cadenaVaciaNecesariaParaCompletar = new StringBuilder();
 				while (cadenaVaciaNecesariaParaCompletar.length() < longitudRestantePara100) {
 					cadenaVaciaNecesariaParaCompletar.append("_");
 				}
 				contenidoConTamanioDeseado.insert(longitudActual, cadenaVaciaNecesariaParaCompletar);
 
-			} else if (longitudActual > 100) {
-				contenidoConTamanioDeseado.setLength(100);
+			} else if (longitudActual > MAX_LONGITUD) {
+				contenidoConTamanioDeseado.setLength(MAX_LONGITUD);
 			}
 			sms.contenido = contenidoConTamanioDeseado.toString();
 			return this;

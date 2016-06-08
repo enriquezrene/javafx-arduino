@@ -36,11 +36,11 @@
                             GridPane.columnIndex="4" GridPane.rowIndex="1"/>
                     <TextArea fx:id="textoArduino" GridPane.columnIndex="0" visible="false"
                               GridPane.columnSpan="3" GridPane.rowIndex="3"/>
-                    <ImageView fx:id="loading">
+                    <!--ImageView fx:id="loading">
                         <image>
                             <Image url="loading.gif"/>
                         </image>
-                    </ImageView>
+                    </ImageView-->
                 </GridPane>
             </body>
         </Panel>
