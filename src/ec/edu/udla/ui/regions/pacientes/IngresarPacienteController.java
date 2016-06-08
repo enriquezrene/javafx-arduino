@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import ec.edu.udla.arduino.listener.ModoOnlineListener;
 import ec.edu.udla.domain.Paciente;
 import ec.edu.udla.domain.dao.PacienteDao;
 import ec.edu.udla.domain.util.Context;
@@ -58,6 +59,7 @@ public class IngresarPacienteController extends AbstractController implements In
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         createTable();
+        ModoOnlineListener.getInstance().setTable(pacientes);
     }
 
     private TableView<Paciente> createTable() {

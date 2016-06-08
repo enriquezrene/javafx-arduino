@@ -2,8 +2,10 @@ package ec.edu.udla.arduino.listener;
 
 import ec.edu.udla.arduino.parser.LecturaGlucometroArduino;
 import ec.edu.udla.domain.LecturaGlucometro;
+import ec.edu.udla.domain.Paciente;
 import ec.edu.udla.domain.dao.PacienteDao;
 import javafx.application.Platform;
+import javafx.scene.control.TableView;
 import org.controlsfx.control.Notifications;
 
 import java.util.Observable;
@@ -15,8 +17,13 @@ import java.util.Observer;
 public class ModoOnlineListener implements Observer {
 
     PacienteDao pacienteDao;
+    TableView<Paciente> pacientes;
 
     private static ModoOnlineListener instance;
+
+    public void setTable(TableView<Paciente> pacientes){
+        this.pacientes = pacientes;
+    }
 
     public static ModoOnlineListener getInstance() {
         if (instance == null) {
@@ -39,6 +46,7 @@ public class ModoOnlineListener implements Observer {
         LecturaGlucometro lecturaGlucometro = new LecturaGlucometroArduino(cadenaArduino).obtenerObjeto();
         pacienteDao.registrarLectura(lecturaGlucometro);
         mostrarNotificacion(lecturaGlucometro);
+        pacientes.refresh();
     }
 
     void mostrarNotificacion(LecturaGlucometro lecturaGlucometro) {
