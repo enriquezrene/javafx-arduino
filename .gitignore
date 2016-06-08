@@ -1,6 +1,6 @@
 bin
 .classpath
 .project
-.settings
-.idea/workspace.xml
+.settings/
 docs/*.pdf
+.idea/
