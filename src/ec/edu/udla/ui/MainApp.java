@@ -70,7 +70,7 @@ public class MainApp extends Application {
             }
         });
 
-        menuInicio.getItems().addAll(opcionIngresarPacientes, opcionAdministrarUsuarios, opcionAyuda /*, opcionLeerInformacionArduino, opcionEnvioSms*/);
+        menuInicio.getItems().addAll(opcionIngresarPacientes, opcionAdministrarUsuarios, opcionAyuda, opcionEnvioSms /*, opcionLeerInformacionArduino, opcionEnvioSms*/);
 
 
 

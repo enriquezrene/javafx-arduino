@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="094d9106-6fa6-4749-b1a5-5e95a6dfbdc8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/arduino/sms/domain/Sms.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/arduino/sms/domain/Sms.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/arduino/sms/service/ServicioEnvioSms.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/arduino/sms/service/ServicioEnvioSms.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java" />
-    </list>
+    <list default="true" id="094d9106-6fa6-4749-b1a5-5e95a6dfbdc8" name="Default" comment="" />
     <ignored path="arduino.client.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -30,7 +25,7 @@
       <file leaf-file-name="ConexionArduino.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.886792">
+            <state vertical-scroll-proportion="0.0">
               <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
               <folding />
             </state>
@@ -66,7 +61,7 @@
       <file leaf-file-name="ServicioEnvioSms.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/arduino/sms/service/ServicioEnvioSms.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.7281106">
+            <state vertical-scroll-proportion="0.9556213">
               <caret line="54" column="77" selection-start-line="54" selection-start-column="77" selection-end-line="54" selection-end-column="77" />
               <folding>
                 <element signature="e#543#544#0" expanded="true" />
@@ -1173,7 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="64" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1188,7 +1182,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -1199,9 +1192,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1209,7 +1199,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="133" column="32" selection-start-line="133" selection-start-column="32" selection-end-line="133" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1233,7 +1222,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.886792">
+        <state vertical-scroll-proportion="0.0">
           <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
           <folding />
         </state>
@@ -1263,7 +1252,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/arduino/sms/service/ServicioEnvioSms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7281106">
+        <state vertical-scroll-proportion="0.9556213">
           <caret line="54" column="77" selection-start-line="54" selection-start-column="77" selection-end-line="54" selection-end-column="77" />
           <folding>
             <element signature="e#543#544#0" expanded="true" />
