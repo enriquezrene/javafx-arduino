@@ -41,13 +41,13 @@ public class ServicioEnvioSms implements Observer {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto("9");
+            ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto("7");
             try {
                 Thread.sleep(1000L);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto("9");
+            ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto("1");
         } else if (text.toString().contains(NOTIFICACION_LUEGO_LONGITUD)) {
             System.out.println("Recibido notificacion llego LONGITUD");
             ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto(sms.getContenido());
