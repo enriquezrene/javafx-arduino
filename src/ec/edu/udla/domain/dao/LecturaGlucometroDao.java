@@ -27,7 +27,7 @@ public class LecturaGlucometroDao extends AbstractDao {
                 + "values (?, ?, ?, ?)";
         Object[] params = new Object[]{lectura.getIdPaciente(), lectura.getValor(), lectura.getFecha(),
                 lectura.getEstado()};
-        int[] types = new int[]{Types.NUMERIC, Types.VARCHAR, Types.DATE, Types.VARCHAR};
+        int[] types = new int[]{Types.NUMERIC, Types.VARCHAR, Types.TIMESTAMP, Types.VARCHAR};
         conexion.getJdbcTemplate().update(sql, params, types);
     }
 
