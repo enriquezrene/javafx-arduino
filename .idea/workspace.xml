@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="094d9106-6fa6-4749-b1a5-5e95a6dfbdc8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/domain/LecturaGlucometro.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/domain/LecturaGlucometro.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/domain/EstadoPacienteEnLaLectura.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/domain/EstadoPacienteEnLaLectura.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPaciente.fxml" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPaciente.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPacienteController.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPacienteController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ec/edu/udla/arduino/parser/FechaHexadecimalTest.java" afterPath="$PROJECT_DIR$/test/ec/edu/udla/arduino/parser/FechaHexadecimalTest.java" />
     </list>
     <ignored path="arduino.client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,30 +31,38 @@
       <file leaf-file-name="LecturasGlucosaController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="91" column="78" selection-start-line="91" selection-start-column="78" selection-end-line="91" selection-end-column="78" />
+            <state relative-caret-position="533">
+              <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LecturaGlucometro.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LecturaGlucometro.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/LecturaGlucometro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="21" column="92" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="92" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="144">
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java">
+      <file leaf-file-name="EstadoPacienteEnLaLectura.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/EstadoPacienteEnLaLectura.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IngresarPacienteController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPacienteController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -117,8 +126,11 @@
         <option value="$PROJECT_DIR$/src/ec/edu/udla/arduino/sms/service/ServicioEnvioSms.java" />
         <option value="$PROJECT_DIR$/test/ec/edu/udla/arduino/parser/FechaHexadecimalTest.java" />
         <option value="$PROJECT_DIR$/test/ec/edu/udla/domain/dao/LecturaGlucometroDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/domain/LecturaGlucometro.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPaciente.fxml" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPacienteController.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/domain/EstadoPacienteEnLaLectura.java" />
       </list>
     </option>
   </component>
@@ -159,6 +171,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -355,14 +368,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="LG&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/domain/LecturaGlucometro.java&#10;MA&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/MainApp.java&#10;Lectur.fx&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosa.fxml&#10;LGD&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/domain/dao/LecturaGlucometroDao.java&#10;FHTes&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/test/ec/edu/udla/arduino/parser/FechaHexadecimalTest.java&#10;Serv&#9;PSI&#9;JAVA://ec.edu.udla.arduino.sms.service.ServicioEnvioSms&#10;MApp.&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/MainApp.java&#10;LC&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/LoginController.java&#10;LG.fx&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosa.fxml&#10;*.css&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/style.css&#10;LoginC.java&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/login/LoginController.java&#10;CA.f&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml&#10;LGC&#9;PSI&#9;JAVA://ec.edu.udla.ui.regions.pacientes.LecturasGlucosaController&#10;Login&#9;PSI&#9;JAVA://ec.edu.udla.ui.regions.login.LoginController" />
+    <property name="SearchEverywhereHistoryKey" value="IPC&#9;PSI&#9;JAVA://ec.edu.udla.ui.regions.pacientes.IngresarPacienteController&#10;LG&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/domain/LecturaGlucometro.java&#10;MA&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/MainApp.java&#10;Lectur.fx&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosa.fxml&#10;LGD&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/domain/dao/LecturaGlucometroDao.java&#10;FHTes&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/test/ec/edu/udla/arduino/parser/FechaHexadecimalTest.java&#10;Serv&#9;PSI&#9;JAVA://ec.edu.udla.arduino.sms.service.ServicioEnvioSms&#10;MApp.&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/MainApp.java&#10;LC&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/login/LoginController.java&#10;LG.fx&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosa.fxml&#10;*.css&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/style.css&#10;LoginC.java&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/login/LoginController.java&#10;CA.f&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml&#10;LGC&#9;PSI&#9;JAVA://ec.edu.udla.ui.regions.pacientes.LecturasGlucosaController&#10;Login&#9;PSI&#9;JAVA://ec.edu.udla.ui.regions.login.LoginController" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -879,30 +891,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/help/help.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="73" column="100" selection-start-line="73" selection-start-column="100" selection-end-line="73" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/help/help.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPaciente.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1104,16 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPaciente.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/help/help.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1169,7 +1147,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
           <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1177,7 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2700">
           <caret line="172" column="5" selection-start-line="172" selection-start-column="5" selection-end-line="172" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1185,7 +1161,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="864">
           <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1193,7 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1201,7 +1175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1217,7 +1190,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1225,7 +1197,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="30" column="135" selection-start-line="29" selection-start-column="8" selection-end-line="30" selection-end-column="135" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1242,16 +1213,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
+        <state relative-caret-position="540">
           <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="91" column="78" selection-start-line="91" selection-start-column="78" selection-end-line="91" selection-end-column="78" />
           <folding />
         </state>
       </provider>
@@ -1260,7 +1223,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="590" column="20" selection-start-line="590" selection-start-column="14" selection-end-line="590" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1268,17 +1230,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
           <caret line="1371" column="4" selection-start-line="1371" selection-start-column="4" selection-end-line="1371" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/AbstractController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPaciente.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPacienteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/LecturaGlucometro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="21" column="92" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="144">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/domain/EstadoPacienteEnLaLectura.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

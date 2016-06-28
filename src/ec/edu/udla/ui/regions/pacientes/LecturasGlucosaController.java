@@ -88,8 +88,9 @@ public class LecturasGlucosaController extends AbstractController implements Ini
     private TableView<LecturaGlucometro> createTable(List<LecturaGlucometro> lecturasGlucometro) {
         this.lecturas.setItems(FXCollections.observableArrayList(lecturasGlucometro));
         lecturas.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
-        addColumnToTable(createColumn("Valor", "valor", 50), lecturas);
-        addColumnToTable(createColumn("Fecha de la medicion", "fechaFormateada", 50), lecturas);
+        addColumnToTable(createColumn("Valor", "valor", 30), lecturas);
+        addColumnToTable(createColumn("Fecha de la medicion", "fechaFormateada", 40), lecturas);
+        addColumnToTable(createColumn("Ayunas/Con comida", "estado", 40), lecturas);
         return lecturas;
     }
 
