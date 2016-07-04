@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.bootstrapfx.scene.layout.Panel?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<GridPane fx:id="gridPane" hgap="15" vgap="3"
+          xmlns:fx="http://javafx.com/fxml" fx:controller="ec.edu.udla.ui.regions.offline.LecturasOfflineController">
+
+    <padding>
+        <Insets top="20" right="40" bottom="20" left="40"/>
+    </padding>
+
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0" spacing="10">
+        <Button onAction="#atras" style="-fx-background-color: transparent; -fx-padding: 4;" styleClass="none">
+            <graphic>
+                <ImageView>
+                    <Image url="@../back.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Panel styleClass="panel-primary">
+            <heading>
+                <Label styleClass="h3" text="Lecturas de glucosa off-line"/>
+            </heading>
+            <body>
+
+            </body>
+        </Panel>
+    </VBox>
+    <StackPane GridPane.hgrow="ALWAYS" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <TableView fx:id="lecturas"/>
+    </StackPane>
+
+</GridPane>

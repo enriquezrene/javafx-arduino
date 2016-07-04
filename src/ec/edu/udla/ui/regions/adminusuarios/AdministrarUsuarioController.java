@@ -5,6 +5,7 @@ import java.util.ResourceBundle;
 
 import ec.edu.udla.domain.Usuario;
 import ec.edu.udla.domain.dao.UsuarioDao;
+import ec.edu.udla.ui.regions.AbstractController;
 import ec.edu.udla.ui.regions.DrawableRegion;
 import ec.edu.udla.ui.regions.RegionsContainer;
 import javafx.collections.FXCollections;
@@ -19,7 +20,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 
-public class AdministrarUsuarioController implements Initializable, DrawableRegion {
+public class AdministrarUsuarioController extends AbstractController implements Initializable, DrawableRegion {
 
 	protected RegionsContainer container;
 	private UsuarioDao usuarioDao;
@@ -67,11 +68,6 @@ public class AdministrarUsuarioController implements Initializable, DrawableRegi
 	}
 
 	@Override
-	public void setContainer(RegionsContainer container) {
-		this.container = container;
-	}
-
-	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		createTable();
 	}
@@ -109,9 +105,9 @@ public class AdministrarUsuarioController implements Initializable, DrawableRegi
 		return usuarios;
 	}
 
-	private void addColumnToTable(TableColumn<Usuario, String> column, TableView<Usuario> table) {
-		table.getColumns().add(column);
-	}
+//	void addColumnToTable(TableColumn<Usuario, String> column, TableView<Usuario> table) {
+//		table.getColumns().add(column);
+//	}
 
 	private TableColumn<Usuario, String> createColumn(String columnHeader, String fieldName) {
 		TableColumn<Usuario, String> column = new TableColumn<>(columnHeader);

@@ -16,7 +16,14 @@
         <Insets top="20" right="40" bottom="20" left="40"/>
     </padding>
 
-    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0">
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0" spacing="10">
+        <Button onAction="#atras" style="-fx-background-color: transparent; -fx-padding: 4;" styleClass="none">
+            <graphic>
+                <ImageView>
+                    <Image url="@../back.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
         <Panel styleClass="panel-primary">
             <heading>
                 <Label styleClass="h3" text="Lecturas de glucosa"/>

@@ -4,6 +4,7 @@ import java.sql.Types;
 import java.util.Date;
 import java.util.List;
 
+import ec.edu.udla.domain.LecturaOffLine;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
@@ -102,6 +103,18 @@ public class PacienteDao extends AbstractDao {
         return paciente;
     }
 
+    public Paciente buscarPacientePorId(int id) {
+        String sql = "SELECT * FROM paciente WHERE id = ?";
+        Object[] params = new Object[]{id};
+        Paciente paciente = null;
+        try {
+            paciente = conexion.getJdbcTemplate().queryForObject(sql, params, new BeanPropertyRowMapper<>(Paciente.class));
+        } catch (EmptyResultDataAccessException e) {
+            paciente = Paciente.NEW;
+        }
+        return paciente;
+    }
+
     public void registrarLectura(LecturaGlucometro lectura) {
         Paciente paciente = buscarPacientePorCedula(lectura.getCedulaPaciente());
         int id = paciente.getId();
@@ -111,6 +124,18 @@ public class PacienteDao extends AbstractDao {
         }
         lectura.setIdPaciente(id);
         lecturaGlucometroDao.save(lectura);
+    }
+
+    public void registrarLecturaOffLine(LecturaGlucometro lectura) {
+        Paciente paciente = buscarPacientePorCedula(lectura.getCedulaPaciente());
+        int id = paciente.getId();
+        if (paciente.equals(Paciente.NEW)) {
+            paciente.setCedula(lectura.getCedulaPaciente());
+            id = saveAndGetId(paciente);
+        }
+        lectura.setIdPaciente(id);
+        LecturaOffLine lecturaOffLine = new LecturaOffLine.Buider().fromLecturaGlucosa(lectura);
+        new LecturaOffLineDao().save(lecturaOffLine);
     }
 
     public void setLecturaGlucometroDao(LecturaGlucometroDao lecturaGlucometroDao) {

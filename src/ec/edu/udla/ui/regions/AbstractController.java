@@ -13,6 +13,12 @@ public abstract class AbstractController implements DrawableRegion {
         table.getColumns().add(column);
     }
 
+    public void atras(){
+        if(container.getPantallasVisitadas().size()>1){
+            container.setCurrentScreen(container.getPantallasVisitadas().get(1));
+        }
+    }
+
     protected TableColumn createColumn(String columnHeader, String fieldName, int ancho) {
         TableColumn column = new TableColumn<>(columnHeader);
         column.setCellValueFactory(new PropertyValueFactory<>(fieldName));

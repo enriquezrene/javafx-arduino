@@ -2,7 +2,9 @@ package ec.edu.udla.ui.regions;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import javafx.application.HostServices;
 import javafx.fxml.FXMLLoader;
@@ -19,9 +21,12 @@ public class RegionsContainer extends BorderPane {
 	private HashMap<String, Node> screens;
 	private MenuBar barraDeMenu;
 	private Stage primaryStage;
+    private List<String> pantallasVisitadas;
+
 
 	public RegionsContainer() {
 		super();
+        this.pantallasVisitadas = new ArrayList<>();
 		screens = new HashMap<>();
 		barraDeMenu = new MenuBar();
 	}
@@ -56,8 +61,13 @@ public class RegionsContainer extends BorderPane {
 		addScreen(name, screenToLoad);
 	}
 
-	public void setCurrentScreen(final String name) {
-		this.setCenter(screens.get(name));
+    public List<String> getPantallasVisitadas() {
+        return pantallasVisitadas;
+    }
+
+    public void setCurrentScreen(final String name) {
+		this.pantallasVisitadas.add(0, name);
+        this.setCenter(screens.get(name));
 	}
 
 	// This method will remove the screen with the given name from the

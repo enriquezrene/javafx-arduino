@@ -65,7 +65,6 @@ public class IngresarPacienteController extends AbstractController implements In
     private TableView<Paciente> createTable() {
 
         pacientes.setItems(FXCollections.observableArrayList(pacienteDao.findAll()));
-//        pacientes.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         addColumnToTable(createColumn("Nombre", "nombre", 25), pacientes);
         addColumnToTable(createColumn("Apellido", "apellido", 25), pacientes);
         addColumnToTable(createColumn("Id del paciente", "cedula", 25), pacientes);

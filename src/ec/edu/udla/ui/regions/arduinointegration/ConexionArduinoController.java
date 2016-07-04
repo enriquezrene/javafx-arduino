@@ -42,9 +42,6 @@ public class ConexionArduinoController extends AbstractController implements Ini
     @FXML
     private Button btnLeerInformacion, botonConectar, btnCerrarConexion;
 
-//    @FXML
-//    private ImageView loading;
-
     private PacienteDao pacienteDao;
 
     private int indiceDelRegistroProcesado = 1;
@@ -55,7 +52,6 @@ public class ConexionArduinoController extends AbstractController implements Ini
             indiceDelRegistroProcesado = 1;
             btnLeerInformacion.setText("Procesar informacion en la posicion: " + indiceDelRegistroProcesado);
             ComunicadorPuertoSerial.obtenerInstancia().configurarConexion(puertosSeriales.getValue().toString());
-//            loading.setVisible(true);
             ComunicadorPuertoSerial.obtenerInstancia().addObservers(this);
             desactivarBotones(botonConectar);
         } catch (Exception e) {
@@ -83,7 +79,6 @@ public class ConexionArduinoController extends AbstractController implements Ini
         textoArduino.setDisable(true);
         ComunicadorPuertoSerial.obtenerInstancia().asignarCampoParaEscribirSalida(textoArduino);
         desactivarBotones(btnLeerInformacion, btnCerrarConexion);
-//        loading.setVisible(false);
         pacienteDao = new PacienteDao();
         btnLeerInformacion.setText("Procesar informacion en la posicion: " + indiceDelRegistroProcesado);
     }
@@ -93,11 +88,9 @@ public class ConexionArduinoController extends AbstractController implements Ini
         if (texto != null) {
             System.out.println(texto);
             if (texto.toString().contains("Fin")) {
-//                loading.setVisible(false);
                 btnLeerInformacion.setDisable(false);
                 btnCerrarConexion.setDisable(false);
             } else if (!texto.toString().contains("Inicializa")) {
-//                loading.setVisible(false);
                 if (texto.toString().trim().length() < 25) {
                     Platform.runLater(() -> {
                         Alert dialog = LoginController.buildDialog(Alert.AlertType.CONFIRMATION, "Toda la informacion ha sido procesada exitosamente, desea intentar reprocesar?", "Informacion");
@@ -122,7 +115,6 @@ public class ConexionArduinoController extends AbstractController implements Ini
                             }
                         } else {
                             System.out.println("NO REPROCESAR");
-//                            container.mostrarBarraDeMenu();
                             limpiarInformacionDelArduino();
                             ponerArduinoEnModoOnline();
                             ComunicadorPuertoSerial.obtenerInstancia().addObservers(ModoOnlineListener.getInstance());
@@ -132,7 +124,9 @@ public class ConexionArduinoController extends AbstractController implements Ini
                 } else {
                     try {
                         LecturaGlucometro lecturaGlucometro = extraerInformacion(texto.toString().trim().substring(20).trim());
+
                         pacienteDao.registrarLectura(lecturaGlucometro);
+                        pacienteDao.registrarLecturaOffLine(lecturaGlucometro);
                         Platform.runLater(() -> {
                             Notifications.create().title("Informacion guardada").text("La información ha sido registrada exitosamente").showInformation();
                         });

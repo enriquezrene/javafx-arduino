@@ -33,3 +33,16 @@ CREATE TABLE lectura_glucometro(
 
 insert into lectura_glucometro (id_paciente, valor, fecha, estado) values
 (1, '54.50', '10/05/2015', 'AYUNAS');
+
+
+CREATE TABLE lectura_offline(
+   id  SERIAL PRIMARY KEY,
+   id_paciente  INTEGER,
+   valor TEXT,
+   fecha TIMESTAMP,
+   estado TEXT,
+   insercion TIMESTAMP
+);
+
+insert into lectura_offline (id_paciente, valor, fecha, estado) values
+(1, '54.50', '10/05/2015', 'AYUNAS');

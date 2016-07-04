@@ -8,6 +8,7 @@ import ec.edu.udla.ui.regions.arduino.LeerInformacionArduinoController;
 import ec.edu.udla.ui.regions.arduinointegration.ConexionArduinoController;
 import ec.edu.udla.ui.regions.help.HelpController;
 import ec.edu.udla.ui.regions.login.LoginController;
+import ec.edu.udla.ui.regions.offline.LecturasOfflineController;
 import ec.edu.udla.ui.regions.pacientes.IngresarPacienteController;
 import ec.edu.udla.ui.regions.sms.SmsController;
 import javafx.application.Application;
@@ -32,6 +33,7 @@ public class MainApp extends Application {
     public static final String PANTALLA_MEDIDAS_GLUCOSA = "LecturasGlucosa.fxml";
     public static final String PANTALLA_CONEXION_ARDUINO = "ConexionArduino.fxml";
     public static final String PANTALLA_AYUDA = "help.fxml";
+    public static final String PANTALLA_OFFLINE = "LecturasOffLine.fxml";
 
     private RegionsContainer mainContainer;
 
@@ -47,6 +49,7 @@ public class MainApp extends Application {
         Menu menuInicio = new Menu("Inicio");
         MenuItem opcionIngresarPacientes = crearItemDeMenu("Pacientes", PANTALLA_DATOS_PACIENTE);
         MenuItem opcionAdministrarUsuarios = crearItemDeMenu("Administrar usuarios", PANTALLA_ADMINISTRACION_USUARIOS);
+        MenuItem opcioneOffline = crearItemDeMenu("Lecturas off-line", PANTALLA_OFFLINE);
         MenuItem opcionAyuda = crearItemDeMenu("Ayuda", PANTALLA_AYUDA);
         MenuItem opcionLeerInformacionArduino = crearItemDeMenu("Establecer conexion", PANTALLA_LEER_INFORMACION);
 
@@ -70,7 +73,7 @@ public class MainApp extends Application {
             }
         });
 
-        menuInicio.getItems().addAll(opcionIngresarPacientes, opcionAdministrarUsuarios, opcionAyuda, opcionEnvioSms /*, opcionLeerInformacionArduino, opcionEnvioSms*/);
+        menuInicio.getItems().addAll(opcionIngresarPacientes, opcionAdministrarUsuarios, opcionAyuda, opcioneOffline, opcionEnvioSms /*, opcionLeerInformacionArduino, opcionEnvioSms*/);
 
 
 
@@ -89,6 +92,7 @@ public class MainApp extends Application {
     private void cargarPantallas() throws IOException {
         mainContainer = new RegionsContainer();
 
+        mainContainer.loadScreen(PANTALLA_OFFLINE, LecturasOfflineController.class.getResource(PANTALLA_OFFLINE));
         mainContainer.loadScreen(PANTALLA_DATOS_PACIENTE,
                 IngresarPacienteController.class.getResource(PANTALLA_DATOS_PACIENTE));
         mainContainer.loadScreen(PANTALLA_LOGIN, LoginController.class.getResource(PANTALLA_LOGIN));
