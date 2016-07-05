@@ -41,8 +41,12 @@ CREATE TABLE lectura_offline(
    valor TEXT,
    fecha TIMESTAMP,
    estado TEXT,
-   insercion TIMESTAMP
+   insercion TIMESTAMP,
+   leido BOOLEAN
 );
 
-insert into lectura_offline (id_paciente, valor, fecha, estado) values
-(1, '54.50', '10/05/2015', 'AYUNAS');
+insert into lectura_offline (id_paciente, valor, fecha, estado, leido) values
+(9, '54.50', '10/05/2015', 'AYUNAS', false);
+
+insert into lectura_offline (id_paciente, valor, fecha, estado, leido) values
+(9, '54.50', '10/05/2015', 'AYUNAS', true);

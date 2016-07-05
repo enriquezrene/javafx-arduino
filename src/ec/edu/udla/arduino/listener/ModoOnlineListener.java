@@ -45,6 +45,7 @@ public class ModoOnlineListener implements Observer {
     public void procesarLectura(String cadenaArduino) {
         LecturaGlucometro lecturaGlucometro = new LecturaGlucometroArduino(cadenaArduino).obtenerObjeto();
         pacienteDao.registrarLectura(lecturaGlucometro);
+        pacienteDao.registrarLecturaOffLine(lecturaGlucometro);
         mostrarNotificacion(lecturaGlucometro);
         pacientes.refresh();
     }

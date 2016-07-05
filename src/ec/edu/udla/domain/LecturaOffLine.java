@@ -21,6 +21,16 @@ public class LecturaOffLine extends PojoBase {
     private String fechaFormateada;
     private String nombrePaciente;
 
+    public boolean isLeido() {
+        return leido;
+    }
+
+    public void setLeido(boolean leido) {
+        this.leido = leido;
+    }
+
+    private boolean leido;
+
     public String getNombrePaciente() {
         if(idPaciente!=0){
             Paciente paciente = new PacienteDao().buscarPacientePorId(idPaciente);
@@ -41,6 +51,7 @@ public class LecturaOffLine extends PojoBase {
         }
 
         public LecturaOffLine fromLecturaGlucosa(LecturaGlucometro lecturaGlucometro){
+            lecturaOffLine.setLeido(false);
             lecturaOffLine.setValor(lecturaGlucometro.getValor());
             lecturaOffLine.setFecha(lecturaGlucometro.getFecha());
             lecturaOffLine.setEstado(lecturaGlucometro.getEstado());

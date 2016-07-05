@@ -128,12 +128,7 @@ public class PacienteDao extends AbstractDao {
 
     public void registrarLecturaOffLine(LecturaGlucometro lectura) {
         Paciente paciente = buscarPacientePorCedula(lectura.getCedulaPaciente());
-        int id = paciente.getId();
-        if (paciente.equals(Paciente.NEW)) {
-            paciente.setCedula(lectura.getCedulaPaciente());
-            id = saveAndGetId(paciente);
-        }
-        lectura.setIdPaciente(id);
+        lectura.setIdPaciente(paciente.getId());
         LecturaOffLine lecturaOffLine = new LecturaOffLine.Buider().fromLecturaGlucosa(lectura);
         new LecturaOffLineDao().save(lecturaOffLine);
     }

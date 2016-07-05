@@ -5,8 +5,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import org.kordamp.bootstrapfx.scene.layout.Panel?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
 <GridPane hgap="15" vgap="7" xmlns:fx="http://javafx.com/fxml"
           fx:controller="ec.edu.udla.ui.regions.sms.SmsController">
 
