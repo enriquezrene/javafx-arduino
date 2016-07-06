@@ -39,8 +39,8 @@ public class RegionsContainer extends BorderPane {
 		this.setTop(barraDeMenu);
 	}
 
-	public void cargarOpcionesDeMenu(Menu menu) {
-		this.barraDeMenu.getMenus().add(menu);
+	public void cargarOpcionesDeMenu(Menu... menu) {
+		this.barraDeMenu.getMenus().addAll(menu);
 	}
 
 	// Add the screen to the collection

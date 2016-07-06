@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.bootstrapfx.scene.layout.Panel?>
+<GridPane hgap="15" vgap="7" xmlns:fx="http://javafx.com/fxml" fx:controller="ec.edu.udla.ui.regions.login.IntroController" style="text-align:center" alignment="CENTER">
+
+
+    <Panel GridPane.columnIndex="0" GridPane.rowIndex="1"
+           styleClass="panel-primary">
+        <heading>
+            <Label styleClass="h3" text="Sistema de monitoreo de glucosa"/>
+        </heading>
+        <body>
+            <GridPane hgap="15" vgap="7">
+                <padding>
+                    <Insets top="30" right="20" bottom="30" left="80"/>
+                </padding>
+
+                <Label text="Universidad de las americas" GridPane.columnIndex="0"
+                       GridPane.rowIndex="1" styleClass="control-label"/>
+                <Label text="Jhoanna Olmedo" GridPane.columnIndex="0"
+                       GridPane.rowIndex="2" styleClass="control-label"/>
+
+                <Label text="2016" GridPane.columnIndex="0" styleClass="label-bold"
+                       GridPane.rowIndex="3"/>
+                <Button text="OK" onAction="#motrarLogin"
+                        GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.halignment="RIGHT"/>
+            </GridPane>
+        </body>
+    </Panel>
+</GridPane>

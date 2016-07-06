@@ -45,6 +45,7 @@ public class LoginController extends AbstractController implements Initializable
 
             container.getPrimaryStage().hide();
             Stage stage = new Stage();
+            stage.setTitle("Sistema de Monitoreo de Glucosa_GluMed");
             container.getPrimaryStage().getScene().setFill(Color.WHITE);
             stage.setScene(container.getPrimaryStage().getScene());
             stage.setMaximized(true);

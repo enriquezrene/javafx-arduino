@@ -76,7 +76,7 @@ public class ReporteLecturaGlucometro {
         font.setFontHeightInPoints((short)12);
         font.setBold(true);
         style.setFont(font);
-        row.createCell(0).setCellValue("VALOR");
+        row.createCell(0).setCellValue("VALOR (mg/dl)");
         row.createCell(1).setCellValue("FECHA DE LA MEDICION");
 
         row.getCell(0).setCellStyle(style);
