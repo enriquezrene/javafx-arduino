@@ -1,3 +1,13 @@
+
+
+#pane{
+        -fx-background-image: url("presentacion.png");
+        -fx-background-repeat: stretch;
+        -fx-background-position: center center;
+        -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+
 #main_container{
     -fx-base: #e9e99;
     -fx-background: white;

@@ -106,7 +106,7 @@ public class MainApp extends Application {
 
 
         mainContainer.setCurrentScreen(PANTALLA_HOME);
-        Scene scene = new Scene(mainContainer);
+        Scene scene = new Scene(mainContainer,880, 610);
         scene.getStylesheets().add("bootstrapfx.css");
         scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
         primaryStage.setTitle("Sistema de monitoreo de glucosa");
