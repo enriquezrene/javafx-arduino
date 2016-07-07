@@ -3,7 +3,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import org.kordamp.bootstrapfx.scene.layout.Panel?>
-<GridPane hgap="15" vgap="7" xmlns:fx="http://javafx.com/fxml" fx:controller="ec.edu.udla.ui.regions.login.IntroController" style="text-align:center" alignment="CENTER">
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<GridPane hgap="15" vgap="7" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="ec.edu.udla.ui.regions.login.IntroController" style="text-align:center" alignment="CENTER">
 
 
     <Panel GridPane.columnIndex="0" GridPane.rowIndex="1"
@@ -12,20 +16,43 @@
             <Label styleClass="h3" text="Sistema de monitoreo de glucosa"/>
         </heading>
         <body>
-            <GridPane hgap="15" vgap="7">
+            <GridPane hgap="15" vgap="2">
                 <padding>
                     <Insets top="30" right="20" bottom="30" left="80"/>
                 </padding>
 
-                <Label text="Universidad de las americas" GridPane.columnIndex="0"
-                       GridPane.rowIndex="1" styleClass="control-label"/>
-                <Label text="Jhoanna Olmedo" GridPane.columnIndex="0"
-                       GridPane.rowIndex="2" styleClass="control-label"/>
+                <!--ImageView GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.rowSpan="4">
+                    <Image url="@udla.png"/>
+                </ImageView-->
 
-                <Label text="2016" GridPane.columnIndex="0" styleClass="label-bold"
-                       GridPane.rowIndex="3"/>
+                <Label text="Universidad de las americas" GridPane.columnIndex="1"
+                       GridPane.rowIndex="1" styleClass="control-label" style="-fx-font-weight: bold;">
+                    <font>
+                        <Font name="Cambria" size="32"/>
+                    </font>
+                </Label>
+
+                <Label text="Jhoanna Olmedo" GridPane.columnIndex="1" style="-fx-font-weight: bold;"
+                       GridPane.rowIndex="2" styleClass="control-label">
+                    <font>
+                        <Font name="Cambria" size="24"/>
+                    </font>
+                </Label>
+                <Label text="2016" GridPane.columnIndex="1" styleClass="control-label"
+                       style="-fx-font-weight: bold;"
+                       GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Cambria" size="24"/>
+                    </font>
+                </Label>
+
+                <ImageView GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2">
+                    <Image url="@glucometro.png"/>
+                </ImageView>
+
+
                 <Button text="OK" onAction="#motrarLogin"
-                        GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.halignment="RIGHT"/>
+                        GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.halignment="RIGHT"/>
             </GridPane>
         </body>
     </Panel>

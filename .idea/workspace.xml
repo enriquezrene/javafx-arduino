@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="094d9106-6fa6-4749-b1a5-5e95a6dfbdc8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/Intro.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/IntroController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/glucometro.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/udla.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/.~lock.1467816404936.xls#" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/html_header_table.html" afterPath="$PROJECT_DIR$/docs/html_header_table.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/report.html" afterPath="$PROJECT_DIR$/docs/report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/reportes/ReporteLecturaGlucometro.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/reportes/ReporteLecturaGlucometro.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/RegionsContainer.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/RegionsContainer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/LoginController.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPaciente.fxml" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/IngresarPaciente.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosaController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/Intro.fxml" afterPath="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/Intro.fxml" />
     </list>
     <ignored path="arduino.client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +32,8 @@
       <file leaf-file-name="Intro.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/Intro.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+            <state relative-caret-position="432">
+              <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -47,10 +42,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="119" column="2" selection-start-line="119" selection-start-column="2" selection-end-line="119" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="IntroController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/IntroController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="144">
               <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
               <folding>
                 <element signature="e#305#306#0" expanded="true" />
@@ -63,7 +68,7 @@
       <file leaf-file-name="Login.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/Login.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="540">
               <caret line="30" column="68" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
               <folding />
             </state>
@@ -152,8 +157,8 @@
         <option value="$PROJECT_DIR$/docs/html_header_table.html" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/RegionsContainer.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/home/Intro.fxml" />
-        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/IntroController.java" />
+        <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java" />
         <option value="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/Intro.fxml" />
       </list>
     </option>
@@ -195,8 +200,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -327,18 +333,21 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="LC&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/src/ec/edu/udla/ui/regions/login/LoginController.java&#10;MA&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/src/ec/edu/udla/ui/MainApp.java&#10;html_row_table&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/docs/html_row_table.html&#10;Sms.&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/src/ec/edu/udla/ui/regions/sms/Sms.fxml&#10;.sq&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/docs/ddl.sql&#10;Lectura&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/src/ec/edu/udla/ui/regions/offline/LecturasOffLine.fxml&#10;sql&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/docs/ddl.sql&#10;Listener&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/src/ec/edu/udla/arduino/listener/ModoOnlineListener.java&#10;Cone&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java&#10;Conexion&#9;PSI&#9;JAVA://ec.edu.udla.domain.dao.ConexionPostgreSQL&#10;AUC&#9;PSI&#9;JAVA://ec.edu.udla.ui.regions.adminusuarios.AdministrarUsuarioController&#10;Controller&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/AbstractController.java&#10;LOD&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/domain/dao/LecturaOffLineDao.java&#10;LO&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/domain/LecturaOffLine.java&#10;*.sql&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/docs/ddl.sql&#10;MainA&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/MainApp.java&#10;Liste&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/arduino/listener/ModoOnlineListener.java&#10;ModoOnlineListener&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/arduino/listener/ModoOnlineListener.java&#10;IPC&#9;PSI&#9;JAVA://ec.edu.udla.ui.regions.pacientes.IngresarPacienteController&#10;LG&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/domain/LecturaGlucometro.java&#10;Lectur.fx&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosa.fxml&#10;LGD&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/domain/dao/LecturaGlucometroDao.java&#10;FHTes&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/test/ec/edu/udla/arduino/parser/FechaHexadecimalTest.java&#10;Serv&#9;PSI&#9;JAVA://ec.edu.udla.arduino.sms.service.ServicioEnvioSms&#10;MApp.&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/MainApp.java&#10;LG.fx&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosa.fxml&#10;*.css&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/style.css&#10;LoginC.java&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/login/LoginController.java&#10;CA.f&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml&#10;LGC&#9;PSI&#9;JAVA://ec.edu.udla.ui.regions.pacientes.LecturasGlucosaController&#10;Login&#9;PSI&#9;JAVA://ec.edu.udla.ui.regions.login.LoginController" />
+    <property name="SearchEverywhereHistoryKey" value="MA&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/src/ec/edu/udla/ui/MainApp.java&#10;LC&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/src/ec/edu/udla/ui/regions/login/LoginController.java&#10;html_row_table&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/docs/html_row_table.html&#10;Sms.&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/src/ec/edu/udla/ui/regions/sms/Sms.fxml&#10;.sq&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/docs/ddl.sql&#10;Lectura&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/src/ec/edu/udla/ui/regions/offline/LecturasOffLine.fxml&#10;sql&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/docs/ddl.sql&#10;Listener&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/src/ec/edu/udla/arduino/listener/ModoOnlineListener.java&#10;Cone&#9;FILE&#9;file:///home/rene/Documents/proyectos/arduino/javafx-arduino/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduinoController.java&#10;Conexion&#9;PSI&#9;JAVA://ec.edu.udla.domain.dao.ConexionPostgreSQL&#10;AUC&#9;PSI&#9;JAVA://ec.edu.udla.ui.regions.adminusuarios.AdministrarUsuarioController&#10;Controller&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/AbstractController.java&#10;LOD&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/domain/dao/LecturaOffLineDao.java&#10;LO&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/domain/LecturaOffLine.java&#10;*.sql&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/docs/ddl.sql&#10;MainA&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/MainApp.java&#10;Liste&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/arduino/listener/ModoOnlineListener.java&#10;ModoOnlineListener&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/arduino/listener/ModoOnlineListener.java&#10;IPC&#9;PSI&#9;JAVA://ec.edu.udla.ui.regions.pacientes.IngresarPacienteController&#10;LG&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/domain/LecturaGlucometro.java&#10;Lectur.fx&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosa.fxml&#10;LGD&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/domain/dao/LecturaGlucometroDao.java&#10;FHTes&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/test/ec/edu/udla/arduino/parser/FechaHexadecimalTest.java&#10;Serv&#9;PSI&#9;JAVA://ec.edu.udla.arduino.sms.service.ServicioEnvioSms&#10;MApp.&#9;FILE&#9;file:///home/rene/Documents/Proyectos/johana/workspace/arduino.client/src/ec/edu/udla/ui/MainApp.java&#10;LG.fx&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/pacientes/LecturasGlucosa.fxml&#10;*.css&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/style.css&#10;LoginC.java&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/login/LoginController.java&#10;CA.f&#9;FILE&#9;file:///Users/moe/Documents/Proyectos/Arduino/workspace/javafx-arduino/src/ec/edu/udla/ui/regions/arduinointegration/ConexionArduino.fxml&#10;LGC&#9;PSI&#9;JAVA://ec.edu.udla.ui.regions.pacientes.LecturasGlucosaController&#10;Login&#9;PSI&#9;JAVA://ec.edu.udla.ui.regions.login.LoginController" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login" />
+      <recent name="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/home" />
+      <recent name="$PROJECT_DIR$/src/ec/edu/udla/ui/regions" />
+      <recent name="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/online" />
+      <recent name="$PROJECT_DIR$/externalLibs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ec.edu.udla.ui.regions.online" />
@@ -346,12 +355,8 @@
       <recent name="ec.edu.udla.domain" />
       <recent name="ec.edu.udla.reportes" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/home" />
-      <recent name="$PROJECT_DIR$/src/ec/edu/udla/ui/regions" />
-      <recent name="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/online" />
-      <recent name="$PROJECT_DIR$/externalLibs" />
-      <recent name="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/help" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login" />
     </key>
   </component>
   <component name="RunManager" selected="Application.MainApp">
@@ -789,7 +794,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32452276" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32451677" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32451677" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3224822" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -986,7 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="26" column="17" selection-start-line="20" selection-start-column="8" selection-end-line="26" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -1079,7 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -1090,7 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-79">
           <caret line="33" column="17" selection-start-line="27" selection-start-column="8" selection-end-line="33" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -1188,7 +1190,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1196,7 +1197,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1216,17 +1216,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="111" column="62" selection-start-line="111" selection-start-column="62" selection-end-line="111" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/IntroController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="144">
           <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
           <folding>
             <element signature="e#305#306#0" expanded="true" />
@@ -1237,7 +1229,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/Login.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="540">
           <caret line="30" column="68" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
           <folding />
         </state>
@@ -1246,10 +1238,18 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="119" column="2" selection-start-line="119" selection-start-column="2" selection-end-line="119" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/edu/udla/ui/regions/login/Intro.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        <state relative-caret-position="432">
+          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
           <folding />
         </state>
       </provider>

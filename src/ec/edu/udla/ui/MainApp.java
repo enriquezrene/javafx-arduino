@@ -105,7 +105,7 @@ public class MainApp extends Application {
 
 
 
-        mainContainer.setCurrentScreen(PANTALLA_LOGIN);
+        mainContainer.setCurrentScreen(PANTALLA_HOME);
         Scene scene = new Scene(mainContainer);
         scene.getStylesheets().add("bootstrapfx.css");
         scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
@@ -116,7 +116,7 @@ public class MainApp extends Application {
         mainContainer.setHostServices(getHostServices());
 
         //Thread.sleep(2100);
-        mainContainer.setCurrentScreen(PANTALLA_HOME);
+//        mainContainer.setCurrentScreen(PANTALLA_HOME);
 /*
         Platform.runLater(new Runnable() {
             @Override
