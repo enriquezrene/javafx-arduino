@@ -4,11 +4,14 @@ import ec.edu.udla.arduino.parser.LecturaGlucometroArduino;
 import ec.edu.udla.domain.LecturaGlucometro;
 import ec.edu.udla.domain.LecturaOffLine;
 import ec.edu.udla.domain.Paciente;
+import ec.edu.udla.domain.dao.LecturaOffLineDao;
 import ec.edu.udla.domain.dao.PacienteDao;
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
 import javafx.scene.control.TableView;
 import org.controlsfx.control.Notifications;
 
+import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -54,6 +57,9 @@ public class ModoOnlineListener implements Observer {
         pacienteDao.registrarLecturaOffLine(lecturaGlucometro);
         mostrarNotificacion(lecturaGlucometro);
         pacientes.refresh();
+
+        List<LecturaOffLine> lecturasGlucometro = new LecturaOffLineDao().findAll();
+        lecturaOffLine.setItems(FXCollections.observableArrayList(lecturasGlucometro));
         lecturaOffLine.refresh();
     }
 

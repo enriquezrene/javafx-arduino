@@ -86,7 +86,7 @@ public class LecturasOfflineController extends AbstractController implements Ini
         List<LecturaOffLine> lecturasGlucometro = lecturaOffLineDao.findAll();
         this.lecturas.setItems(FXCollections.observableArrayList(lecturasGlucometro));
         lecturas.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
-        addColumnToTable(createColumn("Valor", "valor", 20), lecturas);
+        addColumnToTable(createColumn("Valor (mg/dl)", "valor", 20), lecturas);
         addColumnToTable(createColumn("Fecha de la medicion", "fechaFormateada", 30), lecturas);
         addColumnToTable(createColumn("Ayunas/Con comida", "estado", 20), lecturas);
         addColumnToTable(createColumn("Paciente", "nombrePaciente", 30), lecturas);
