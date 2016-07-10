@@ -25,7 +25,7 @@
         </Button>
         <Panel styleClass="panel-primary">
             <heading>
-                <Label styleClass="h3" text="Lecturas de glucosa off-line"/>
+                <Label styleClass="h3" text="Lecturas de glucosa"/>
             </heading>
             <body>
 

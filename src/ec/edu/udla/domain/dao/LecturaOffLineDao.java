@@ -25,9 +25,9 @@ public class LecturaOffLineDao extends AbstractDao {
         String sql = "insert into lectura_offline" + " (id_paciente, valor, fecha, estado, leido) "
                 + "values (?, ?, ?, ?, ?)";
         Object[] params = new Object[]{lectura.getIdPaciente(), lectura.getValor(), lectura.getFecha(),
-                lectura.getEstado()};
+                lectura.getEstado(), lectura.isLeido()};
         int[] types = new int[]{Types.NUMERIC, Types.VARCHAR, Types.TIMESTAMP, Types.VARCHAR, Types.BOOLEAN};
-        conexion.getJdbcTemplate().update(sql, params, types, lectura.isLeido());
+        conexion.getJdbcTemplate().update(sql, params, types);
     }
 
     public void marcarComoLeido(LecturaOffLine lecturaOffLine){

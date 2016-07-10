@@ -1,5 +1,6 @@
 package ec.edu.udla.ui.regions.offline;
 
+import ec.edu.udla.arduino.listener.ModoOnlineListener;
 import ec.edu.udla.domain.LecturaGlucometro;
 import ec.edu.udla.domain.LecturaOffLine;
 import ec.edu.udla.domain.Paciente;
@@ -24,6 +25,7 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
 import javafx.util.Callback;
 
@@ -64,6 +66,18 @@ public class LecturasOfflineController extends AbstractController implements Ini
         });
         contextMenu.getItems().add(mark);
         lecturas.setContextMenu(contextMenu);
+
+        lecturas.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                LecturaOffLine lecturaOffLine = lecturas.getSelectionModel().getSelectedItem();
+                lecturaOffLineDao.marcarComoLeido(lecturaOffLine);
+                List<LecturaOffLine> lecturasGlucometro = lecturaOffLineDao.findAll();
+                lecturas.setItems(FXCollections.observableArrayList(lecturasGlucometro));
+            }
+        });
+
+        ModoOnlineListener.getInstance().setLecturaOffLine(lecturas);
 
     }
 
