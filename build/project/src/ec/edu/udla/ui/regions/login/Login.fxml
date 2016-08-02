@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.bootstrapfx.scene.layout.Panel?>
+<GridPane hgap="15" vgap="7" xmlns:fx="http://javafx.com/fxml" style="text-align:center"
+          fx:controller="ec.edu.udla.ui.regions.login.LoginController" alignment="CENTER">
+
+
+    <Panel GridPane.columnIndex="0" GridPane.rowIndex="1"
+           styleClass="panel-primary">
+        <heading>
+            <Label styleClass="h3" text="Login"/>
+        </heading>
+        <body>
+            <GridPane hgap="15" vgap="7">
+                <padding>
+                    <Insets top="30" right="20" bottom="30" left="80"/>
+                </padding>
+
+                <Label text="Nombre de usuario:" GridPane.columnIndex="0"
+                       GridPane.rowIndex="1" styleClass="control-label"/>
+                <TextField fx:id="usuario" GridPane.columnIndex="0" style="-fx-min-width: 400; -fx-min-height: 40;"
+                           GridPane.rowIndex="2" promptText="Nombre de usuario"/>
+                <Label text="Password:" GridPane.columnIndex="0" styleClass="label-bold"
+                       GridPane.rowIndex="3"/>
+                <PasswordField fx:id="password" GridPane.columnIndex="0" style="-fx-min-width: 400; -fx-min-height: 40;"
+                               GridPane.rowIndex="4" promptText="Password"/>
+
+                <Button text="LOGIN" onAction="#login"
+                        GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.halignment="RIGHT"/>
+
+            </GridPane>
+        </body>
+    </Panel>
+</GridPane>

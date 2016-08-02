@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:id="pane"
+      fx:controller="ec.edu.udla.ui.regions.login.IntroController" style="text-align:center">
+    <padding>
+        <Insets top="550" left="600"/>
+    </padding>
+    <Button text="OK" onAction="#motrarLogin"/>
+</VBox>

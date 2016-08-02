@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.bootstrapfx.scene.layout.Panel?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<GridPane hgap="15" vgap="7" xmlns:fx="http://javafx.com/fxml" style="text-align:center" alignment="CENTER"
+          fx:controller="ec.edu.udla.ui.regions.arduinointegration.LoadingController">
+
+
+    <Panel GridPane.columnIndex="0" GridPane.rowIndex="1"
+           styleClass="panel-primary">
+        <heading>
+            <Label styleClass="h3" text="Procesando"/>
+        </heading>
+        <body>
+            <VBox>
+                <Label styleClass="h4" text="Procesando" fx:id="mensaje"/>
+                <ImageView>
+                    <image>
+                        <Image url="loading.gif"/>
+                    </image>
+                </ImageView>
+            </VBox>
+        </body>
+    </Panel>
+</GridPane>

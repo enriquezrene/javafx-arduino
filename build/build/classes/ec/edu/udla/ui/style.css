@@ -1,0 +1,207 @@
+
+
+#pane{
+        -fx-background-image: url("presentacion.png");
+        -fx-background-repeat: stretch;
+        -fx-background-position: center center;
+        -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+
+#main_container{
+    -fx-base: #e9e99;
+    -fx-background: white;
+    -fx-control-inner-background: white;
+}
+
+.button {
+    -fx-min-width: 200;
+    -fx-min-height: 40;
+    -fx-background-color: #337ab7;
+    -fx-border-color: #2e6da4;
+    -fx-font-size: 14.0px;
+    -fx-border-radius: 4.0px;
+    -fx-background-radius: 4.0px;
+    -fx-padding: 6.0px 12.0px 6.0px 12.0px;
+    -fx-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -fx-text-fill: white;
+}
+
+.label-bold{
+    -fx-font-weight: 700;
+    -fx-font-size:12px;
+}
+
+.button:hover {
+    -fx-color: #fff;
+    -fx-background-color: #286090;
+    -fx-border-color: #204d74;
+}
+
+.text-field{
+    -fx-min-width: 300.0;
+    -fx-min-height: 30;
+}
+
+.text-field:focused {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30.0%);
+}
+
+.text-area:focused {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30.0%);
+}
+
+.headerPane{
+    -fx-background-color:  derive(grey, -30.0%);
+}
+
+.table-view {
+    -fx-base: white;
+    -fx-control-inner-background: white;
+    -fx-background-color: #c7c7c7;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 2.0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #42539d;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35.0;
+    -fx-border-width: 0.0 0.0 0.0 0.0;
+    -fx-background-color: transparent;
+    -fx-border-color:
+        transparent
+        transparent
+        derive(-fx-base, 80.0%)
+        transparent;
+    -fx-border-insets: 0.0 10.0 1.0 0.0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 12.0px;
+    -fx-font-family: "Segoe UI bold";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+
+/*.table-cell {
+    -fx-cell-size: 4.0em;
+    -fx-padding: 1.0em 0.0em 0.1em 0.1em;
+    -fx-font: 12.0px "Segoe UI";
+    -fx-alignment: bottom-left;
+}*/
+
+.table-row-cell:empty {
+    -fx-background-color: #f8f8f8;
+    -fx-base: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 0.0;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0.0px;
+}
+
+.menu-bar {
+    -fx-background-color: linear-gradient(to bottom, #d0d0d0, derive(#d0d0d0,+50%));
+    -fx-text-fill: black;
+}
+
+.menu-bar .menu .label {
+    -fx-padding: 0.333em 0.5em 0.333em 0.5em; /* 4 6 4 6*/
+    -fx-text-fill: black;
+}
+
+.my-gridpane {
+	-fx-background-color: radial-gradient(radius 100%, derive(-fx-base,70%), derive(-fx-base,20%));
+}
+
+.separator-label {
+   -fx-text-fill: steelblue ;
+}
+
+#window-resize-button {
+    -fx-background-image: url("images/window-corner.png");
+    -fx-background-position: right 1px bottom 1px;
+    -fx-background-repeat: no-repeat;
+}
+
+#window_close {
+    -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("images/window-close.png");
+    -fx-padding: 6 6 4 6;
+}
+
+#window_min {
+    -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("images/window-min.png");
+    -fx-padding: 6 6 4 6;
+}
+
+#window_max {
+    -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("images/window-expand.png");
+    -fx-padding: 6 6 4 6;
+}
+
+#window_close:hover {
+    -fx-background-image: url("images/window-close-over.png");
+}
+
+#window_min:hover {
+    -fx-background-image: url("images/window-min-over.png");
+}
+
+#window_max:hover {
+    -fx-background-image: url("images/window-expand-over.png");
+}
+
+.MTrimBar {
+	-fx-background-color:
+        linear-gradient(to bottom, derive(-fx-base,-30%), derive(-fx-base,-60%)),
+        linear-gradient(to bottom, derive(-fx-base,65%) 2%, derive(-fx-base,-20%) 95%);
+}
+
+.MTrimBar .tool-bar {
+    -fx-border-style: solid;
+    -fx-background-color: null;
+    -fx-border-color:  null;
+    -fx-border-width: 0px;
+}
+
+.tool-bar {
+    -fx-border-style: solid;
+    -fx-border-color:  linear-gradient(to bottom, derive(-fx-base,-30%), derive(-fx-base,-60%)),
+        linear-gradient(to bottom, derive(-fx-base,65%) 2%, derive(-fx-base,-20%) 95%);
+    -fx-border-width: 1px;
+}
+
+
+
+.login {
+    position: relative;
+    margin: 0px auto;
+    padding: 20px;
+    width: 310px;
+    background: #FFF none repeat scroll 0% 0%;
+    border-radius: 3px;
+    box-shadow: 0px 0px 200px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.selected {
+    -fx-font-weight: bold;
+    -fx-font-size: 13;
+      -fx-font-colo:
+}

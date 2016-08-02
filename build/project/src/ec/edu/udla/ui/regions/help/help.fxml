@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import org.kordamp.bootstrapfx.scene.layout.Panel?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<GridPane fx:id="gridPane" hgap="15" vgap="7"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="ec.edu.udla.ui.regions.help.HelpController">
+
+    <padding>
+        <Insets top="20" right="40" bottom="20" left="40"/>
+    </padding>
+
+    <VBox spacing="10">
+        <Button onAction="#atras" style="-fx-background-color: transparent; -fx-padding: 4;" styleClass="none">
+            <graphic>
+                <ImageView>
+                    <Image url="@../back.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <VBox GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.hgrow="ALWAYS">
+            <Panel styleClass="panel-primary">
+
+                <heading>
+                    <Label styleClass="h3" text="Ayuda"/>
+                </heading>
+                <body>
+                    <GridPane hgap="15" vgap="7">
+                        <WebView fx:id="myWebView"/>
+                    </GridPane>
+                </body>
+            </Panel>
+        </VBox>
+    </VBox>
+
+</GridPane>

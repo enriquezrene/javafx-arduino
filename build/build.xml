@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<project name="arduino.client" default="do-deploy" basedir="."  xmlns:fx="javafx:com.sun.javafx.tools.ant">
+	<target name="init-fx-tasks">
+		<path id="fxant">
+			<filelist>
+				<file name="${java.home}\..\lib\ant-javafx.jar"/>
+				<file name="${java.home}\lib\jfxrt.jar"/>
+			</filelist>
+		</path>
+	
+		<taskdef resource="com/sun/javafx/tools/ant/antlib.xml"
+			uri="javafx:com.sun.javafx.tools.ant"
+			classpathref="fxant"/>
+	</target>
+	<target name="setup-staging-area">
+		<delete dir="externalLibs" />
+		<delete dir="project" />
+		<delete dir="projectRefs" />
+	
+		<mkdir dir="externalLibs" />
+	
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="org.springframework.core-3.0.0.M3.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="antlr-runtime-3.0.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="xmlworker-5.5.9.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="postgresql-9.2-1004.jdbc41.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/eclipse/plugins">
+				<filename name="org.hamcrest.core_1.3.0.v201303031735.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="mockito-all-1.10.19.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="org.springframework.asm-3.0.0.M3.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="org.springframework.context.support-3.0.0.M3.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="jssc-2.8.0.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="commons-pool.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="poi-3.14.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="bootstrapfx-all.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="commons-logging-1.0.4.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="org.springframework.transaction-3.0.0.M3.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="itext-xtra-5.5.9.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="commons-dbcp.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="org.springframework.expression-3.0.0.M3.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="org.springframework.jdbc-3.0.0.M3.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="itext-pdfa-5.5.9.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="org.springframework.beans-3.0.0.M3.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="org.springframework.context-3.0.0.M3.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="controlsfx-8.40.10.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/eclipse/plugins/org.junit_4.12.0.v201504281640">
+				<filename name="junit.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino/externalLibs">
+				<filename name="itextpdf-5.5.9.jar"/>
+			</fileset>
+		</copy>
+	
+		<mkdir dir="project" />
+		<copy todir="project">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino">
+				<include name="test/**" />
+			</fileset>
+		</copy>
+		<copy todir="project">
+			<fileset dir="/home/rene/Documents/proyectos/arduino/javafx-arduino">
+				<include name="src/**" />
+			</fileset>
+		</copy>
+	
+		<mkdir dir="projectRefs" />
+	</target>
+	<target name='do-compile'>
+		<delete dir="build" />
+		<mkdir dir="build/src" />
+		<mkdir dir="build/libs" />
+		<mkdir dir="build/classes" />
+	
+		<!-- Copy project-libs references -->
+		<copy todir="build/libs">
+			<fileset dir="externalLibs">
+				<include name="org.springframework.beans-3.0.0.M3.jar"/>
+				<include name="commons-dbcp.jar"/>
+				<include name="xmlworker-5.5.9.jar"/>
+				<include name="org.hamcrest.core_1.3.0.v201303031735.jar"/>
+				<include name="org.springframework.core-3.0.0.M3.jar"/>
+				<include name="antlr-runtime-3.0.jar"/>
+				<include name="junit.jar"/>
+				<include name="mockito-all-1.10.19.jar"/>
+				<include name="org.springframework.expression-3.0.0.M3.jar"/>
+				<include name="org.springframework.asm-3.0.0.M3.jar"/>
+				<include name="itext-pdfa-5.5.9.jar"/>
+				<include name="controlsfx-8.40.10.jar"/>
+				<include name="commons-pool.jar"/>
+				<include name="org.springframework.jdbc-3.0.0.M3.jar"/>
+				<include name="jssc-2.8.0.jar"/>
+				<include name="org.springframework.context.support-3.0.0.M3.jar"/>
+				<include name="itextpdf-5.5.9.jar"/>
+				<include name="org.springframework.transaction-3.0.0.M3.jar"/>
+				<include name="org.springframework.context-3.0.0.M3.jar"/>
+				<include name="poi-3.14.jar"/>
+				<include name="itext-xtra-5.5.9.jar"/>
+				<include name="bootstrapfx-all.jar"/>
+				<include name="postgresql-9.2-1004.jdbc41.jar"/>
+				<include name="commons-logging-1.0.4.jar"/>
+			</fileset>
+		</copy>
+	
+		<!-- Copy project references -->
+	
+		<!-- Copy project sources itself -->
+		<copy todir="build/src">
+			<fileset dir="project/test">
+				<include name="**/*"/>
+			</fileset>
+		</copy>
+		<copy todir="build/src">
+			<fileset dir="project/src">
+				<include name="**/*"/>
+			</fileset>
+		</copy>
+	
+		<javac includeantruntime="false" source="1.8" target="1.8" srcdir="build/src" destdir="build/classes" encoding="UTF-8">
+			<classpath>
+				<fileset dir="build/libs">
+					<include name="*"/>
+				</fileset>
+			</classpath>
+		</javac>
+	
+		<!-- Copy over none Java-Files -->
+		<copy todir="build/classes">
+		<fileset dir="project/test">
+			<exclude name="**/*.java"/>
+		</fileset>
+		<fileset dir="project/src">
+			<exclude name="**/*.java"/>
+		</fileset>
+		</copy>
+	
+	
+	</target>
+	<target name="do-deploy" depends="setup-staging-area, do-compile, init-fx-tasks">
+		<delete file="dist"/>
+		<delete file="deploy" />
+	
+		<mkdir dir="dist" />
+		<mkdir dir="dist/libs" />
+	
+		<copy todir="dist/libs">
+			<fileset dir="externalLibs">
+				<include name="*" />
+			</fileset>
+		</copy>
+	
+	
+		<fx:resources id="appRes">
+			<fx:fileset dir="dist" includes="arduino.client.jar"/>
+			<fx:fileset dir="dist" includes="libs/*"/>
+		</fx:resources>
+	
+		<fx:application id="fxApplication"
+			name="arduino.client"
+			mainClass="ec.edu.udla.ui.MainApp"
+		/>
+	
+		<mkdir dir="build/classes/META-INF" />
+	
+	
+	
+		<fx:jar destfile="dist/arduino.client.jar">
+			<fx:application refid="fxApplication"/>
+			<fileset dir="build/classes">
+			</fileset>
+			<fx:resources refid="appRes"/>
+	
+			<manifest>
+				<attribute name="Implementation-Vendor" value="com.enriquezrene"/>
+				<attribute name="Implementation-Title" value="arduino.client"/>
+				<attribute name="Implementation-Version" value="1.0"/>
+				<attribute name="JavaFX-Feature-Proxy" value="None"/>
+			</manifest>
+		</fx:jar>
+	
+	
+		<mkdir dir="deploy" />
+		<!-- Need to use ${basedir} because somehow the ant task is calculating the directory differently -->
+		<fx:deploy
+			embedJNLP="false"
+			extension="false"
+			includeDT="true"
+			offlineAllowed="true"
+			outdir="${basedir}/deploy"
+			outfile="arduino.client" nativeBundles="none"
+			updatemode="background" >
+	
+			<fx:platform basedir="${java.home}"/>
+			<fx:info title="arduino.client" vendor="com.enriquezrene"/>
+	
+			<fx:application refId="fxApplication"/>
+			<fx:resources refid="appRes"/>
+		</fx:deploy>
+	
+	
+	</target>
+</project>

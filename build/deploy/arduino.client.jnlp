@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="arduino.client.jnlp">
+  <information>
+    <title>arduino.client</title>
+    <vendor>com.enriquezrene</vendor>
+    <description>arduino.client</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="arduino.client.jar" size="24640707" download="eager" />
+    <jar href="libs/antlr-runtime-3.0.jar" size="92015" download="eager" />
+    <jar href="libs/bootstrapfx-all.jar" size="6786" download="eager" />
+    <jar href="libs/commons-dbcp.jar" size="121757" download="eager" />
+    <jar href="libs/commons-logging-1.0.4.jar" size="38015" download="eager" />
+    <jar href="libs/commons-pool.jar" size="62103" download="eager" />
+    <jar href="libs/controlsfx-8.40.10.jar" size="954085" download="eager" />
+    <jar href="libs/itext-pdfa-5.5.9.jar" size="117922" download="eager" />
+    <jar href="libs/itext-xtra-5.5.9.jar" size="119941" download="eager" />
+    <jar href="libs/itextpdf-5.5.9.jar" size="2287148" download="eager" />
+    <jar href="libs/jssc-2.8.0.jar" size="153562" download="eager" />
+    <jar href="libs/junit.jar" size="314932" download="eager" />
+    <jar href="libs/mockito-all-1.10.19.jar" size="1234599" download="eager" />
+    <jar href="libs/org.hamcrest.core_1.3.0.v201303031735.jar" size="55198" download="eager" />
+    <jar href="libs/org.springframework.asm-3.0.0.M3.jar" size="53050" download="eager" />
+    <jar href="libs/org.springframework.beans-3.0.0.M3.jar" size="497506" download="eager" />
+    <jar href="libs/org.springframework.context-3.0.0.M3.jar" size="530360" download="eager" />
+    <jar href="libs/org.springframework.context.support-3.0.0.M3.jar" size="99138" download="eager" />
+    <jar href="libs/org.springframework.core-3.0.0.M3.jar" size="318696" download="eager" />
+    <jar href="libs/org.springframework.expression-3.0.0.M3.jar" size="193901" download="eager" />
+    <jar href="libs/org.springframework.jdbc-3.0.0.M3.jar" size="360343" download="eager" />
+    <jar href="libs/org.springframework.transaction-3.0.0.M3.jar" size="225559" download="eager" />
+    <jar href="libs/poi-3.14.jar" size="2528204" download="eager" />
+    <jar href="libs/postgresql-9.2-1004.jdbc41.jar" size="579874" download="eager" />
+    <jar href="libs/xmlworker-5.5.9.jar" size="251792" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="0" height="0" main-class="ec.edu.udla.ui.MainApp"  name="arduino.client" />
+  <update check="background"/>
+</jnlp>
