@@ -2,6 +2,7 @@ package ec.edu.udla.ui;
 
 import java.io.IOException;
 
+import ec.edu.udla.arduino.comunicacion.ComunicadorPuertoSerial;
 import ec.edu.udla.ui.regions.RegionsContainer;
 import ec.edu.udla.ui.regions.adminusuarios.AdministrarUsuarioController;
 import ec.edu.udla.ui.regions.arduino.LeerInformacionArduinoController;
@@ -84,6 +85,25 @@ public class MainApp extends Application {
             }
         });
 
+//        MenuItem opcionSalir = new MenuItem("Salir");
+//        opcionSalir.setOnAction(event -> {
+//            try {
+//                FXMLLoader loader = new FXMLLoader(SmsController.class.getResource("Sms.fxml"));
+//                Parent node = loader.load();
+//                Stage dialogStage = new Stage();
+//                dialogStage.setTitle("SMS");
+//                dialogStage.initModality(Modality.NONE);
+//                dialogStage.initOwner(primaryStage);
+//                Scene scene = new Scene(node);
+//                scene.getStylesheets().add("bootstrapfx.css");
+//                scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
+//                dialogStage.setScene(scene);
+//                dialogStage.show();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        });
+
         menuInicio.getItems().addAll(opcionIngresarPacientes, opcionAdministrarUsuarios, opcionEnvioSms);
 
 
@@ -161,5 +181,11 @@ public class MainApp extends Application {
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    @Override
+    public void stop() throws Exception {
+    	ComunicadorPuertoSerial.obtenerInstancia().enviarCadenaDeTexto("B");
+    	Thread.sleep(2000L);
     }
 }
