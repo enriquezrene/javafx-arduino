@@ -1,6 +1,7 @@
 package ec.edu.udla.domain.dao;
 
 import java.sql.Types;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -83,7 +84,13 @@ public class PacienteDao extends AbstractDao {
 
     public List<LecturaGlucometro> buscarLecturasGlucosaEntreFechas(int idPaciente, Date fechaInicio, Date fechaFin) {
         String sql = "SELECT * FROM lectura_glucometro WHERE id_paciente = ? and  fecha BETWEEN ? AND ?";
-        Object[] params = new Object[]{idPaciente, fechaInicio, fechaFin};
+
+        Calendar calendarFechaFin = Calendar.getInstance();
+        calendarFechaFin.setTime(fechaFin);
+        calendarFechaFin.add(Calendar.HOUR, 24);
+//        calendarFechaFin.set(Calendar.MINUTE, 59);
+
+        Object[] params = new Object[]{idPaciente, fechaInicio, calendarFechaFin.getTime()};
         int[] types = new int[]{Types.INTEGER, Types.DATE, Types.DATE};
         List<LecturaGlucometro> lecturas = conexion.getJdbcTemplate().query(sql, params, types,
                 new BeanPropertyRowMapper<LecturaGlucometro>(LecturaGlucometro.class));

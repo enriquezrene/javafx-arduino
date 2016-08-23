@@ -62,9 +62,11 @@ public class LecturaOffLine extends PojoBase {
     }
 
     public String getFechaInsercionFormateada() {
-        if (insercion != null) {
-            SimpleDateFormat dateFormat = new SimpleDateFormat(PATTERN);
-            return dateFormat.format(insercion);
+    	if (insercion != null) {
+    		
+    		ZonedDateTime fechaZone = ZonedDateTime.ofInstant(insercion.toInstant(), ZoneOffset.UTC);
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy hh:mm:ss a");
+            return fechaZone.format(formatter);
         }
         return fechaInsercionFormateada;
     }

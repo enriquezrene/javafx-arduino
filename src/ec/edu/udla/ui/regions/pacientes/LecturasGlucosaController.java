@@ -97,6 +97,7 @@ public class LecturasGlucosaController extends AbstractController implements Ini
 
 
     public void filtrar(ActionEvent event) {
+    	
         List<LecturaGlucometro> lecturaGlucometros = pacienteDao.buscarLecturasGlucosaEntreFechas(paciente.getId(),
                 Date.from(fechaInicio.getValue().atStartOfDay(ZoneId.systemDefault()).toInstant()),
                 Date.from(fechaFin.getValue().atStartOfDay(ZoneId.systemDefault()).toInstant()));
