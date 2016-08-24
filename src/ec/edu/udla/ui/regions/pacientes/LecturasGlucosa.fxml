@@ -10,59 +10,67 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
 <GridPane fx:id="gridPane" hgap="15" vgap="3"
-          xmlns:fx="http://javafx.com/fxml" fx:controller="ec.edu.udla.ui.regions.pacientes.LecturasGlucosaController">
+	xmlns:fx="http://javafx.com/fxml" fx:controller="ec.edu.udla.ui.regions.pacientes.LecturasGlucosaController">
 
-    <padding>
-        <Insets top="20" right="40" bottom="20" left="40"/>
-    </padding>
+	<padding>
+		<Insets top="20" right="40" bottom="20" left="40" />
+	</padding>
 
-    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0" spacing="10">
-        <Button onAction="#atras" style="-fx-background-color: transparent; -fx-padding: 4;" styleClass="none">
-            <graphic>
-                <ImageView>
-                    <Image url="@../back.png"/>
-                </ImageView>
-            </graphic>
-        </Button>
-        <Panel styleClass="panel-primary">
-            <heading>
-                <Label styleClass="h3" text="Lecturas de glucosa"/>
-            </heading>
-            <body>
-                <VBox spacing="0">
-                    <VBox spacing="10">
-                        <Label styleClass="h4" fx:id="infoPaciente"/>
-                        <Label styleClass="h4" fx:id="telefono"/>
-                        <GridPane hgap="10" vgap="7">
-                            <Label text="Fecha desde" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
-                            <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="none"
-                                        fx:id="fechaInicio"/>
-                            <Label text="Fecha hasta" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
-                            <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="fechaFin"/>
-                            <HBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2">
-                                <Button text="Aplicar filtro"
-                                        onAction="#filtrar"/>
-                                <Button text="Exportar como PDF"
-                                        onAction="#exportar"/>
-                                <Button text="Exportar como Excel"
-                                        onAction="#exportarXls"/>
-                            </HBox>
-                        </GridPane>
-                        <StackPane fx:id="chartPane" GridPane.hgrow="ALWAYS" GridPane.columnIndex="0"
-                                   GridPane.rowIndex="2"/>
-                    </VBox>
-                    <ImageView fx:id="loading" visible="false" managed="false">
-                        <image>
-                            <Image url="loading.gif"/>
-                        </image>
-                    </ImageView>
-                </VBox>
+	<VBox GridPane.columnIndex="0" GridPane.rowIndex="0" spacing="10">
+		<Button onAction="#atras"
+			style="-fx-background-color: transparent; -fx-padding: 4;"
+			styleClass="none">
+			<graphic>
+				<ImageView>
+					<Image url="@../back.png" />
+				</ImageView>
+			</graphic>
+		</Button>
+		<Panel styleClass="panel-primary">
+			<heading>
+				<Label styleClass="h3" text="Lecturas de glucosa" />
+			</heading>
+			<body>
+				<VBox spacing="0">
+					<VBox spacing="10">
+						<Label styleClass="h4" fx:id="infoPaciente" />
+						<Label styleClass="h4" fx:id="telefono" />
+						<GridPane hgap="10" vgap="7">
+							<Label text="Fecha desde" GridPane.columnIndex="0"
+								GridPane.rowIndex="0" />
+							<DatePicker GridPane.columnIndex="1"
+								GridPane.rowIndex="0" styleClass="none" fx:id="fechaInicio" />
+							<Label text="Fecha hasta" GridPane.columnIndex="0"
+								GridPane.rowIndex="1" />
+							<DatePicker GridPane.columnIndex="1"
+								GridPane.rowIndex="1" fx:id="fechaFin" />
+							<HBox spacing="10" GridPane.columnIndex="0"
+								GridPane.rowIndex="2" GridPane.columnSpan="2">
+								<Button text="Aplicar filtro" onAction="#filtrar" />
+								<Button text="Exportar como PDF" onAction="#exportar" />
+								<Button text="Exportar como Excel" onAction="#exportarXls" />
+							</HBox>
+						</GridPane>
+						<StackPane fx:id="chartPane" GridPane.hgrow="ALWAYS"
+							GridPane.columnIndex="0" GridPane.rowIndex="2">
+							<padding>
+								<Insets right="40" left="40" />
+							</padding>
+						</StackPane>
+					</VBox>
+					<ImageView fx:id="loading" visible="false" managed="false">
+						<image>
+							<Image url="loading.gif" />
+						</image>
+					</ImageView>
+				</VBox>
 
-            </body>
-        </Panel>
-    </VBox>
-    <StackPane GridPane.hgrow="ALWAYS" GridPane.columnIndex="0" GridPane.rowIndex="1">
-        <TableView fx:id="lecturas"/>
-    </StackPane>
+			</body>
+		</Panel>
+	</VBox>
+	<StackPane GridPane.hgrow="ALWAYS" GridPane.columnIndex="0"
+		GridPane.rowIndex="1">
+		<TableView fx:id="lecturas" />
+	</StackPane>
 
 </GridPane>

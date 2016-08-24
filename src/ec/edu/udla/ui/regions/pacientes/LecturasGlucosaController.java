@@ -1,5 +1,16 @@
 package ec.edu.udla.ui.regions.pacientes;
 
+import java.io.File;
+import java.net.URL;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.ZoneId;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+import java.util.ResourceBundle;
+import java.util.TimeZone;
+
 import ec.edu.udla.domain.LecturaGlucometro;
 import ec.edu.udla.domain.Paciente;
 import ec.edu.udla.domain.dao.PacienteDao;
@@ -12,8 +23,10 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Cursor;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
@@ -21,14 +34,9 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
-
-import java.io.File;
-import java.net.URL;
-import java.time.ZoneId;
-import java.util.Date;
-import java.util.List;
-import java.util.ResourceBundle;
+import javafx.scene.paint.Color;
 
 public class LecturasGlucosaController extends AbstractController implements Initializable {
 
@@ -72,7 +80,25 @@ public class LecturasGlucosaController extends AbstractController implements Ini
         ObservableList<XYChart.Data<Date, Number>> medidasGlucosa = FXCollections.observableArrayList();
 
         for (LecturaGlucometro lectura : lecturas) {
-            medidasGlucosa.add(new XYChart.Data<Date, Number>(lectura.getFecha(), Double.valueOf(lectura.getValor())));
+
+//        	SimpleDateFormat isoFormat = new SimpleDateFormat("yyy-MM-dd'T'HH:mm:ss");
+//            String fecha = isoFormat.format(lectura.getFecha());
+//            isoFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
+//            try {
+//                lectura.setFecha(isoFormat.parse(fecha));
+//                XYChart.Data<Date, Number> data = new XYChart.Data<Date, Number>(isoFormat.parse(fecha), Double.valueOf(lectura.getValor()));
+        	Calendar c = Calendar.getInstance();
+        	c.setTime(lectura.getFecha());
+        	c.add(Calendar.HOUR, 5);
+//        	 XYChart.Data<Date, Number> data = new XYChart.Data<Date, Number>(lectura.getFecha(), Double.valueOf(lectura.getValor()));
+        	 XYChart.Data<Date, Number> data = new XYChart.Data<Date, Number>(c.getTime(), Double.valueOf(lectura.getValor()));
+                data.setNode(new HoveredThresholdNode(0, lectura.getFechaFormateada()));
+                medidasGlucosa.add(data);
+//            } catch (ParseException e) {
+//                e.printStackTrace();
+//            }
+
+
         }
 
         series.add(new XYChart.Series<>("Mediciones realizadas con el glucometro", medidasGlucosa));
@@ -97,7 +123,7 @@ public class LecturasGlucosaController extends AbstractController implements Ini
 
 
     public void filtrar(ActionEvent event) {
-    	
+
         List<LecturaGlucometro> lecturaGlucometros = pacienteDao.buscarLecturasGlucosaEntreFechas(paciente.getId(),
                 Date.from(fechaInicio.getValue().atStartOfDay(ZoneId.systemDefault()).toInstant()),
                 Date.from(fechaFin.getValue().atStartOfDay(ZoneId.systemDefault()).toInstant()));
@@ -149,3 +175,43 @@ public class LecturasGlucosaController extends AbstractController implements Ini
         new Thread(task).start();
     }
 }
+
+class HoveredThresholdNode extends StackPane {
+    HoveredThresholdNode(int priorValue, String value) {
+      setPrefSize(15, 15);
+
+      final Label label = createDataThresholdLabel(priorValue, value);
+
+      setOnMouseEntered(new EventHandler<MouseEvent>() {
+        @Override public void handle(MouseEvent mouseEvent) {
+          getChildren().setAll(label);
+          setCursor(Cursor.NONE);
+          toFront();
+        }
+      });
+      setOnMouseExited(new EventHandler<MouseEvent>() {
+        @Override public void handle(MouseEvent mouseEvent) {
+          getChildren().clear();
+          setCursor(Cursor.CROSSHAIR);
+        }
+      });
+    }
+
+    private Label createDataThresholdLabel(int priorValue, String value) {
+      final Label label = new Label(value);
+      label.getStyleClass().addAll("default-color0", "chart-line-symbol", "chart-series-line");
+      label.setStyle("-fx-font-size: 12; -fx-font-weight: bold;");
+
+//      if (priorValue == 0) {
+//        label.setTextFill(Color.DARKGRAY);
+//      } else if (value > priorValue) {
+//        label.setTextFill(Color.FORESTGREEN);
+//      } else {
+        label.setTextFill(Color.FIREBRICK);
+//      }
+
+      label.setMinSize(Label.USE_PREF_SIZE, Label.USE_PREF_SIZE);
+      return label;
+    }
+  }
+

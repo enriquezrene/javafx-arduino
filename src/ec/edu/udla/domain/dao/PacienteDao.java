@@ -1,9 +1,12 @@
 package ec.edu.udla.domain.dao;
 
 import java.sql.Types;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 
 import ec.edu.udla.domain.LecturaOffLine;
 import org.springframework.dao.EmptyResultDataAccessException;
@@ -79,6 +82,8 @@ public class PacienteDao extends AbstractDao {
         String sql = "SELECT * FROM lectura_glucometro WHERE id_paciente = " + idPaciente + " ORDER BY id";
         List<LecturaGlucometro> lecturas = conexion.getJdbcTemplate().query(sql,
                 new BeanPropertyRowMapper<LecturaGlucometro>(LecturaGlucometro.class));
+
+
         return lecturas;
     }
 
@@ -88,12 +93,12 @@ public class PacienteDao extends AbstractDao {
         Calendar calendarFechaFin = Calendar.getInstance();
         calendarFechaFin.setTime(fechaFin);
         calendarFechaFin.add(Calendar.HOUR, 24);
-//        calendarFechaFin.set(Calendar.MINUTE, 59);
 
         Object[] params = new Object[]{idPaciente, fechaInicio, calendarFechaFin.getTime()};
         int[] types = new int[]{Types.INTEGER, Types.DATE, Types.DATE};
         List<LecturaGlucometro> lecturas = conexion.getJdbcTemplate().query(sql, params, types,
                 new BeanPropertyRowMapper<LecturaGlucometro>(LecturaGlucometro.class));
+       
         return lecturas;
     }
 

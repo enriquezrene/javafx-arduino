@@ -139,6 +139,10 @@ public final class DateAxis extends Axis<Date> {
     public void invalidateRange(List<Date> list) {
         super.invalidateRange(list);
 
+        Calendar calendarMin = Calendar.getInstance();
+        Calendar calendarMax = Calendar.getInstance();
+        
+        
         Collections.sort(list);
         if (list.isEmpty()) {
             minDate = maxDate = new Date();
@@ -148,6 +152,15 @@ public final class DateAxis extends Axis<Date> {
             minDate = list.get(0);
             maxDate = list.get(list.size() - 1);
         }
+        
+        calendarMin.setTime(minDate);
+    	calendarMin.add(Calendar.DAY_OF_MONTH, -1);
+    	minDate = calendarMin.getTime();
+    	
+    	calendarMax.setTime(maxDate);
+    	calendarMax.add(Calendar.DAY_OF_MONTH, 1);
+    	maxDate = calendarMax.getTime();
+    	
     }
 
     @Override
