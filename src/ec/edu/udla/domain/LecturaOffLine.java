@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat;
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
 import java.util.Date;
 
 public class LecturaOffLine extends PojoBase {
@@ -63,7 +64,7 @@ public class LecturaOffLine extends PojoBase {
 
     public String getFechaInsercionFormateada() {
     	if (insercion != null) {
-    		
+
     		ZonedDateTime fechaZone = ZonedDateTime.ofInstant(insercion.toInstant(), ZoneOffset.UTC);
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy hh:mm:ss a");
             return fechaZone.format(formatter);
@@ -77,7 +78,10 @@ public class LecturaOffLine extends PojoBase {
 
     public String getFechaFormateada() {
         if (fecha != null) {
-            ZonedDateTime fechaZone = ZonedDateTime.ofInstant(fecha.toInstant(), ZoneOffset.UTC);
+        	Calendar calendar = Calendar.getInstance();
+        	calendar.setTime(fecha);
+        	calendar.add(Calendar.HOUR, 5);
+            ZonedDateTime fechaZone = ZonedDateTime.ofInstant(calendar.getTime().toInstant(), ZoneOffset.UTC);
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern(PATTERN);
             return fechaZone.format(formatter);
         }

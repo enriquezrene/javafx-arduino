@@ -1,41 +1,26 @@
 package ec.edu.udla.ui.regions.offline;
 
+import java.net.URL;
+import java.util.List;
+import java.util.ResourceBundle;
+
 import ec.edu.udla.arduino.listener.ModoOnlineListener;
-import ec.edu.udla.domain.LecturaGlucometro;
 import ec.edu.udla.domain.LecturaOffLine;
-import ec.edu.udla.domain.Paciente;
 import ec.edu.udla.domain.dao.LecturaOffLineDao;
-import ec.edu.udla.domain.dao.PacienteDao;
-import ec.edu.udla.domain.util.Context;
-import ec.edu.udla.reportes.ReporteLecturaGlucometro;
 import ec.edu.udla.ui.regions.AbstractController;
-import ec.edu.udla.ui.regions.custom.DateAxis;
-import javafx.application.HostServices;
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.chart.LineChart;
-import javafx.scene.chart.NumberAxis;
-import javafx.scene.chart.XYChart;
-import javafx.scene.control.*;
-import javafx.scene.image.ImageView;
+import javafx.scene.control.ContextMenu;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TableRow;
+import javafx.scene.control.TableView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.StackPane;
 import javafx.util.Callback;
-
-import java.io.File;
-import java.net.URL;
-import java.time.ZoneId;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.ResourceBundle;
 
 public class LecturasOfflineController extends AbstractController implements Initializable {
 
@@ -61,6 +46,9 @@ public class LecturasOfflineController extends AbstractController implements Ini
                 LecturaOffLine lecturaOffLine = lecturas.getSelectionModel().getSelectedItem();
                 lecturaOffLineDao.marcarComoLeido(lecturaOffLine);
                 List<LecturaOffLine> lecturasGlucometro = lecturaOffLineDao.findAll();
+                for (LecturaOffLine lecturaOffLine2 : lecturasGlucometro) {
+
+				}
                 lecturas.setItems(FXCollections.observableArrayList(lecturasGlucometro));
             }
         });

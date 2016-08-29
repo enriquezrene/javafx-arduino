@@ -14,7 +14,6 @@ import ec.edu.udla.ui.regions.offline.LecturasOfflineController;
 import ec.edu.udla.ui.regions.pacientes.IngresarPacienteController;
 import ec.edu.udla.ui.regions.sms.SmsController;
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -23,10 +22,8 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyCodeCombination;
 import javafx.scene.input.KeyCombination;
-import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 public class MainApp extends Application {
 

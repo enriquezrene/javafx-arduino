@@ -2,14 +2,11 @@ package ec.edu.udla.ui.regions.pacientes;
 
 import java.io.File;
 import java.net.URL;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.ZoneId;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.ResourceBundle;
-import java.util.TimeZone;
 
 import ec.edu.udla.domain.LecturaGlucometro;
 import ec.edu.udla.domain.Paciente;
