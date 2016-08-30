@@ -15,11 +15,11 @@
 }
 
 .button {
-    -fx-min-width: 200;
-    -fx-min-height: 40;
+    -fx-min-width: 160;
+    -fx-min-height: 32;
     -fx-background-color: #337ab7;
     -fx-border-color: #2e6da4;
-    -fx-font-size: 14.0px;
+    -fx-font-size: 12.0px;
     -fx-border-radius: 4.0px;
     -fx-background-radius: 4.0px;
     -fx-padding: 6.0px 12.0px 6.0px 12.0px;
@@ -29,7 +29,7 @@
 
 .label-bold{
     -fx-font-weight: 700;
-    -fx-font-size:12px;
+    -fx-font-size:10px;
 }
 
 .button:hover {
@@ -39,8 +39,8 @@
 }
 
 .text-field{
-    -fx-min-width: 300.0;
-    -fx-min-height: 30;
+    -fx-min-width: 240.0;
+    -fx-min-height: 24;
 }
 
 .text-field:focused {
@@ -61,7 +61,7 @@
     -fx-background-color: #c7c7c7;
     -fx-table-cell-border-color: transparent;
     -fx-table-header-border-color: transparent;
-    -fx-padding: 2.0;
+    -fx-padding: 1.0;
 }
 
 .table-view .column-header-background {
@@ -69,7 +69,7 @@
 }
 
 .table-view .column-header, .table-view .filler {
-    -fx-size: 35.0;
+    -fx-size: 28.0;
     -fx-border-width: 0.0 0.0 0.0 0.0;
     -fx-background-color: transparent;
     -fx-border-color:
@@ -77,11 +77,11 @@
         transparent
         derive(-fx-base, 80.0%)
         transparent;
-    -fx-border-insets: 0.0 10.0 1.0 0.0;
+    -fx-border-insets: 0.0 8.0 0.8 0.0;
 }
 
 .table-view .column-header .label {
-    -fx-font-size: 12.0px;
+    -fx-font-size: 10.0px;
     -fx-font-family: "Segoe UI bold";
     -fx-text-fill: white;
     -fx-alignment: center-left;
@@ -202,6 +202,6 @@
 
 .selected {
     -fx-font-weight: bold;
-    -fx-font-size: 13;
+    -fx-font-size: 11;
       -fx-font-colo:
 }
